@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+
+        <record id="view_company_form" model="ir.ui.view">
+            <field name="name">view.company.form.rss.url</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook[@colspan='4']/page[@name='general_info']" position="after">
+                    <page name="ai_csrd_policy" string="CSRD AI Policy Support">
+                        <group>
+                            <group>
+                                <field name="ai_company_context"/>
+                            </group>
+                            <group>
+                                <field name="ai_model"/>
+                                <field name="ai_api_key"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

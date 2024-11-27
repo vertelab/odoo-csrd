@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+
+    <record id="product_normal_form_view" model="ir.ui.view">
+      <field name="name">product.product.form</field>
+      <field name="model">product.product</field>
+      <field name="inherit_id" ref="product.product_normal_form_view"/>
+      <field name="arch" type="xml">
+        <page name="invoicing" position="after">
+          <page name="esrs_line" string="ESRS Lines">
+            <field name="product_esrs_line_ids">
+              <tree editable="bottom">
+                <field name="csrd_esrs_id"/>
+                <field name="quantity"/>
+                <field name="uom_id"/>
+                <field name="data_type"/>
+                <field name="create_date"/>
+              </tree>
+            </field>
+          </page>
+        </page>
+      </field>
+    </record>
+
+  </data>
+</odoo>

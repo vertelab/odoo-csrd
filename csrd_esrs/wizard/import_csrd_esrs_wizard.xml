@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+
+        <record id="import_esrs_wizard" model="ir.ui.view">
+            <field name="name">import.esrs.wizard</field>
+            <field name="model">import.csrd.esrs.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Import ESRS">
+                    <group>
+                        <group>
+                            <field name="file"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="import_esrs" string="Import" type="object" class="btn-primary" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="import_esrs_action" model="ir.actions.act_window">
+            <field name="name">Import ESRS</field>
+            <field name="res_model">import.csrd.esrs.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="import_esrs_wizard" />
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="csrd_esrs.menu_import_esrs_wizard" name="CSRD Wizard" parent="csrd_esrs.menu_csrd_esrs_configuration" action="import_esrs_action" sequence="25" />
+
+    </data>
+</odoo>

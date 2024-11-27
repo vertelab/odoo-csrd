@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+csrd_esrs.access_csrd_esrs,access_csrd_esrs,csrd_esrs.model_csrd_esrs,base.group_user,1,1,1,1
+csrd_esrs.access_import_csrd_esrs_wizard,access_import_csrd_esrs_wizard,csrd_esrs.model_import_csrd_esrs_wizard,base.group_user,1,1,1,0
+csrd_esrs.access_csrd_esrs_category,access_csrd_esrs_category,csrd_esrs.model_csrd_esrs_category,base.group_user,1,1,1,1
+csrd_esrs.access_document_page_csrd_esrs,access_document_page_csrd_esrs,csrd_esrs.model_document_page_csrd_esrs,base.group_user,1,1,1,1
