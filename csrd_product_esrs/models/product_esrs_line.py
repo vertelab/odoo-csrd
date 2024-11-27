@@ -6,7 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class ProductESRSLine(models.Model):
     _name = 'product.esrs.line'
-    _description = 'scaffold_test.scaffold_test'
+    _description = 'Lines to store ESRS data on products'
 
     name = fields.Char()
     product_id = fields.Many2one(comodel_name="product.product")

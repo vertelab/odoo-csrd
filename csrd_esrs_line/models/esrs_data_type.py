@@ -6,6 +6,6 @@ _logger = logging.getLogger(__name__)
 
 class ESRSDataType(models.Model):
     _name = 'esrs.data.type'
-    _description = 'Describes what thing the CSRD data point refers to for type.'
+    _description = 'Describes what type the ESRS datapoint refers to.'
 
     name = fields.Char()

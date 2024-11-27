@@ -11,7 +11,6 @@ from langchain_core.output_parsers import StrOutputParser
 _logger = logging.getLogger(__name__)
 
 class DocumentCSRD(models.Model):
-    _description = 'scaffold_test.scaffold_test'
     _inherit = 'csrd.esrs'
 
     ai_question = fields.Html()

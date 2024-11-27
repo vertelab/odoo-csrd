@@ -5,7 +5,7 @@ import logging
 _logger = logging.getLogger(__name__)
 
 class CSRDESRS(models.Model):
-    _description = ''
+    _description = 'ESRS Datapoints'
     _inherit = 'csrd.esrs'
 
     uom_id = fields.Many2one(comodel_name="uom.uom")

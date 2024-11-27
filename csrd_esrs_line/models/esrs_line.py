@@ -6,7 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class ESRSLine(models.Model):
     _name = 'esrs.line'
-    _description = 'Transaction line for esrs'
+    _description = 'Transaction line for ESRS'
 
     name = fields.Char(compute="_compute_name", store=True)
     account_move_id = fields.Many2one(comodel_name="account.move")

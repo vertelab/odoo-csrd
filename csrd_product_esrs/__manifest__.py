@@ -22,7 +22,7 @@
 # https://www.odoo.com/documentation/14.0/reference/module.html
 #
 {
-    'name': 'Product ESRS Line',
+    'name': 'CSRD: Product ESRS Line',
     'version': '1.0',
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as

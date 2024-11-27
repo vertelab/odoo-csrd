@@ -6,7 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class ESRSLine(models.Model):
     _inherit = 'esrs.line'
-    _description = 'scaffold_test.scaffold_test'
+    _description = 'Data types for esrs.lines'
 
     is_computed = fields.Boolean()
 

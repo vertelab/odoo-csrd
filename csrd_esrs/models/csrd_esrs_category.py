@@ -7,7 +7,7 @@ _logger = logging.getLogger(__name__)
 class CSRDESRSCategory(models.Model):
     _name = 'csrd.esrs.category'
     _inherit = ["mail.thread", "mail.activity.mixin"]
-    _description = 'Creates ESRS datapoints'
+    _description = 'ESRS Categorys'
 
     name = fields.Char()
     active = fields.Boolean(default=True)

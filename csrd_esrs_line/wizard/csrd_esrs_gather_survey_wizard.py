@@ -6,7 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class DocumentCSRDGatherSurveyWizard(models.TransientModel):
     _name = 'csrd.esrs.gather.survey.wizard'
-    _description = 'scaffold_test.scaffold_test'
+    _description = 'collects data from surveys for ESRS reporting'
 
     name = fields.Char()
     survey_id = fields.Many2one(comodel_name="survey.survey", required=True)
