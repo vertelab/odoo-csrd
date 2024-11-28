@@ -1,0 +1,156 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* csrd_policy_support
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20241127\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-27 15:55+0000\n"
+"PO-Revision-Date: 2024-11-28 10:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: csrd_policy_support
+#. odoo-python
+#: code:addons/csrd_policy_support/models/csrd_esrs.py:0
+#, python-format
+msgid ""
+"\n"
+"        {context}\n"
+"\n"
+"        ---\n"
+"\n"
+"        The context above is a description and summary of a company. And below is an ESRS datapoint requirement. Below the ESRS datapoint requirement, there is a user question. With the user question and the ESRS datapoint requirement in mind, create an ESRS policy that is relevant for the business/company.\n"
+"\n"
+"        ---\n"
+"        \n"
+"        {document}\n"
+"\n"
+"        ---\n"
+"\n"
+"        {question}\n"
+"\n"
+"        ---\n"
+"        Answer: \n"
+"        "
+msgstr ""
+"\n"
+"        {context}\n"
+"\n"
+"        ---\n"
+"\n"
+"        Kontexten ovan är en beskrivning och sammanfattning av ett företag. Och nedan är ett ESRS-datapunktskrav. Under ESRS-datapunktskravet finns en användarfråga. Med användarfrågan och ESRS-datapunktskravet i åtanke skapar du en ESRS-policy som är relevant för verksamheten/företaget.\n"
+"\n"
+"        ---\n"
+"        \n"
+"        {document}\n"
+"\n"
+"        ---\n"
+"\n"
+"        {question}\n"
+"\n"
+"        ---\n"
+"        Svar:\n"
+"        "
+
+#. module: csrd_policy_support
+#. odoo-javascript
+#: code:addons/csrd_policy_support/static/src/js/js.js:0
+#, python-format
+msgid "Add this text to your mailing's     documentation"
+msgstr "Lägg till denna text i dokumentationen för ditt utskick"
+
+#. module: csrd_policy_support
+#: model:ir.model,name:csrd_policy_support.model_res_company
+msgid "Adds a RSS URL field to the res.company model"
+msgstr "Lägger till ett RSS URL-fält i res.company-modellen"
+
+#. module: csrd_policy_support
+#: model:ir.model.fields,field_description:csrd_policy_support.field_res_company__ai_api_key
+msgid "Ai Api Key"
+msgstr "Ai Api Nyckel"
+
+#. module: csrd_policy_support
+#: model:ir.model.fields,field_description:csrd_policy_support.field_res_company__ai_company_context
+msgid "Ai Company Context"
+msgstr "Ai Företag Kontext"
+
+#. module: csrd_policy_support
+#: model:ir.model.fields,field_description:csrd_policy_support.field_res_company__ai_model
+msgid "Ai Model"
+msgstr "Ai Modell"
+
+#. module: csrd_policy_support
+#: model:ir.model.fields,field_description:csrd_policy_support.field_csrd_esrs__ai_question
+msgid "Ai Question"
+msgstr "Till frågorna"
+
+#. module: csrd_policy_support
+#: model_terms:ir.ui.view,arch_db:csrd_policy_support.view_company_form
+msgid "CSRD AI Policy Support"
+msgstr "CSRD AI Policystöd"
+
+#. module: csrd_policy_support
+#: model_terms:ir.ui.view,arch_db:csrd_policy_support.view_csrd_esrs_policy_form
+msgid "Chancel"
+msgstr "Koret"
+
+#. module: csrd_policy_support
+#: model:ir.model.fields.selection,name:csrd_policy_support.selection__res_company__ai_model__chatgpt
+msgid "ChatGPT"
+msgstr "ChattGPT"
+
+#. module: csrd_policy_support
+#: model:ir.actions.server,name:csrd_policy_support.action_csrd_esrs_policy
+msgid "Create Policy"
+msgstr "Skapa policy"
+
+#. module: csrd_policy_support
+#. odoo-javascript
+#: code:addons/csrd_policy_support/static/src/js/js.js:0
+#, python-format
+msgid "Document"
+msgstr "Dokument"
+
+#. module: csrd_policy_support
+#. odoo-javascript
+#: code:addons/csrd_policy_support/static/src/js/js.js:0
+#, python-format
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#. module: csrd_policy_support
+#: model:ir.model,name:csrd_policy_support.model_csrd_esrs
+msgid "ESRS Datapoints"
+msgstr "ESRS Datapunkter"
+
+#. module: csrd_policy_support
+#: model:ir.model.fields.selection,name:csrd_policy_support.selection__res_company__ai_model__mistral
+msgid "Mistral"
+msgstr "Mistral"
+
+#. module: csrd_policy_support
+#: model_terms:ir.ui.view,arch_db:csrd_policy_support.view_csrd_esrs_policy_form
+msgid "OK"
+msgstr "OK"
+
+#. module: csrd_policy_support
+#. odoo-python
+#: code:addons/csrd_policy_support/models/csrd_esrs.py:0
+#, python-format
+msgid "Pleass add a api key for your llm."
+msgstr "Var snäll och lägg till en api-nyckel för din llm."
+
+#. module: csrd_policy_support
+#. odoo-python
+#: code:addons/csrd_policy_support/models/csrd_esrs.py:0
+#, python-format
+msgid "Pleass selecte a llm on your company."
+msgstr "Vänligen välj en llm på ditt företag."
