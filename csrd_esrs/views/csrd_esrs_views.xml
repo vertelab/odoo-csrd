@@ -59,20 +59,26 @@
                   </group>
                 </group>
               </page>
-              <page name="policy" string="Policy">
-                <field name="description" nolabel="1" attrs="{'invisible': ['!',('csrd_data_type', 'ilike', 'narrative')]}"/>
-                <group>
-                  <group>
-                    <field name="currency_id" invisible="1"/>
-                    <field name="estimated_value" attrs="{'invisible': [('csrd_data_type', 'ilike', 'narrative')]}"/>
-                  </group>
-                </group>
+              <page name="policy" string="Policy" attrs="{'invisible': ['!',('csrd_data_type', 'ilike', 'narrative')]}">
+                <field name="description" nolabel="1" />
                 <field name="document_page_manual_ids">
                   <tree editable="bottom">
                     <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]"/>
                   </tree>
                 </field>
-
+              </page>
+              <page name="data" string="Data" attrs="{'invisible': [('csrd_data_type', 'ilike', 'narrative')]}">
+                <group>
+                  <group>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="estimated_value"/>
+                  </group>
+                </group>
+                <field name="document_page_manual_ids">
+                  <tree editable="bottom">
+                    <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]" string="Manual/Policy"/>
+                  </tree>
+                </field>
               </page>
               <page name="survey" string="Survey">
                 <group>

@@ -6,7 +6,6 @@ _logger = logging.getLogger(__name__)
 
 class AccountMove(models.Model):
     _inherit = 'account.move'
-    _description = 'scaffold_test.scaffold_test'
 
     def action_post(self):
 

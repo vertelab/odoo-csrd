@@ -109,7 +109,7 @@
       <field name="act_window_id" ref="action_esrs_category" />
     </record>
 
-    <menuitem id="menu_csrd_esrs_category" name="ESRS Category" parent="menu_csrd_esrs_items" action="action_esrs_category" sequence="20" />
+    <menuitem id="menu_csrd_esrs_category" name="ESRS Category" parent="menu_csrd_esrs_items" action="action_esrs_category" sequence="24" />
 
   </data>
 </odoo>
