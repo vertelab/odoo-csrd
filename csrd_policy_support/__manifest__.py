@@ -31,24 +31,22 @@
     'description': """
         Long description of module's purpose
     """,
-    #'sequence': 1,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
-    'images': ['static/description/banner.png'], # 560x280
+    'images': ['static/description/banner.png'],  # 560x280
     'license': 'AGPL-3',
     'depends': ["csrd_esrs"],
     "external_dependencies": {
-       "python": ["langchain_core","langchain_openai","langchain_mistralai"],
+       "python": ["langchain_core", "langchain_openai", "langchain_mistralai"],
     },
-    'data': ["views/csrd_esrs_views.xml","views/res_company_views.xml"],
+    'data': ["views/csrd_esrs_views.xml", "views/res_company_views.xml"],
     'demo': [],
-    # 'assets': {
-    #     'web.assets_backend': [
-    #         'knowledge_powerbox_option/static/src/js/js.js',
-    #     ],
-    # },
+    'assets': {
+        'web_editor.assets_wysiwyg': [
+            'csrd_policy_support/static/src/js/wysiwyg.js',
+        ],
+    },
     'application': False,
     'installable': True,    
     'auto_install': False,
-    #"post_init_hook": "post_init_hook",
 }
