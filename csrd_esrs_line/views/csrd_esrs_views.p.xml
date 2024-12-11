@@ -48,7 +48,7 @@
               <tree>
                 <field name="csrd_name" nolabel="1"/>
               </tree>
-              <!-- #if VERSION >= "18.0" -->
+              <!-- #elif VERSION >= "18.0" -->
               <list>
                 <field name="csrd_name" nolabel="1"/>
               </list>
