@@ -32,9 +32,9 @@
           </header>
           <sheet>
             <div name="button_box" id="button_box" class="oe_button_box" />
-            <!-- #if VERSION >= 17.0 -->     
+            <!-- #if VERSION >= "17.0" -->     
             <widget name="web_ribbon" title="Archived" bg_color="bg-danger"  invisible="active == True" />
-            <!-- #elif VERSION <= 16.0 -->
+            <!-- #elif VERSION <= "16.0" -->
             <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
             <!-- #endif -->
             <field name="active" invisible="1" />
@@ -50,7 +50,7 @@
                     <field name="company_id" groups="base.group_multi_company" />
                     <field name="create_date" readonly="1" />
                     <field name="csrd_id" readonly="1" />
-                    <!-- #if VERSION >= 17.0 -->     
+                    <!-- #if VERSION >= "17.0" -->     
                     <field name="csrd_dr" readonly="1" invisible="csrd_dr == False"/>
                     <field name="csrd_paragraph" readonly="1" invisible="csrd_paragraph == False" />
                     <field name="csrd_related_ar" readonly="1" invisible="csrd_related_ar == False" />
@@ -61,7 +61,7 @@
                     <field name="csrd_appendix_c_less_then_750" readonly="1" invisible="csrd_appendix_c_less_then_750 == False" />
                     <field name="csrd_appendix_c_more_then_750" readonly="1" invisible="csrd_appendix_c_more_then_750 == False" />
                     <field name="category_id" invisible="category_id == False" />
-                    <!-- #elif VERSION <= 16.0 -->
+                    <!-- #elif VERSION <= "16.0" -->
                     <field name="csrd_dr" readonly="1" attrs="{'invisible': [('csrd_dr', '=', False)]}"/>
                     <field name="csrd_paragraph" readonly="1" attrs="{'invisible': [('csrd_paragraph', '=', False)]}"/>
                     <field name="csrd_related_ar" readonly="1" attrs="{'invisible': [('csrd_related_ar', '=', False)]}"/>
@@ -76,9 +76,9 @@
                   </group>
                 </group>
               </page>
-              <!-- #if VERSION >= 17.0 -->     
+              <!-- #if VERSION >= "17.0" -->     
               <page name="policy" string="Policy" invisible="not 'narrative' in csrd_data_type">
-              <!-- #elif VERSION <= 16.0 -->
+              <!-- #elif VERSION <= "16.0" -->
               <page name="policy" string="Policy" attrs="{'invisible': ['!',('csrd_data_type', 'ilike', 'narrative')]}">
               <!-- #endif -->
                 <field name="description" nolabel="1" />
@@ -88,9 +88,9 @@
                   </tree>
                 </field>
               </page>
-              <!-- #if VERSION >= 17.0 -->     
+              <!-- #if VERSION >= "17.0" -->     
               <page name="data" string="Data" invisible="'narrative' in csrd_data_type">
-              <!-- #elif VERSION <= 16.0 -->
+              <!-- #elif VERSION <= "16.0" -->
               <page name="data" string="Data" attrs="{'invisible': [('csrd_data_type', 'ilike', 'narrative')]}">
               <!-- #endif -->
                 <group>
