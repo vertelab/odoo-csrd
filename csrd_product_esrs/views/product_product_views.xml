@@ -9,13 +9,13 @@
         <page name="invoicing" position="after">
           <page name="esrs_line" string="ESRS Lines">
             <field name="product_esrs_line_ids">
-              <tree editable="bottom">
+              <list editable="bottom">
                 <field name="csrd_esrs_id"/>
                 <field name="quantity"/>
                 <field name="uom_id"/>
                 <field name="data_type"/>
                 <field name="create_date"/>
-              </tree>
+              </list>
             </field>
           </page>
         </page>
