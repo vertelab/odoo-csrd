@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Action -->
-    <record id="action_esrs_line" model="ir.actions.act_window">
-        <field name="name">ESRS Lines</field>
-        <field name="res_model">esrs.line</field>
-        <field name="view_mode">tree,form,pivot</field>
-    </record>
-
-    <!-- Menu Items -->
-
-    <menuitem id="menu_esrs_line" name="ESRS Lines" parent="document_knowledge.menu_document_configuration" action="action_esrs_line" sequence="10"/>
-
-    <!-- Tree View -->
     <record id="view_esrs_line_tree" model="ir.ui.view">
         <field name="name">esrs.line.tree</field>
         <field name="model">esrs.line</field>
@@ -64,4 +52,14 @@
             </pivot>
         </field>
     </record>
+
+    <!-- Action -->
+    <record id="action_esrs_line" model="ir.actions.act_window">
+        <field name="name">ESRS Lines</field>
+        <field name="res_model">esrs.line</field>
+        <field name="view_mode">tree,form,pivot</field>
+    </record>
+
+    <menuitem id="menu_esrs_line" name="ESRS Lines" parent="csrd_esrs.menu_csrd_esrs_configuration" action="action_esrs_line" sequence="10"/>
+
 </odoo>
