@@ -8,19 +8,33 @@
       <field name="arch" type="xml">
 
         <header position="inside">
+          <!-- #if VERSION <= "16.0" -->
+          <button name="open_survey_wizard" string="Apply Survey Data" type="object" class="oe_highlight" attrs="{'invisible': [('survey_id', '=', False)]}"/>
+          <!-- #elif VERSION >= "17.0" -->     
           <button name="open_survey_wizard" string="Apply Survey Data" type="object" class="oe_highlight" invisible="survey_id != False"/>
+          <!-- #endif -->
         </header>
 
         <div name="button_box" position="inside">
+          <!-- #if VERSION <= "16.0" -->
+          <button class="oe_stat_button" type="object" name="get_children" icon="fa-list" attrs="{'invisible': [('count_esrs_lines', '=', 0)]}">
+          <!-- #elif VERSION >= "17.0" -->     
           <button class="oe_stat_button" type="object" name="get_children" icon="fa-list" invisible="count_esrs_lines == 0" >
+          <!-- #endif -->
             <field string="ESRS Lines" name="count_esrs_lines" widget="statinfo"/>
           </button>
         </div>
 
         <field name="estimated_value" position="after">
+          <!-- #if VERSION <= "16.0" -->
+          <field name="quantity" attrs="{'invisible': ['|',('csrd_data_type', '=', 'narrative'),('csrd_data_type', '=', 'semi-narrative')]}"/>
+          <field name="uom_id" attrs="{'invisible': ['|',('csrd_data_type', '=', 'narrative'),('csrd_data_type', '=', 'semi-narrative')]}" />
+          <field name="data_type" attrs="{'invisible': ['|',('csrd_data_type', '=', 'narrative'),('csrd_data_type', '=', 'semi-narrative')]}"/>
+          <!-- #elif VERSION >= "17.0" -->     
           <field name="quantity" invisible="'csrd_data_type' == 'narrative' or 'csrd_data_type' == 'semi-narrative'"/>
           <field name="uom_id" invisible="'csrd_data_type' == 'narrative' or 'csrd_data_type' == 'semi-narrative'" />
           <field name="data_type" invisible="'csrd_data_type' == 'narrative' or 'csrd_data_type' == 'semi-narrative'"/>
+          <!-- #endif -->
         </field>
 
         <field name="category_id" position="after">
