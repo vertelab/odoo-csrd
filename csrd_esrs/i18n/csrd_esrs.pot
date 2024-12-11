@@ -1,0 +1,669 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* csrd_esrs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20241127\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-28 07:43+0000\n"
+"PO-Revision-Date: 2024-11-28 07:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs_category__financial_materiality__10
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs_category__impact_materiality__10
+msgid "10"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_needaction
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__active
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__active
+msgid "Active"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_exception_decoration
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_state
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_type_icon
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_document_page
+msgid "Adds One2many connection to document.law from document.page."
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_appendix_b
+msgid "Appendix B"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_appendix_c_less_then_750
+msgid "Appendix C < 750"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_appendix_c_more_then_750
+msgid "Appendix C > 750"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Archived"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_attachment_count
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.actions.act_window,name:csrd_esrs.action_csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_root
+msgid "CSRD"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "CSRD Name"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_import_esrs_wizard
+msgid "CSRD Wizard"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Category"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__company_id
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Company"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_conditional_or_alternative_dp
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Conditional or Alternative DP"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__create_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__create_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__create_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__create_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__create_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__create_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__csrd_esrs_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page__csrd_esrs_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__csrd_esrs_id
+msgid "Csrd Esrs"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_sheet_name
+msgid "Csrd Sheet Name"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "DR"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_data_type
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Data Type"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__description
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Description"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_dr
+msgid "Disclosure Requirement"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__display_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__display_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__display_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__document_page_id
+msgid "Document Page"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__document_page_manual_ids
+msgid "Document Page Manual"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Document csrd"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__stage__done
+msgid "Done"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__stage__draft
+msgid "Draft"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_wiki_form
+msgid "ESRS"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_2
+msgid "ESRS 2"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_2_mdr
+msgid "ESRS 2 MDR"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.actions.act_window,name:csrd_esrs.action_esrs_category
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__category_id
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_category
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "ESRS Category"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_pivot
+msgid "ESRS Category Pivot"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_csrd_esrs_category
+msgid "ESRS Categorys"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_csrd_esrs
+msgid "ESRS Datapoints"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e1
+msgid "ESRS E1"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e2
+msgid "ESRS E2"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e3
+msgid "ESRS E3"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e4
+msgid "ESRS E4"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e5
+msgid "ESRS E5"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_g1
+msgid "ESRS G1"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s1
+msgid "ESRS S1"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s2
+msgid "ESRS S2"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s3
+msgid "ESRS S3"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s4
+msgid "ESRS S4"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__estimated_value
+msgid "Estimated Value"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__file
+msgid "File"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__financial_materiality
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Financial Materiality"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__financial_materiality_description
+msgid "Financial Materiality Description"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_follower_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_partner_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_type_icon
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_document_page_csrd_esrs
+msgid "Glue model between document.page and csrd.esrs"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__has_message
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__id
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__id
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_exception_icon
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_exception_icon
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_needaction
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_has_error
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_has_sms_error
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_has_error
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__company_id
+msgid "If set, page is accessible only from this company"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__impact_materiality
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Impact Materiality"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__impact_materiality_description
+msgid "Impact Materiality Description"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.import_esrs_wizard
+msgid "Import"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.actions.act_window,name:csrd_esrs.import_esrs_action
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.import_esrs_wizard
+msgid "Import ESRS"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Information"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_is_follower
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_items
+msgid "Items"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs____last_update
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category____last_update
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs____last_update
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__write_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__write_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__write_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__write_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__write_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__write_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_wiki_form
+msgid "Laws"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_main_attachment_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_may_v
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "May V"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_has_error
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__my_activity_date_deadline
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__name
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Name"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_calendar_event_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_date_deadline
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_summary
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_type_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.actions.act_window,help:csrd_esrs.action_esrs_category
+msgid "No ESRS Categorys"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.actions.act_window,help:csrd_esrs.action_csrd_esrs
+msgid "No ESRS Datapoints at the moment."
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__number_of_children
+msgid "Number Of Children"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_needaction_counter
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_has_error_counter
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_needaction_counter
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_has_error_counter
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_paragraph
+msgid "Paragraph"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__parent_id
+msgid "Parent Category"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Policy"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__priority
+msgid "Priority"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_related_ar
+msgid "Related_AR"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_user_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_has_sms_error
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__stage
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Status"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_state
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Subcategories"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__survey_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__survey_id
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Survey"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_exception_decoration
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Update Subcategorys"
+msgstr ""
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Value"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__website_message_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__website_message_ids
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_import_csrd_esrs_wizard
+msgid "import.csrd.esrs.wizard"
+msgstr ""

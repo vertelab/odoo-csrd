@@ -9,8 +9,13 @@
                 <field name="name"/>
                 <field name="quantity"/>
                 <field name="data_type"/>
+                <!-- #if VERSION <= "16.0" -->
                 <field name="account_move_id" attrs="{'invisible': [('account_move_id', '=', False)]}" optional="hide"/>
                 <field name="survey_id" attrs="{'invisible': [('survey_id', '=', False)]}" optional="hide"/>
+                <!-- #elif VERSION >= "17.0" -->
+                <field name="account_move_id" invisible="account_move_id == False" />
+                <field name="survey_id" invisible="survey_id == False" optional="hide"/>
+                <!-- #endif -->
                 <field name="csrd_esrs_id"/>
                 <field name="uom_id"/>
                 <field name="create_date"/>
@@ -29,8 +34,13 @@
                         <field name="name"/>
                         <field name="quantity"/>
                         <field name="data_type"/>
+                        <!-- #if VERSION <= "16.0" -->
                         <field name="account_move_id" attrs="{'invisible': [('account_move_id', '=', False)]}" />
                         <field name="survey_id" attrs="{'invisible': [('survey_id', '=', False)]}" />
+                        <!-- #elif VERSION >= "17.0" -->
+                        <field name="account_move_id" invisible="account_move_id == False" />
+                        <field name="survey_id" invisible="survey_id == False" />
+                        <!-- #endif -->
                         <field name="csrd_esrs_id"/>
                         <field name="uom_id"/>
                         <field name="create_date"/>

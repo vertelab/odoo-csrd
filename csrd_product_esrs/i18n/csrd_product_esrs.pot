@@ -1,0 +1,116 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* csrd_product_esrs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20241127\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-28 07:54+0000\n"
+"PO-Revision-Date: 2024-11-28 07:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__csrd_esrs_id
+msgid "Csrd Esrs"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__data_type
+msgid "Data Type"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model,name:csrd_product_esrs.model_esrs_line
+msgid "Data types for esrs.lines"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_product_esrs.product_normal_form_view
+msgid "ESRS Lines"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__id
+msgid "ID"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_esrs_line__is_computed
+msgid "Is Computed"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model,name:csrd_product_esrs.model_product_esrs_line
+msgid "Lines to store ESRS data on products"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__name
+msgid "Name"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__product_id
+msgid "Product"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_product__product_esrs_line_ids
+msgid "Product Esrs Line"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model,name:csrd_product_esrs.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__uom_id
+msgid "Uom"
+msgstr ""
+
+#. module: csrd_product_esrs
+#: model:ir.model,name:csrd_product_esrs.model_account_move
+msgid "scaffold_test.scaffold_test"
+msgstr ""

@@ -7,15 +7,675 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-26 12:20+0000\n"
-"PO-Revision-Date: 2024-11-27 16:43+0100\n"
+"PO-Revision-Date: 2024-11-28 09:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: sv_SE\n"
+"Language: se\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
 "X-Generator: Poedit 3.0.1\n"
+
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs_category__financial_materiality__10
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs_category__impact_materiality__10
+msgid "10"
+msgstr "10"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_needaction
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_needaction
+msgid "Action Needed"
+msgstr "Åtgärder krävs"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__active
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__active
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_ids
+msgid "Activities"
+msgstr "Aktiviteter"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_exception_decoration
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Aktivitet Undantag Dekoration"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_state
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_state
+msgid "Activity State"
+msgstr "Aktivitet Stat"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_type_icon
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Aktivitetstyp Ikon"
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_document_page
+msgid "Adds One2many connection to document.law from document.page."
+msgstr "Lägger till One2many-anslutning till document.law från document.page."
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_appendix_b
+msgid "Appendix B"
+msgstr "Bilaga B"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_appendix_c_less_then_750
+msgid "Appendix C < 750"
+msgstr "Bilaga C < 750"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_appendix_c_more_then_750
+msgid "Appendix C > 750"
+msgstr "Bilaga C > 750"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Archived"
+msgstr "Arkiverad"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_attachment_count
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_attachment_count
+msgid "Attachment Count"
+msgstr "Antal bifogade filer"
+
+#. module: csrd_esrs
+#: model:ir.actions.act_window,name:csrd_esrs.action_csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_root
+msgid "CSRD"
+msgstr "CSRD"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "CSRD Name"
+msgstr "CSRD Namn"
+
+#. module: csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_import_esrs_wizard
+msgid "CSRD Wizard"
+msgstr "CSRD-guide"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Category"
+msgstr "Kategori"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__company_id
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Company"
+msgstr "Företag"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_conditional_or_alternative_dp
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Conditional or Alternative DP"
+msgstr "Villkorlig eller alternativ DP"
+
+#. module: csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_configuration
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__create_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__create_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__create_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__create_uid
+msgid "Created by"
+msgstr "Skapad av"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__create_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__create_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__create_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__create_date
+msgid "Created on"
+msgstr "Skapad på"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__csrd_esrs_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page__csrd_esrs_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__csrd_esrs_id
+msgid "Csrd Esrs"
+msgstr "Csrd Esrs"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_sheet_name
+msgid "Csrd Sheet Name"
+msgstr "Namn på Csrd-ark"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "DR"
+msgstr "DR"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_data_type
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Data Type"
+msgstr "Typ av data"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__description
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Description"
+msgstr "Beskrivning"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_dr
+msgid "Disclosure Requirement"
+msgstr "Krav på offentliggörande"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__display_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__display_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__display_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__document_page_id
+msgid "Document Page"
+msgstr "Dokument Sida"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__document_page_manual_ids
+msgid "Document Page Manual"
+msgstr "Dokument Sida Manual"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Document csrd"
+msgstr "Dokument csrd"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__stage__done
+msgid "Done"
+msgstr "Klar"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__stage__draft
+msgid "Draft"
+msgstr "Utkast"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_wiki_form
+msgid "ESRS"
+msgstr "ESRS"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_2
+msgid "ESRS 2"
+msgstr "ESRS 2"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_2_mdr
+msgid "ESRS 2 MDR"
+msgstr "ESRS 2 MDR"
+
+#. module: csrd_esrs
+#: model:ir.actions.act_window,name:csrd_esrs.action_esrs_category
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__category_id
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_category
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "ESRS Category"
+msgstr "ESRS Kategori"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_pivot
+msgid "ESRS Category Pivot"
+msgstr "ESRS Kategori Pivot"
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_csrd_esrs_category
+msgid "ESRS Categorys"
+msgstr "ESRS-kategorier"
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_csrd_esrs
+msgid "ESRS Datapoints"
+msgstr "ESRS Datapunkter"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e1
+msgid "ESRS E1"
+msgstr "ESRS E1"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e2
+msgid "ESRS E2"
+msgstr "ESRS E2"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e3
+msgid "ESRS E3"
+msgstr "ESRS E3"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e4
+msgid "ESRS E4"
+msgstr "ESRS E4"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_e5
+msgid "ESRS E5"
+msgstr "ESRS E5"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_g1
+msgid "ESRS G1"
+msgstr "ESRS G1"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s1
+msgid "ESRS S1"
+msgstr "ESRS S1"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s2
+msgid "ESRS S2"
+msgstr "ESRS S2"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s3
+msgid "ESRS S3"
+msgstr "ESRS S3"
+
+#. module: csrd_esrs
+#: model:ir.model.fields.selection,name:csrd_esrs.selection__csrd_esrs__csrd_sheet_name__esrs_s4
+msgid "ESRS S4"
+msgstr "ESRS S4"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__estimated_value
+msgid "Estimated Value"
+msgstr "Uppskattat värde"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__file
+msgid "File"
+msgstr "Fil"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__financial_materiality
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Financial Materiality"
+msgstr "Finansiell väsentlighet"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__financial_materiality_description
+msgid "Financial Materiality Description"
+msgstr "Finansiell väsentlighet Beskrivning"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_follower_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_follower_ids
+msgid "Followers"
+msgstr "Följare"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_partner_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Följare (Partners)"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_type_icon
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome-ikon, t.ex. fa-tasks"
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_document_page_csrd_esrs
+msgid "Glue model between document.page and csrd.esrs"
+msgstr "Limmodell mellan document.page och csrd.esrs"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Group By..."
+msgstr "Gruppera genom..."
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__has_message
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__has_message
+msgid "Has Message"
+msgstr "Har meddelande"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__id
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__id
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_exception_icon
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_exception_icon
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_exception_icon
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon för att indikera en undantagsaktivitet."
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_needaction
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Om den är markerad kräver nya meddelanden din uppmärksamhet."
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_has_error
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_has_sms_error
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_has_error
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Om kryssrutan är markerad får vissa meddelanden ett leveransfel."
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__company_id
+msgid "If set, page is accessible only from this company"
+msgstr "Om den är inställd är sidan endast tillgänglig från detta företag"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__impact_materiality
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Impact Materiality"
+msgstr "Påverkan Väsentlighet"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__impact_materiality_description
+msgid "Impact Materiality Description"
+msgstr "Påverkan Väsentlighet Beskrivning"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.import_esrs_wizard
+msgid "Import"
+msgstr "Import"
+
+#. module: csrd_esrs
+#: model:ir.actions.act_window,name:csrd_esrs.import_esrs_action
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.import_esrs_wizard
+msgid "Import ESRS"
+msgstr "ESRS import"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Information"
+msgstr "Information om"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_is_follower
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_is_follower
+msgid "Is Follower"
+msgstr "Är följare"
+
+#. module: csrd_esrs
+#: model:ir.ui.menu,name:csrd_esrs.menu_csrd_esrs_items
+msgid "Items"
+msgstr "Föremål"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs____last_update
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category____last_update
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs____last_update
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard____last_update
+msgid "Last Modified on"
+msgstr "Senast ändrad den"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__write_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__write_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__write_uid
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Senast uppdaterad av"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__write_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__write_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_document_page_csrd_esrs__write_date
+#: model:ir.model.fields,field_description:csrd_esrs.field_import_csrd_esrs_wizard__write_date
+msgid "Last Updated on"
+msgstr "Senast uppdaterad den"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_wiki_form
+msgid "Laws"
+msgstr "Lagar"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_main_attachment_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Huvudfäste"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_may_v
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "May V"
+msgstr "Maj V"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_has_error
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_has_error
+msgid "Message Delivery error"
+msgstr "Fel vid leverans av meddelande"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_ids
+msgid "Messages"
+msgstr "Meddelanden"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__my_activity_date_deadline
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Min aktivitet Deadline"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_name
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__name
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Name"
+msgstr "Namn"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_calendar_event_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Nästa aktivitet i aktivitetskalendern"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_date_deadline
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Deadline för nästa aktivitet"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_summary
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_summary
+msgid "Next Activity Summary"
+msgstr "Nästa Aktivitet Sammanfattning"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_type_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_type_id
+msgid "Next Activity Type"
+msgstr "Nästa aktivitetstyp"
+
+#. module: csrd_esrs
+#: model_terms:ir.actions.act_window,help:csrd_esrs.action_esrs_category
+msgid "No ESRS Categorys"
+msgstr "Nej ESRS-kategorier"
+
+#. module: csrd_esrs
+#: model_terms:ir.actions.act_window,help:csrd_esrs.action_csrd_esrs
+msgid "No ESRS Datapoints at the moment."
+msgstr "Inga ESRS-datapunkter för närvarande."
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__number_of_children
+msgid "Number Of Children"
+msgstr "Antal barn"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_needaction_counter
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Antal åtgärder"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_has_error_counter
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_has_error_counter
+msgid "Number of errors"
+msgstr "Antal fel"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_needaction_counter
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Antal meddelanden som kräver åtgärder"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__message_has_error_counter
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Antal meddelanden med leveransfel"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_paragraph
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__parent_id
+msgid "Parent Category"
+msgstr "Överordnad kategori"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Policy"
+msgstr "Policy"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__priority
+msgid "Priority"
+msgstr "Prioritet"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_related_ar
+msgid "Related_AR"
+msgstr "Relaterad_AR"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__activity_user_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__activity_user_id
+msgid "Responsible User"
+msgstr "Ansvarig användare"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__message_has_sms_error
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Fel vid leverans av SMS"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__stage
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
+msgid "Status"
+msgstr "Status"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_state
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status baserad på aktiviteter\n"
+"Försenad: Förfallodatumet har redan passerats\n"
+"Idag: Aktivitetsdatumet är idag\n"
+"Planerad: Framtida aktiviteter."
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Subcategories"
+msgstr "Underkategorier"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__survey_id
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__survey_id
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_form
+msgid "Survey"
+msgstr "Undersökning"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__activity_exception_decoration
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Typ av undantagsaktivitet som registreras."
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Update Subcategorys"
+msgstr "Uppdatera underkategorier"
+
+#. module: csrd_esrs
+#: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_category_form
+msgid "Value"
+msgstr "Värde"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__website_message_ids
+#: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__website_message_ids
+msgid "Website Messages"
+msgstr "Webbplatsmeddelanden"
+
+#. module: csrd_esrs
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__website_message_ids
+#: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs_category__website_message_ids
+msgid "Website communication history"
+msgstr "Webbplatsens kommunikationshistorik"
+
+#. module: csrd_esrs
+#: model:ir.model,name:csrd_esrs.model_import_csrd_esrs_wizard
+msgid "import.csrd.esrs.wizard"
+msgstr "import.csrd.esrs.wizard"
+
+
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_506_81c18c87
@@ -469,7 +1129,7 @@ msgid ""
 "area of sites owned, leased or managed in or near protected areas or key "
 "biodiversity areas that undertaking is negatively affecting"
 msgstr ""
-"Areal av områden som ägs, hyrs eller förvaltas i eller nära skyddade "
+"areal av områden som ägs, hyrs eller förvaltas i eller nära skyddade "
 "områden eller viktiga områden för biologisk mångfald som företaget påverkar "
 "negativt"
 
@@ -575,12 +1235,12 @@ msgstr "basår från vilket framsteg mäts"
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_172_3140941d
 msgid "baseline value"
-msgstr "Baslinjevärde"
+msgstr "baslinjevärde"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_173_8a811009
 msgid "baseline year"
-msgstr "Baslinjeår"
+msgstr "baslinjeår"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1_c3b55224
@@ -602,19 +1262,19 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_567_902ea1ca
 msgid "biodiversity offsets are part of transition plan"
-msgstr "Kompensation för biologisk mångfald är en del av övergångsplanen"
+msgstr "kompensation för biologisk mångfald är en del av övergångsplanen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_596_dc30c81b
 msgid "biodiversity offsets were used in action plan"
 msgstr ""
-"Kompensationsåtgärder för biologisk mångfald användes i handlingsplanen"
+"kompensationsåtgärder för biologisk mångfald användes i handlingsplanen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_620_e7596fec
 msgid "biodiversity offsets were used in setting target"
 msgstr ""
-"Kompensation för biologisk mångfald användes vid fastställandet av målet"
+"kompensation för biologisk mångfald användes vid fastställandet av målet"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_319_c150e8d3
@@ -825,8 +1485,8 @@ msgid ""
 "description of  whether and how policy addresses prioritisation of "
 "strategies to avoid or minimise waste over waste treatment strategies"
 msgstr ""
-"Beskrivning av om och hur policyn behandlar prioritering av strategier för "
-"att undvika eller minimera avfall framför strategier för avfallshantering."
+"beskrivning av om och hur policyn behandlar prioritering av strategier för "
+"att undvika eller minimera avfall framför strategier för avfallshantering"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_217_015fac63
@@ -1038,10 +1698,10 @@ msgid ""
 "remedy in event of material negative impacts on  value chain workers  are "
 "available and effective in their implementation and outcomes"
 msgstr ""
-"Beskrivning av tillvägagångssätt för att säkerställa att processer för att "
+"beskrivning av tillvägagångssätt för att säkerställa att processer för att "
 "tillhandahålla eller möjliggöra gottgörelse i händelse av väsentlig negativ "
 "påverkan på arbetstagare i värdekedjan är tillgängliga och effektiva i "
-"fråga om genomförande och resultat."
+"fråga om genomförande och resultat"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1040_8e1b9a24
@@ -2288,9 +2948,9 @@ msgid ""
 "based solutions have been incorporated into biodiversity and ecosystems-"
 "related action"
 msgstr ""
-"Beskrivning av om och hur lokal och inhemsk kunskap och naturbaserade "
+"beskrivning av om och hur lokal och inhemsk kunskap och naturbaserade "
 "lösningar har införlivats i åtgärder som rör biologisk mångfald och "
-"ekosystem."
+"ekosystem"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1076_c1e93d61
@@ -2307,7 +2967,7 @@ msgid ""
 "description of whether and how policy addresses waste hierarchy "
 "(prevention, preparing for re-use, recycling, other recovery, disposal)"
 msgstr ""
-"Beskrivning av om och hur politiken tar hänsyn till avfallshierarkin "
+"beskrivning av om och hur politiken tar hänsyn till avfallshierarkin "
 "(förebyggande, förberedelse för återanvändning, materialåtervinning, annan "
 "återvinning, bortskaffande)."
 
@@ -2345,8 +3005,8 @@ msgid ""
 "disclosure of  whether and  how target relates to prevention and control of "
 "air pollutants and respective specific loads"
 msgstr ""
-"Uppgift om huruvida och hur målet avser förebyggande och kontroll av "
-"luftföroreningar och respektive specifika belastningar."
+"uppgift om huruvida och hur målet avser förebyggande och kontroll av "
+"luftföroreningar och respektive specifika belastningar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_415_87082625
@@ -2355,7 +3015,7 @@ msgid ""
 "emergency situations, and if and when they occur, controlling and limiting "
 "their impact on people and environment"
 msgstr ""
-"Redovisning av om och hur policyn hanterar undvikande av incidenter och "
+"redovisning av om och hur policyn hanterar undvikande av incidenter och "
 "nödsituationer, och om och när de inträffar, kontroll och begränsning av "
 "deras påverkan på människor och miljö"
 
@@ -2365,7 +3025,7 @@ msgid ""
 "disclosure of  whether and how policy addresses substituting and minimising "
 "use of substances of concern and phasing out substances of very high concern"
 msgstr ""
-"Redovisning av om och hur policyn behandlar substitution och minimering av "
+"redovisning av om och hur policyn behandlar substitution och minimering av "
 "användningen av ämnen som inger betänkligheter och utfasning av ämnen som "
 "inger mycket stora betänkligheter"
 
@@ -2385,7 +3045,7 @@ msgid ""
 "disclosure of  whether and how target relates to prevention and control of "
 "emissions to water and respective specific loads"
 msgstr ""
-"Redovisning av om och hur målet relaterar till förebyggande och begränsning "
+"redovisning av om och hur målet relaterar till förebyggande och begränsning "
 "av utsläpp till vatten och respektive specifika belastningar"
 
 #. module: __export__
@@ -2394,7 +3054,7 @@ msgid ""
 "disclosure of  whether and how target relates to prevention and control of "
 "pollution to soil and respective specific loads"
 msgstr ""
-"Redovisning av om och hur målet avser förebyggande och begränsning av "
+"redovisning av om och hur målet avser förebyggande och begränsning av "
 "förorening av mark och respektive specifika belastningar"
 
 #. module: __export__
@@ -2473,9 +3133,9 @@ msgid ""
 "opportunities on financial position, financial performance and cash flows "
 "over short-, medium- and long-term"
 msgstr ""
-"Upplysningar om förväntade finansiella effekter av väsentliga risker och "
+"upplysningar om förväntade finansiella effekter av väsentliga risker och "
 "möjligheter på finansiell ställning, resultat och kassaflöden på kort, "
-"medellång och lång sikt."
+"medellång och lång sikt"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1002_67de66f9
@@ -2483,8 +3143,8 @@ msgid ""
 "disclosure of any  any particular policy provisions for preventing and "
 "addressing impacts on indigenous peoples"
 msgstr ""
-"Upplysningar om eventuella särskilda policybestämmelser för att förebygga "
-"och hantera påverkan på ursprungsbefolkningar."
+"upplysningar om eventuella särskilda policybestämmelser för att förebygga "
+"och hantera påverkan på ursprungsbefolkningar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_772_6b94fe7d
@@ -2513,7 +3173,7 @@ msgid ""
 "explanation how time horizon is defined, financial amounts are estimated, "
 "and which critical assumptions are made (pollution)"
 msgstr ""
-"Upplysningar om bedömning av risk för relaterade produkter och tjänster och "
+"upplysningar om bedömning av risk för relaterade produkter och tjänster och "
 "förklaring av hur tidshorisonten definieras, finansiella belopp uppskattas "
 "och vilka kritiska antaganden som görs (förorening)"
 
@@ -2579,13 +3239,13 @@ msgid ""
 "disclosure of changes to material impacts, risks and opportunities compared "
 "to previous reporting period"
 msgstr ""
-"Upplysningar om förändringar av väsentlig påverkan, risker och möjligheter "
-"jämfört med föregående rapportperiod."
+"upplysningar om förändringar av väsentlig påverkan, risker och möjligheter "
+"jämfört med föregående rapportperiod"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_711_9c92ba26
 msgid "disclosure of composition of waste"
-msgstr "Upplysning om avfallets sammansättning"
+msgstr "upplysning om avfallets sammansättning"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_831_5fa684e7
@@ -2622,7 +3282,7 @@ msgid ""
 "data has been compiled (work-related grievances, incidents and complaints "
 "related to social and human rights matters)"
 msgstr ""
-"Offentliggörande av kontextuell information som är nödvändig för att förstå "
+"offentliggörande av kontextuell information som är nödvändig för att förstå "
 "data och hur data har sammanställts (arbetsrelaterade klagomål, incidenter "
 "och klagomål relaterade till sociala frågor och mänskliga rättigheter)."
 
@@ -2667,10 +3327,10 @@ msgid ""
 "locked-in assets and resources that are associated with biodiversity and "
 "ecosystems change"
 msgstr ""
-"Redovisning av bidrag till påverkansfaktorer och möjliga "
+"redovisning av bidrag till påverkansfaktorer och möjliga "
 "begränsningsåtgärder enligt begränsningshierarkin och de viktigaste "
 "vägberoendena samt låsta tillgångar och resurser som är förknippade med "
-"biologisk mångfald och ekosystemförändringar."
+"biologisk mångfald och ekosystemförändringar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_628_12590d37
@@ -2693,10 +3353,10 @@ msgid ""
 "of material risks and opportunities arising from biodiversity- and "
 "ecosystem-related impacts and dependencies"
 msgstr ""
-"Upplysningar om kritiska antaganden som används vid uppskattningar av "
+"upplysningar om kritiska antaganden som används vid uppskattningar av "
 "finansiella effekter av väsentliga risker och möjligheter som uppstår till "
 "följd av effekter och beroenden relaterade till biologisk mångfald och "
-"ekosystem."
+"ekosystem"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_721_5af3a460
@@ -2705,9 +3365,9 @@ msgid ""
 "of material risks and opportunities arising from resource use and circular "
 "economy-related impacts"
 msgstr ""
-"Upplysningar om kritiska antaganden som används vid uppskattningar av "
+"upplysningar om kritiska antaganden som används vid uppskattningar av "
 "finansiella effekter av väsentliga risker och möjligheter som härrör från "
-"resursanvändning och effekter relaterade till cirkulär ekonomi."
+"resursanvändning och effekter relaterade till cirkulär ekonomi"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_529_2657c6ea
@@ -2716,9 +3376,9 @@ msgid ""
 "of material risks and opportunities arising from water and marine resources-"
 "related impacts"
 msgstr ""
-"Upplysningar om kritiska antaganden som används vid uppskattningar av "
+"upplysningar om kritiska antaganden som används vid uppskattningar av "
 "finansiella effekter av väsentliga risker och möjligheter som härrör från "
-"påverkan på vatten och marina resurser."
+"påverkan på vatten och marina resurser"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_478_df37a796
@@ -2726,7 +3386,7 @@ msgid ""
 "disclosure of critical assumptions used to quantify anticipated financial "
 "effects, sources and level of uncertainty of assumptions (pollution)"
 msgstr ""
-"Upplysning om kritiska antaganden som används för att kvantifiera "
+"upplysning om kritiska antaganden som används för att kvantifiera "
 "förväntade finansiella effekter, källor och graden av osäkerhet i "
 "antagandena (föroreningar)"
 
@@ -2747,10 +3407,10 @@ msgid ""
 "making, and how undertaking has responded or plans to respond to these "
 "effects"
 msgstr ""
-"Redovisning av nuvarande och förväntade effekter av väsentliga effekter, "
+"redovisning av nuvarande och förväntade effekter av väsentliga effekter, "
 "risker och möjligheter på affärsmodell, värdekedja, strategi och "
 "beslutsfattande samt hur företaget har reagerat eller planerar att reagera "
-"på dessa effekter."
+"på dessa effekter"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_114_3efbc68b
@@ -2761,12 +3421,12 @@ msgid ""
 "adjustment within next annual reporting period to carrying amounts of "
 "assets and liabilities reported in related financial statements"
 msgstr ""
-"Upplysning om aktuella finansiella effekter av väsentliga risker och "
+"upplysning om aktuella finansiella effekter av väsentliga risker och "
 "möjligheter på finansiell ställning, finansiellt resultat och kassaflöden "
 "samt väsentliga risker och möjligheter för vilka det finns en betydande "
 "risk för en väsentlig justering under nästa årsredovisningsperiod av "
 "redovisade värden på tillgångar och skulder som redovisas i tillhörande "
-"finansiella rapporter."
+"finansiella rapporter"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_197_f578680c
@@ -2796,7 +3456,7 @@ msgid ""
 "disclosure of ecological threshold identified and methodology used to "
 "identify ecological threshold (resource use and circular economy)"
 msgstr ""
-"Redovisning av identifierat ekologiskt tröskelvärde och metod som använts "
+"redovisning av identifierat ekologiskt tröskelvärde och metod som använts "
 "för att identifiera ekologiskt tröskelvärde (resursanvändning och cirkulär "
 "ekonomi)"
 
@@ -2806,7 +3466,7 @@ msgid ""
 "disclosure of ecological threshold identified and methodology used to "
 "identify ecological threshold (water and marine resources)"
 msgstr ""
-"Redovisning av identifierat ekologiskt tröskelvärde och metod för att "
+"redovisning av identifierat ekologiskt tröskelvärde och metod för att "
 "identifiera ekologiskt tröskelvärde (vatten och marina resurser)"
 
 #. module: __export__
@@ -2815,7 +3475,7 @@ msgid ""
 "disclosure of ecological threshold identified and methodology used to "
 "identify threshold (biodiversity and ecosystems)"
 msgstr ""
-"Redovisning av identifierade ekologiska tröskelvärden och metoder som "
+"redovisning av identifierade ekologiska tröskelvärden och metoder som "
 "använts för att identifiera tröskelvärden (biologisk mångfald och ekosystem)"
 
 #. module: __export__
@@ -2824,7 +3484,7 @@ msgid ""
 "disclosure of ecological thresholds identified and methodology used to "
 "identify ecological thresholds (pollution)"
 msgstr ""
-"Redovisning av identifierade ekologiska tröskelvärden och metoder som "
+"redovisning av identifierade ekologiska tröskelvärden och metoder som "
 "använts för att identifiera ekologiska tröskelvärden (förorening)"
 
 #. module: __export__
@@ -2858,8 +3518,8 @@ msgid ""
 "disclosure of expertise of administrative, management and supervisory "
 "bodies on business conduct matters"
 msgstr ""
-"Offentliggörande av förvaltnings-, lednings- och tillsynsorganens expertis "
-"i frågor som rör affärsuppförande."
+"offentliggörande av förvaltnings-, lednings- och tillsynsorganens expertis "
+"i frågor som rör affärsuppförande"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1009_ac791ba8
@@ -2920,7 +3580,7 @@ msgstr ""
 msgid ""
 "disclosure of extent of use and quality criteria used for carbon credits"
 msgstr ""
-"Redovisning av omfattning av användning och kvalitetskriterier som används "
+"redovisning av omfattning av användning och kvalitetskriterier som används "
 "för koldioxidkrediter"
 
 #. module: __export__
@@ -2941,7 +3601,7 @@ msgid ""
 "disclosure of extent to which sustainability statement covers upstream and "
 "downstream value chain"
 msgstr ""
-"Redovisning av i vilken utsträckning hållbarhetsredovisningen omfattar "
+"redovisning av i vilken utsträckning hållbarhetsredovisningen omfattar "
 "värdekedjan uppströms och nedströms"
 
 #. module: __export__
@@ -2953,9 +3613,9 @@ msgid ""
 "operational responsibility for ensuring that engagement happens and that "
 "results inform undertakings approach"
 msgstr ""
-"Uppgift om funktion och högsta befattningshavare inom företaget som har det "
+"uppgift om funktion och högsta befattningshavare inom företaget som har det "
 "operativa ansvaret för att säkerställa att samverkan sker och att "
-"resultaten ligger till grund för företagets strategi."
+"resultaten ligger till grund för företagets strategi"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_763_451964d9
@@ -3046,8 +3706,8 @@ msgid ""
 "disclosure of general approach in relation to respect for human rights of "
 "communities, and indigenous peoples specifically"
 msgstr ""
-"Offentliggörande av allmän strategi när det gäller respekt för mänskliga "
-"rättigheter för samhällen och särskilt för ursprungsbefolkningar."
+"offentliggörande av allmän strategi när det gäller respekt för mänskliga "
+"rättigheter för samhällen och särskilt för ursprungsbefolkningar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1073_59effc62
@@ -3085,7 +3745,7 @@ msgid ""
 "contributing to remedy where undertaking has identified that it connected "
 "with a material negative impact on  value chain workers"
 msgstr ""
-"Offentliggörande av allmän strategi och processer för att tillhandahålla "
+"offentliggörande av allmän strategi och processer för att tillhandahålla "
 "eller bidra till åtgärder när ett företag har identifierat att det har en "
 "väsentlig negativ inverkan på arbetstagare i värdekedjan"
 
@@ -3107,7 +3767,7 @@ msgid ""
 "contributing to remedy where undertaking has identified that it connected "
 "with a material negative impact on consumers and end-users"
 msgstr ""
-"Offentliggörande av allmän strategi och processer för att tillhandahålla "
+"offentliggörande av allmän strategi och processer för att tillhandahålla "
 "eller bidra till åtgärder när ett företag har identifierat att det har en "
 "väsentlig negativ inverkan på konsumenter och slutanvändare"
 
@@ -3118,9 +3778,9 @@ msgid ""
 "risk of child labour, or of forced or compulsory labour, among workers in "
 "undertaking’s value chain"
 msgstr ""
-"Upplysningar om geografiska områden eller råvaror där det finns en "
+"upplysningar om geografiska områden eller råvaror där det finns en "
 "betydande risk för barnarbete eller tvångsarbete bland arbetstagare i "
-"företagets värdekedja."
+"företagets värdekedja"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_332_ad65d09d
@@ -3171,9 +3831,9 @@ msgid ""
 "consider impacts, risks and opportunities when overseeing strategy, "
 "decisions on major transactions and risk management process"
 msgstr ""
-"Redovisning av hur förvaltnings-, lednings- och tillsynsorgan beaktar "
+"redovisning av hur förvaltnings-, lednings- och tillsynsorgan beaktar "
 "effekter, risker och möjligheter vid övervakning av strategi, beslut om "
-"större transaktioner och riskhanteringsprocessen."
+"större transaktioner och riskhanteringsprocessen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_48_9536e89a
@@ -3182,9 +3842,9 @@ msgid ""
 "determine whether appropriate skills and expertise are available or will be "
 "developed to oversee sustainability matters"
 msgstr ""
-"Redovisning av hur förvaltnings-, lednings- och kontrollorgan avgör om "
+"redovisning av hur förvaltnings-, lednings- och kontrollorgan avgör om "
 "lämplig kompetens och expertis finns tillgänglig eller kommer att utvecklas "
-"för att övervaka hållbarhetsfrågor."
+"för att övervaka hållbarhetsfrågor"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_42_14fdf5b4
@@ -3203,7 +3863,7 @@ msgid ""
 "disclosure of how business model and strategy take account of impacts "
 "related to sustainability matters assessed to be material (phase-in)"
 msgstr ""
-"Redovisning av hur affärsmodell och strategi beaktar påverkan från "
+"redovisning av hur affärsmodell och strategi beaktar påverkan från "
 "hållbarhetsfrågor som bedöms vara väsentliga (infasning)"
 
 #. module: __export__
@@ -3212,8 +3872,8 @@ msgid ""
 "disclosure of how considered scenarios are updated according to evolving "
 "conditions and emerging trends"
 msgstr ""
-"Redovisning av hur övervägda scenarier uppdateras i enlighet med förändrade "
-"förhållanden och nya trender."
+"redovisning av hur övervägda scenarier uppdateras i enlighet med förändrade "
+"förhållanden och nya trender"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_482_f3b427dc
@@ -3230,8 +3890,8 @@ msgid ""
 "disclosure of how consumers and end-users play role in decisions regarding "
 "design and implementation of programmes or processes"
 msgstr ""
-"Redovisning av hur konsumenter och slutanvändare deltar i beslut som rör "
-"utformning och genomförande av program eller processer."
+"redovisning av hur konsumenter och slutanvändare deltar i beslut som rör "
+"utformning och genomförande av program eller processer"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_46_ddcc37bd
@@ -3248,7 +3908,7 @@ msgid ""
 "disclosure of how ecological entity-specific threshold was determined "
 "(resource use and circular economy)"
 msgstr ""
-"Redovisning av hur det ekologiska enhetsspecifika tröskelvärdet har "
+"redovisning av hur det ekologiska enhetsspecifika tröskelvärdet har "
 "fastställts (resursanvändning och cirkulär ekonomi)"
 
 #. module: __export__
@@ -3257,7 +3917,7 @@ msgid ""
 "disclosure of how ecological entity-specific threshold was determined "
 "(water and marine resources)"
 msgstr ""
-"Redovisning av hur det ekologiska enhetsspecifika tröskelvärdet har "
+"redovisning av hur det ekologiska enhetsspecifika tröskelvärdet har "
 "fastställts (vatten och marina resurser)"
 
 #. module: __export__
@@ -3266,8 +3926,8 @@ msgid ""
 "disclosure of how ecological entity-specific thresholds were determined "
 "(pollution)"
 msgstr ""
-"Uppgift om hur ekologiska enhetsspecifika tröskelvärden har fastställts "
-"(förorening)."
+"uppgift om hur ekologiska enhetsspecifika tröskelvärden har fastställts "
+"(förorening)"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1085_cd9e744d
@@ -3275,8 +3935,8 @@ msgid ""
 "disclosure of how effectiveness of engagement with  consumers and end-"
 "users   is assessed"
 msgstr ""
-"Redovisning av hur effektiviteten i samverkan med konsumenter och "
-"slutanvändare bedöms."
+"redovisning av hur effektiviteten i samverkan med konsumenter och "
+"slutanvändare bedöms"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_765_6ebf3705
@@ -3284,8 +3944,8 @@ msgid ""
 "disclosure of how effectiveness of engagement with its own workforce  is "
 "assessed"
 msgstr ""
-"Redovisning av hur effektiviteten i engagemanget med den egna personalen "
-"bedöms."
+"redovisning av hur effektiviteten i engagemanget med den egna personalen "
+"bedöms"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_949_e3dcca6f
@@ -3293,7 +3953,7 @@ msgid ""
 "disclosure of how effectiveness of engagement with value chain workers is "
 "assessed"
 msgstr ""
-"Redovisning av hur effektiviteten i samverkan med arbetare i värdekedjan "
+"redovisning av hur effektiviteten i samverkan med arbetare i värdekedjan "
 "bedöms"
 
 #. module: __export__
@@ -3302,7 +3962,7 @@ msgid ""
 "disclosure of how entity-specific threshold was determined (biodiversity "
 "and ecosystems)"
 msgstr ""
-"Redovisning av hur det enhetsspecifika tröskelvärdet har fastställts "
+"redovisning av hur det enhetsspecifika tröskelvärdet har fastställts "
 "(biologisk mångfald och ekosystem)"
 
 #. module: __export__
@@ -3311,7 +3971,7 @@ msgid ""
 "disclosure of how far undertaking has progressed in efforts during "
 "reporting period"
 msgstr ""
-"Redovisning av hur långt företaget har kommit i sitt arbete under "
+"redovisning av hur långt företaget har kommit i sitt arbete under "
 "rapporteringsperioden"
 
 #. module: __export__
@@ -3320,8 +3980,8 @@ msgid ""
 "disclosure of how governance bodies ensure that appropriate mechanism for "
 "performance monitoring is in place"
 msgstr ""
-"Redovisning av hur styrande organ säkerställer att lämpliga mekanismer för "
-"resultatuppföljning finns på plats."
+"redovisning av hur styrande organ säkerställer att lämpliga mekanismer för "
+"resultatuppföljning finns på plats"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1024_f7d4da0e
@@ -3332,8 +3992,8 @@ msgid ""
 "disclosure of how issues raised and addressed are tracked and monitored and "
 "how effectiveness of channels is ensured"
 msgstr ""
-"Redovisning av hur frågor som tas upp och behandlas spåras och övervakas "
-"och hur kanalernas effektivitet säkerställs."
+"redovisning av hur frågor som tas upp och behandlas spåras och övervakas "
+"och hur kanalernas effektivitet säkerställs"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_110_3ade7fdf
@@ -3347,7 +4007,7 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1174_60234234
 msgid "disclosure of how monetary value of in-kind contributions is estimated"
-msgstr "Uppgift om hur det monetära värdet av naturabidrag uppskattas."
+msgstr "uppgift om hur det monetära värdet av naturabidrag uppskattas"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1047_8a4db29f
@@ -3357,8 +4017,8 @@ msgid ""
 "disclosure of how participation in industry or multi-stakeholder initiative "
 "and undertaking's own involvement is aiming to address material impacts"
 msgstr ""
-"Redovisning av hur deltagande i bransch- eller flerpartsinitiativ och "
-"företagets eget engagemang syftar till att hantera väsentliga effekter."
+"redovisning av hur deltagande i bransch- eller flerpartsinitiativ och "
+"företagets eget engagemang syftar till att hantera väsentliga effekter"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_637_68d919ae
@@ -3366,8 +4026,8 @@ msgid ""
 "disclosure of how pathways of introduction and spread of invasive alien "
 "species and risks posed by invasive alien species are managed"
 msgstr ""
-"Redovisning av hur man hanterar spridningsvägar för invasiva främmande "
-"arter och risker som invasiva främmande arter medför."
+"redovisning av hur man hanterar spridningsvägar för invasiva främmande "
+"arter och risker som invasiva främmande arter medför"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_771_fd6aed6a
@@ -3376,8 +4036,8 @@ msgid ""
 "that is understandable and accessible through appropriate communication "
 "channels"
 msgstr ""
-"Redovisning av hur medarbetare får information som är begriplig och "
-"tillgänglig via lämpliga kommunikationskanaler."
+"redovisning av hur medarbetare får information som är begriplig och "
+"tillgänglig via lämpliga kommunikationskanaler"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_582_9b05f734
@@ -3387,11 +4047,11 @@ msgid ""
 "biodiversity, as demonstrated by regular monitoring and reporting of "
 "biodiversity status and gains or losses"
 msgstr ""
-"Redovisning av hur policyn behandlar råvaror som härrör från ekosystem som "
+"redovisning av hur policyn behandlar råvaror som härrör från ekosystem som "
 "har förvaltats för att upprätthålla eller förbättra förutsättningarna för "
 "biologisk mångfald, vilket visas genom regelbunden övervakning och "
 "rapportering av den biologiska mångfaldens status och vinster eller "
-"förluster."
+"förluster"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_580_9704cd52
@@ -3410,7 +4070,7 @@ msgid ""
 "disclosure of how policy refers to production, sourcing or consumption of "
 "raw materials"
 msgstr ""
-"Redovisning av hur policyn avser produktion, inköp eller förbrukning av "
+"redovisning av hur policyn avser produktion, inköp eller förbrukning av "
 "råmaterial"
 
 #. module: __export__
@@ -3419,7 +4079,7 @@ msgid ""
 "disclosure of how policy refers to recognised standards or third-party "
 "certifications overseen by regulators"
 msgstr ""
-"Redovisning av hur policyn hänvisar till erkända standarder eller "
+"redovisning av hur policyn hänvisar till erkända standarder eller "
 "tredjepartscertifieringar som övervakas av tillsynsmyndigheter"
 
 #. module: __export__
@@ -3443,7 +4103,7 @@ msgid ""
 "disclosure of how responsibility for respecting identified ecological "
 "threshold is allocated (biodiversity and ecosystems)"
 msgstr ""
-"Redovisning av hur ansvaret för att respektera identifierade ekologiska "
+"redovisning av hur ansvaret för att respektera identifierade ekologiska "
 "tröskelvärden fördelas (biologisk mångfald och ekosystem)"
 
 #. module: __export__
@@ -3452,7 +4112,7 @@ msgid ""
 "disclosure of how responsibility for respecting identified ecological "
 "threshold is allocated (resource use and circular economy)"
 msgstr ""
-"Redovisning av hur ansvaret för att respektera identifierade ekologiska "
+"redovisning av hur ansvaret för att respektera identifierade ekologiska "
 "tröskelvärden fördelas (resursanvändning och cirkulär ekonomi)"
 
 #. module: __export__
@@ -3461,7 +4121,7 @@ msgid ""
 "disclosure of how responsibility for respecting identified ecological "
 "threshold is allocated (water and marine resources)"
 msgstr ""
-"Redovisning av hur ansvaret för att respektera identifierade ekologiska "
+"redovisning av hur ansvaret för att respektera identifierade ekologiska "
 "tröskelvärden fördelas (vatten och marina resurser)"
 
 #. module: __export__
@@ -3470,7 +4130,7 @@ msgid ""
 "disclosure of how responsibility for respecting identified ecological "
 "thresholds is allocated (pollution)"
 msgstr ""
-"Redovisning av hur ansvaret för att respektera identifierade ekologiska "
+"redovisning av hur ansvaret för att respektera identifierade ekologiska "
 "tröskelvärden fördelas (förorening)"
 
 #. module: __export__
@@ -3479,8 +4139,8 @@ msgid ""
 "disclosure of how sustainability-related performance metrics are considered "
 "as performance benchmarks or included in remuneration policies"
 msgstr ""
-"Redovisning av hur hållbarhetsrelaterade resultatmått betraktas som "
-"resultatmått eller ingår i ersättningspolicyn."
+"redovisning av hur hållbarhetsrelaterade resultatmått betraktas som "
+"resultatmått eller ingår i ersättningspolicyn"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_50_486b4d67
@@ -3488,8 +4148,8 @@ msgid ""
 "disclosure of how sustainability-related skills and expertise relate to "
 "material impacts, risks and opportunities"
 msgstr ""
-"Redovisning av hur hållbarhetsrelaterade färdigheter och expertis relaterar "
-"till väsentlig påverkan, risker och möjligheter."
+"redovisning av hur hållbarhetsrelaterade färdigheter och expertis relaterar "
+"till väsentlig påverkan, risker och möjligheter"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_679_768f197f
@@ -3508,7 +4168,7 @@ msgstr ""
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_681_7f5ba218
 msgid ""
 "disclosure of how target relates to minimisation of primary raw material"
-msgstr "Redovisning av hur målet relaterar till minimering av primär råvara"
+msgstr "redovisning av hur målet relaterar till minimering av primär råvara"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_685_9700ea63
@@ -3540,7 +4200,7 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_684_d63bafb4
 msgid "disclosure of how target relates to waste management"
-msgstr "Redovisning av hur målet relaterar till avfallshantering"
+msgstr "redovisning av hur målet relaterar till avfallshantering"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_801_33e35da0
@@ -3548,8 +4208,8 @@ msgid ""
 "disclosure of how the initiative, and its own involvement, is aiming to "
 "address the material impact concerned"
 msgstr ""
-"Redovisning av hur initiativet, och dess egen medverkan, syftar till att "
-"hantera den berörda väsentliga påverkan."
+"redovisning av hur initiativet, och dess egen medverkan, syftar till att "
+"hantera den berörda väsentliga påverkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_583_ca499a56
@@ -3677,7 +4337,7 @@ msgid ""
 "stakeholders negatively or positively impacted by action and how they are "
 "impacted"
 msgstr ""
-"Uppgift om vilka nyckelintressenter som är involverade och hur de är "
+"uppgift om vilka nyckelintressenter som är involverade och hur de är "
 "involverade, vilka nyckelintressenter som påverkas negativt eller positivt "
 "av åtgärden och hur de påverkas"
 
@@ -3703,9 +4363,9 @@ msgid ""
 "disclosure of list of any non-compliance incidents or enforcement actions "
 "necessary to ensure compliance in case of breaches of permit conditions"
 msgstr ""
-"Utlämnande av en förteckning över eventuella fall av bristande efterlevnad "
+"utlämnande av en förteckning över eventuella fall av bristande efterlevnad "
 "eller verkställighetsåtgärder som är nödvändiga för att säkerställa "
-"efterlevnad vid överträdelser av tillståndsvillkoren."
+"efterlevnad vid överträdelser av tillståndsvillkoren"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_134_1963a6d8
@@ -3764,14 +4424,14 @@ msgid ""
 "disclosure of location of its significant assets at material physical risk "
 "(disaggregated by nuts codes)"
 msgstr ""
-"Uppgift om var dess betydande tillgångar med väsentlig fysisk risk är "
-"belägna (uppdelade efter nötkoder)."
+"uppgift om var dess betydande tillgångar med väsentlig fysisk risk är "
+"belägna (uppdelade efter nötkoder)"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_369_15450704
 msgid "disclosure of location of significant assets at material physical risk"
 msgstr ""
-"Uppgift om var betydande tillgångar med väsentlig fysisk risk är belägna."
+"uppgift om var betydande tillgångar med väsentlig fysisk risk är belägna"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_377_3a160806
@@ -3779,8 +4439,8 @@ msgid ""
 "disclosure of magnitude of anticipated financial effects in terms of margin "
 "erosion for business activities at material physical risk"
 msgstr ""
-"Upplysning om omfattningen av förväntade finansiella effekter i form av "
-"marginalerosion för affärsverksamhet med väsentlig fysisk risk."
+"upplysning om omfattningen av förväntade finansiella effekter i form av "
+"marginalerosion för affärsverksamhet med väsentlig fysisk risk"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1176_c6976b1a
@@ -3788,8 +4448,8 @@ msgid ""
 "disclosure of main topics covered by lobbying activities and undertaking's "
 "main positions on these topics"
 msgstr ""
-"Redovisning av de viktigaste ämnena som omfattas av lobbyverksamheten och "
-"företagets viktigaste ståndpunkter i dessa ämnen."
+"redovisning av de viktigaste ämnena som omfattas av lobbyverksamheten och "
+"företagets viktigaste ståndpunkter i dessa ämnen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_61_6370fb6f
@@ -3869,8 +4529,8 @@ msgid ""
 "disclosure of objectives or plans for aligning economic activities "
 "(revenues, capex)"
 msgstr ""
-"Offentliggörande av mål eller planer för att anpassa den ekonomiska "
-"verksamheten (intäkter, investeringar)."
+"offentliggörande av mål eller planer för att anpassa den ekonomiska "
+"verksamheten (intäkter, investeringar)"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_22_9194eaca
@@ -3879,9 +4539,9 @@ msgid ""
 "reporting standards and frameworks based on which information has been "
 "included in sustainability statement"
 msgstr ""
-"Upplysningar om annan lagstiftning eller allmänt accepterade standarder och "
+"upplysningar om annan lagstiftning eller allmänt accepterade standarder och "
 "ramverk för hållbarhetsredovisning som ligger till grund för informationen "
-"i hållbarhetsredovisningen."
+"i hållbarhetsredovisningen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_859_39561fc8
@@ -3894,7 +4554,7 @@ msgid ""
 "disclosure of paragraph in another environment-related standard in which "
 "metric is referred to"
 msgstr ""
-"Upplysning om paragraf i annan miljörelaterad standard där mätvärde anges"
+"upplysning om paragraf i annan miljörelaterad standard där mätvärde anges"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_266_89342e7c
@@ -3921,9 +4581,9 @@ msgid ""
 "mitigation measures that aim to maintain value and functionality of "
 "priority services"
 msgstr ""
-"Redovisning av planer för att minimera oundviklig negativ påverkan och "
+"redovisning av planer för att minimera oundviklig negativ påverkan och "
 "genomföra begränsningsåtgärder som syftar till att upprätthålla värdet och "
-"funktionaliteten hos prioriterade tjänster."
+"funktionaliteten hos prioriterade tjänster"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_642_95759bf3
@@ -3995,7 +4655,7 @@ msgid ""
 "disclosure of quality of ecosystems relative to pre-determined reference "
 "state"
 msgstr ""
-"Upplysning om ekosystemens kvalitet i förhållande till ett förutbestämt "
+"upplysning om ekosystemens kvalitet i förhållande till ett förutbestämt "
 "referenstillstånd"
 
 #. module: __export__
@@ -4063,7 +4723,7 @@ msgstr ""
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_112_180e914d
 msgid "disclosure of reasonably expected time horizons of material impacts"
 msgstr ""
-"Upplysningar om rimligt förväntade tidshorisonter för väsentlig påverkan"
+"upplysningar om rimligt förväntade tidshorisonter för väsentlig påverkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_8_9451a8e4
@@ -4115,7 +4775,7 @@ msgid ""
 "disclosure of reconciliation to relevant line item or notes in financial "
 "statements of net revenue from activities in high climate impact sectors"
 msgstr ""
-"Upplysning om avstämning mot relevant post eller not i årsredovisningen av "
+"upplysning om avstämning mot relevant post eller not i årsredovisningen av "
 "nettointäkter från verksamhet i sektorer med hög klimatpåverkan"
 
 #. module: __export__
@@ -4124,8 +4784,8 @@ msgid ""
 "disclosure of reconciliations with financial statements of significant "
 "amounts of assets and net revenue at material physical risk"
 msgstr ""
-"Upplysningar om avstämningar mot finansiella rapporter av betydande belopp "
-"av tillgångar och nettointäkter med väsentlig fysisk risk."
+"upplysningar om avstämningar mot finansiella rapporter av betydande belopp "
+"av tillgångar och nettointäkter med väsentlig fysisk risk"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_404_cdce1472
@@ -4140,7 +4800,7 @@ msgstr ""
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_23_99a4cea3
 msgid "disclosure of reference to paragraphs of standard or framework applied"
 msgstr ""
-"Upplysning om hänvisning till paragrafer i tillämpad standard eller ramverk"
+"upplysning om hänvisning till paragrafer i tillämpad standard eller ramverk"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1060_5f12225e
@@ -4150,7 +4810,7 @@ msgid ""
 "disclosure of references to standards or commitments on which target is "
 "based"
 msgstr ""
-"Upplysningar om referenser till standarder eller åtaganden som målet "
+"upplysningar om referenser till standarder eller åtaganden som målet "
 "baseras på"
 
 #. module: __export__
@@ -4159,8 +4819,8 @@ msgid ""
 "disclosure of references to standards or commitments which targets are "
 "based on"
 msgstr ""
-"Redovisning av hänvisningar till standarder eller åtaganden som målen "
-"baseras på."
+"redovisning av hänvisningar till standarder eller åtaganden som målen "
+"baseras på"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_324_25ef5586
@@ -4178,9 +4838,9 @@ msgid ""
 "biodiversity and ecosystems-related physical, transition and systemic risks "
 "and opportunities"
 msgstr ""
-"Redovisning av nuvarande affärsmodellers och strategiers motståndskraft mot "
+"redovisning av nuvarande affärsmodellers och strategiers motståndskraft mot "
 "fysiska, övergångs- och systemrelaterade risker och möjligheter som rör "
-"biologisk mångfald och ekosystem."
+"biologisk mångfald och ekosystem"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1045_95e599df
@@ -4188,7 +4848,7 @@ msgstr ""
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_977_e04f08af
 msgid "disclosure of resources allocated to management of material impacts"
 msgstr ""
-"Redovisning av resurser som avsatts för hantering av väsentlig påverkan"
+"redovisning av resurser som avsatts för hantering av väsentlig påverkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_795_4d00030e
@@ -4225,7 +4885,7 @@ msgid ""
 "disclosure of risk factors for net revenue from business activities at "
 "material transition risk"
 msgstr ""
-"Upplysningar om riskfaktorer för nettoomsättning från affärsverksamhet med "
+"upplysningar om riskfaktorer för nettoomsättning från affärsverksamhet med "
 "väsentlig övergångsrisk"
 
 #. module: __export__
@@ -4252,7 +4912,7 @@ msgid ""
 "disclosure of scope of resilience analysis along own operations and related "
 "upstream and downstream value chain"
 msgstr ""
-"Redovisning av omfattningen av analysen av motståndskraften i den egna "
+"redovisning av omfattningen av analysen av motståndskraften i den egna "
 "verksamheten och den relaterade värdekedjan uppströms och nedströms"
 
 #. module: __export__
@@ -4305,7 +4965,7 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_14_ee115257
 msgid "disclosure of sources of measurement uncertainty"
-msgstr "Upplysningar om källor till mätosäkerhet"
+msgstr "upplysningar om källor till mätosäkerhet"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1022_ea85be47
@@ -4313,9 +4973,9 @@ msgid ""
 "disclosure of specific channels in place for affected communities to raise "
 "concerns or needs directly with undertaking and have them addressed"
 msgstr ""
-"Uppgift om vilka särskilda kanaler som finns på plats för att berörda "
+"uppgift om vilka särskilda kanaler som finns på plats för att berörda "
 "samhällen ska kunna ta upp problem eller behov direkt med företaget och få "
-"dem tillgodosedda."
+"dem tillgodosedda"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1091_0ca8ece6
@@ -4323,8 +4983,8 @@ msgid ""
 "disclosure of specific channels in place for consumers and end-users to "
 "raise concerns or needs directly with undertaking and have them addressed"
 msgstr ""
-"Uppgift om särskilda kanaler för konsumenter och slutanvändare för att ta "
-"upp problem eller behov direkt med företaget och få dem åtgärdade."
+"uppgift om särskilda kanaler för konsumenter och slutanvändare för att ta "
+"upp problem eller behov direkt med företaget och få dem åtgärdade"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_776_4912da38
@@ -4332,8 +4992,8 @@ msgid ""
 "disclosure of specific channels in place for its own workforce to raise "
 "concerns or needs directly with undertaking and have them addressed"
 msgstr ""
-"Uppgift om särskilda kanaler som finns på plats för den egna personalen för "
-"att ta upp problem eller behov direkt med företaget och få dem åtgärdade."
+"uppgift om särskilda kanaler som finns på plats för den egna personalen för "
+"att ta upp problem eller behov direkt med företaget och få dem åtgärdade"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_954_e3bc0021
@@ -4341,7 +5001,7 @@ msgid ""
 "disclosure of specific channels in place for value chain workers to raise "
 "concerns or needs directly with undertaking and have them addressed"
 msgstr ""
-"Uppgift om särskilda kanaler som finns på plats för arbetstagare i "
+"uppgift om särskilda kanaler som finns på plats för arbetstagare i "
 "värdekedjan för att ta upp problem eller behov direkt med företaget och få "
 "dem åtgärdade"
 
@@ -4386,7 +5046,7 @@ msgid ""
 "communities hat may be particularly vulnerable to impacts and (or) "
 "marginalised"
 msgstr ""
-"Redovisning av åtgärder som vidtagits för att få insikt i perspektiv från "
+"redovisning av åtgärder som vidtagits för att få insikt i perspektiv från "
 "berörda samhällen som kan vara särskilt sårbara för påverkan och (eller) "
 "marginaliserade"
 
@@ -4418,7 +5078,7 @@ msgid ""
 "disclosure of steps taken to gain insight into perspectives of value chain "
 "workers that may be particularly vulnerable to impacts and (or) marginalised"
 msgstr ""
-"Redovisning av åtgärder som vidtagits för att få insikt i perspektiven hos "
+"redovisning av åtgärder som vidtagits för att få insikt i perspektiven hos "
 "anställda i värdekedjan som kan vara särskilt sårbara för påverkan och "
 "(eller) marginaliserade"
 
@@ -4435,10 +5095,10 @@ msgid ""
 "reporting dates of the entities in its value chain and the date of the "
 "undertaking’s general purpose financial statements"
 msgstr ""
-"Upplysningar om effekterna av betydande händelser och ändrade "
+"upplysningar om effekterna av betydande händelser och ändrade "
 "omständigheter (som är relevanta för dess växthusgasutsläpp) som inträffar "
 "mellan rapporteringsdatum för enheterna i dess värdekedja och datumet för "
-"företagets finansiella rapporter för allmänna ändamål."
+"företagets finansiella rapporter för allmänna ändamål"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_701_84ce8af0
@@ -4446,8 +5106,8 @@ msgid ""
 "disclosure of the expected durability of the products placed on the market, "
 "in relation to the industry average for each product group"
 msgstr ""
-"Upplysning om den förväntade hållbarheten hos de produkter som släpps ut på "
-"marknaden, i förhållande till branschgenomsnittet för varje produktgrupp."
+"upplysning om den förväntade hållbarheten hos de produkter som släpps ut på "
+"marknaden, i förhållande till branschgenomsnittet för varje produktgrupp"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1144_1081981d
@@ -4461,7 +5121,7 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_619_7eab5147
 msgid "disclosure of the geographical scope of the targets"
-msgstr "Upplysning om målens geografiska omfattning."
+msgstr "upplysning om målens geografiska omfattning"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_840_101d4994
@@ -4471,7 +5131,7 @@ msgid ""
 "employment activities, and other types relevant to the undertaking), their "
 "relationship with the undertaking, and the type of work that they perform."
 msgstr ""
-"Uppgift om de vanligaste typerna av icke-anställda (t.ex. egenföretagare, "
+"uppgift om de vanligaste typerna av icke-anställda (t.ex. egenföretagare, "
 "personer som tillhandahålls av företag som huvudsakligen bedriver "
 "anställningsverksamhet och andra typer som är relevanta för företaget), "
 "deras förhållande till företaget och den typ av arbete som de utför."
@@ -4495,8 +5155,8 @@ msgid ""
 "disclosure of the type of current and future financial and other resources "
 "allocated to the action plan (capex and opex)"
 msgstr ""
-"Uppgift om vilken typ av nuvarande och framtida finansiella och andra "
-"resurser som avsatts för handlingsplanen (capex och opex)."
+"uppgift om vilken typ av nuvarande och framtida finansiella och andra "
+"resurser som avsatts för handlingsplanen (capex och opex)"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_150_1c711fcc
@@ -4521,7 +5181,7 @@ msgstr ""
 msgid ""
 "disclosure of time horizons used for analysis (biodiversity and ecosystems)"
 msgstr ""
-"Redovisning av tidshorisonter som använts för analys (biologisk mångfald "
+"redovisning av tidshorisonter som använts för analys (biologisk mångfald "
 "och ekosystem)"
 
 #. module: __export__
@@ -4531,9 +5191,9 @@ msgid ""
 "consumers and end-users   in case the undertaking has not adopted a general "
 "process for engageme"
 msgstr ""
-"Uppgift om tidsram för antagande av allmän process för att samarbeta med "
+"uppgift om tidsram för antagande av allmän process för att samarbeta med "
 "konsumenter och slutanvändare om företaget inte har antagit en allmän "
-"process för att samarbeta med konsumenter och slutanvändare."
+"process för att samarbeta med konsumenter och slutanvändare"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_952_3c8a1a2b
@@ -4542,9 +5202,9 @@ msgid ""
 "value chain workers  in case the undertaking has not adopted a general "
 "process for engagement"
 msgstr ""
-"Uppgift om tidsramen för antagande av en allmän process för samverkan med "
+"uppgift om tidsramen för antagande av en allmän process för samverkan med "
 "arbetstagare i värdekedjan, om företaget inte har antagit en allmän process "
-"för samverkan."
+"för samverkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1020_e3645775
@@ -4553,9 +5213,9 @@ msgid ""
 "affected communities in case the undertaking has not adopted a general "
 "process for engagement"
 msgstr ""
-"Uppgift om tidsramen för antagande av en allmän process för samverkan med "
+"uppgift om tidsramen för antagande av en allmän process för samverkan med "
 "berörda grupper, om företaget inte har antagit någon allmän process för "
-"samverkan."
+"samverkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_768_17ad25ee
@@ -4564,9 +5224,9 @@ msgid ""
 "own workforce in case the undertaking has not adopted a general process for "
 "engagement"
 msgstr ""
-"Uppgift om tidsramen för antagande av en allmän process för att engagera "
+"uppgift om tidsramen för antagande av en allmän process för att engagera "
 "den egna personalen, om företaget inte har antagit en allmän process för "
-"engagemang."
+"engagemang"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_785_546ab579
@@ -4584,7 +5244,7 @@ msgid ""
 "disclosure of timeframe for channel or processes for raising concerns to be "
 "in place"
 msgstr ""
-"Uppgift om tidsram för när kanalen eller processerna för att ta upp problem "
+"uppgift om tidsram för när kanalen eller processerna för att ta upp problem "
 "ska vara på plats"
 
 #. module: __export__
@@ -4601,7 +5261,7 @@ msgid ""
 "disclosure of timeframe in which policies in areas of high-water stress "
 "will be adopted"
 msgstr ""
-"Offentliggörande av tidsram för antagande av policyer i områden med hög "
+"offentliggörande av tidsram för antagande av policyer i områden med hög "
 "vattenbelastning"
 
 #. module: __export__
@@ -4609,14 +5269,14 @@ msgstr ""
 msgid ""
 "disclosure of timeframe in which the undertakings aims to adopt actions"
 msgstr ""
-"Upplysningar om den tidsram inom vilken företagen avser att vidta åtgärder."
+"upplysningar om den tidsram inom vilken företagen avser att vidta åtgärder"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_183_5c33ef8f
 msgid ""
 "disclosure of timeframe in which the undertakings aims to adopt policies"
 msgstr ""
-"Upplysningar om den tidsram inom vilken företagen avser att anta policyer."
+"upplysningar om den tidsram inom vilken företagen avser att anta policyer"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_195_8fbe62d5
@@ -4640,9 +5300,9 @@ msgid ""
 "of energy bundled with attributes about energy generation or for unbundled "
 "energy attribute claims"
 msgstr ""
-"Upplysningar om typer av avtalsinstrument som används för försäljning och "
+"upplysningar om typer av avtalsinstrument som används för försäljning och "
 "köp av energi som kombineras med attribut om energiproduktion eller för "
-"obundna krav på energiattribut."
+"obundna krav på energiattribut"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_314_d48d9ac6
@@ -4700,10 +5360,10 @@ msgid ""
 "through public programs or through benefits offered, against loss of income "
 "due to unemployment starting from when own worker is working for undertaking"
 msgstr ""
-"Uppgift om vilka typer av anställda som inte omfattas av socialt skydd, "
+"uppgift om vilka typer av anställda som inte omfattas av socialt skydd, "
 "genom offentliga program eller genom förmåner som erbjuds, mot "
 "inkomstförlust på grund av arbetslöshet från och med den tidpunkt då den "
-"egna arbetstagaren arbetar för företaget."
+"egna arbetstagaren arbetar för företaget"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_712_367d00f8
@@ -4724,7 +5384,7 @@ msgid ""
 "disclosure of whether and  how target relates to management of material "
 "impacts, risks and opportunities related to areas at water risk"
 msgstr ""
-"Redovisning av om och hur målet relaterar till hantering av väsentlig "
+"redovisning av om och hur målet relaterar till hantering av väsentlig "
 "påverkan, risker och möjligheter relaterade till vattenriskområden"
 
 #. module: __export__
@@ -4743,7 +5403,7 @@ msgid ""
 "and ecosystems at own site locations and in value chain have been "
 "identified and assessed"
 msgstr ""
-"Redovisning av om och hur faktiska och potentiella effekter på biologisk "
+"redovisning av om och hur faktiska och potentiella effekter på biologisk "
 "mångfald och ekosystem på den egna anläggningen och i värdekedjan har "
 "identifierats och bedömts"
 
@@ -4763,8 +5423,8 @@ msgid ""
 "in identifying lessons or improvements as result of undertaking’s "
 "performance"
 msgstr ""
-"Uppgift om huruvida och hur berörda samhällen engagerades direkt i att "
-"identifiera lärdomar eller förbättringar till följd av företagets resultat."
+"uppgift om huruvida och hur berörda samhällen engagerades direkt i att "
+"identifiera lärdomar eller förbättringar till följd av företagets resultat"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1056_014eb2fa
@@ -4781,8 +5441,8 @@ msgid ""
 "disclosure of whether and how affected communities are able to access "
 "channels at level of undertaking they are affected by"
 msgstr ""
-"Offentliggörande av om och hur berörda grupper kan få tillgång till kanaler "
-"på den företagsnivå som de berörs av."
+"offentliggörande av om och hur berörda grupper kan få tillgång till kanaler "
+"på den företagsnivå som de berörs av"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1055_0bf3bd8a
@@ -4810,7 +5470,7 @@ msgid ""
 "considered to be at material physical risk relies on or is part of process "
 "to determine material physical risk and to determine climate scenarios"
 msgstr ""
-"Upplysningar om huruvida och hur bedömningen av tillgångar och "
+"upplysningar om huruvida och hur bedömningen av tillgångar och "
 "affärsverksamhet som anses vara utsatta för väsentlig fysisk risk är "
 "beroende av eller ingår i processen för att fastställa väsentlig fysisk "
 "risk och för att fastställa klimatscenarier"
@@ -4822,10 +5482,10 @@ msgid ""
 "considered to be at material transition risk relies on or is part of "
 "process to determine material transition risks and to determine scenarios"
 msgstr ""
-"Upplysningar om huruvida och hur bedömningen av tillgångar och "
+"upplysningar om huruvida och hur bedömningen av tillgångar och "
 "affärsverksamhet som anses vara utsatta för en väsentlig omställningsrisk "
 "är beroende av eller ingår i processen för att fastställa väsentliga "
-"omställningsrisker och fastställa scenarier."
+"omställningsrisker och fastställa scenarier"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_481_e0ebfdce
@@ -4836,11 +5496,11 @@ msgid ""
 "downstream value chain and methodologies, assumptions and tools used in "
 "screening [text block]"
 msgstr ""
-"Upplysningar om huruvida och hur tillgångar och aktiviteter har granskats "
+"upplysningar om huruvida och hur tillgångar och aktiviteter har granskats "
 "för att identifiera faktiska och potentiella effekter, risker och "
 "möjligheter relaterade till vatten och marina resurser i den egna "
 "verksamheten och i värdekedjan uppströms och nedströms samt metoder, "
-"antaganden och verktyg som använts vid granskningen [textblock]."
+"antaganden och verktyg som använts vid granskningen [textblock]"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_364_40b075de
@@ -4848,9 +5508,9 @@ msgid ""
 "disclosure of whether and how carbon price used in internal carbon pricing "
 "scheme is consistent with carbon price used in financial statements"
 msgstr ""
-"Upplysning om huruvida och hur det koldioxidpris som används i det interna "
+"upplysning om huruvida och hur det koldioxidpris som används i det interna "
 "systemet för koldioxidprissättning överensstämmer med det koldioxidpris som "
-"används i de finansiella rapporterna."
+"används i de finansiella rapporterna"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_192_8758ef47
@@ -4859,8 +5519,8 @@ msgid ""
 "into remuneration of members of administrative, management and supervisory "
 "bodies"
 msgstr ""
-"Uppgift om huruvida och hur klimatrelaterade överväganden beaktas i "
-"ersättningen till ledamöter i förvaltnings-, lednings- och tillsynsorgan."
+"uppgift om huruvida och hur klimatrelaterade överväganden beaktas i "
+"ersättningen till ledamöter i förvaltnings-, lednings- och tillsynsorgan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_544_2ea30935
@@ -4868,14 +5528,14 @@ msgid ""
 "disclosure of whether and how communities were involved in materiality "
 "assessment"
 msgstr ""
-"Uppgift om huruvida och hur lokalsamhällen involverats i "
+"uppgift om huruvida och hur lokalsamhällen involverats i "
 "väsentlighetsbedömningen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_410_00046409
 msgid ""
 "disclosure of whether and how consultations have been conducted (pollution)"
-msgstr "Uppgift om huruvida och hur samråd har genomförts (förorening)"
+msgstr "uppgift om huruvida och hur samråd har genomförts (förorening)"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_542_0bc7af27
@@ -4895,9 +5555,9 @@ msgid ""
 "in identifying lessons or improvements as result of undertaking’s "
 "performance"
 msgstr ""
-"Uppgift om huruvida och hur konsumenter och slutanvändare direkt "
+"uppgift om huruvida och hur konsumenter och slutanvändare direkt "
 "engagerades i att identifiera lärdomar eller förbättringar till följd av "
-"företagets resultat."
+"företagets resultat"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1124_031ba3d2
@@ -4923,8 +5583,8 @@ msgid ""
 "disclosure of whether and how consumers and/or end-users are able to access "
 "channels at level of undertaking they are affected by"
 msgstr ""
-"Offentliggörande av om och hur konsumenter och/eller slutanvändare kan få "
-"tillgång till kanaler på den åtagandenivå som de påverkas av."
+"offentliggörande av om och hur konsumenter och/eller slutanvändare kan få "
+"tillgång till kanaler på den åtagandenivå som de påverkas av"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_539_087c4c81
@@ -4933,7 +5593,7 @@ msgid ""
 "and their services have been identified and assessed at own site locations "
 "and in value chain"
 msgstr ""
-"Redovisning av om och hur beroenden av biologisk mångfald och ekosystem och "
+"redovisning av om och hur beroenden av biologisk mångfald och ekosystem och "
 "deras tjänster har identifierats och bedömts på den egna anläggningen och i "
 "värdekedjan"
 
@@ -4955,9 +5615,9 @@ msgid ""
 "aware of and trust structures or processes as way to raise their concerns "
 "or needs and have them addressed"
 msgstr ""
-"Redovisning av om och hur det bedöms att berörda samhällen känner till och "
+"redovisning av om och hur det bedöms att berörda samhällen känner till och "
 "litar på strukturer eller processer som ett sätt att ta upp sina problem "
-"eller behov och få dem tillgodosedda."
+"eller behov och få dem tillgodosedda"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1094_c32493c2
@@ -4966,9 +5626,9 @@ msgid ""
 "are aware of and trust structures or processes as way to raise their "
 "concerns or needs and have them addressed"
 msgstr ""
-"Redovisning av om och hur det bedöms att konsumenter och slutanvändare "
+"redovisning av om och hur det bedöms att konsumenter och slutanvändare "
 "känner till och litar på strukturer eller processer som ett sätt att ta upp "
-"sina problem eller behov och få dem tillgodosedda."
+"sina problem eller behov och få dem tillgodosedda"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_782_cc869eae
@@ -4977,7 +5637,7 @@ msgid ""
 "aware of and trust structures or processes as way to raise their concerns "
 "or needs and have them addressed"
 msgstr ""
-"Redovisning av om och hur man bedömer att den egna personalen känner till "
+"redovisning av om och hur man bedömer att den egna personalen känner till "
 "och litar på strukturer eller processer för hur de kan ta upp sina problem "
 "eller behov och få dem tillgodosedda"
 
@@ -4988,7 +5648,7 @@ msgid ""
 "aware of and trust structures or processes as way to raise their concerns "
 "or needs and have them addressed"
 msgstr ""
-"Redovisning av om och hur det bedöms att värdekedjearbetarna känner till "
+"redovisning av om och hur det bedöms att värdekedjearbetarna känner till "
 "och litar på strukturer eller processer som ett sätt att ta upp sina "
 "problem eller behov och få dem tillgodosedda"
 
@@ -5017,7 +5677,7 @@ msgid ""
 "disclosure of whether and how it is ensured that own practices do not cause "
 "or contribute to material negative impacts on own workforce"
 msgstr ""
-"Redovisning av om och hur det säkerställs att den egna verksamheten inte "
+"redovisning av om och hur det säkerställs att den egna verksamheten inte "
 "orsakar eller bidrar till väsentlig negativ påverkan på den egna "
 "arbetskraften"
 
@@ -5027,9 +5687,9 @@ msgid ""
 "disclosure of whether and how it is ensured that own practices do not cause "
 "or contribute to material negative impacts on value chain workers"
 msgstr ""
-"Redovisning av om och hur det säkerställs att den egna verksamheten inte "
+"redovisning av om och hur det säkerställs att den egna verksamheten inte "
 "orsakar eller bidrar till väsentlig negativ påverkan på värdekedjans "
-"arbetstagare."
+"arbetstagare"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_111_ef769641
@@ -5056,9 +5716,9 @@ msgid ""
 "representatives are able to access channels at level of undertaking they "
 "are employed by or contracted to work for"
 msgstr ""
-"Offentliggörande av om och hur den egna personalen och deras "
+"offentliggörande av om och hur den egna personalen och deras "
 "arbetstagarrepresentanter har tillgång till kanaler på företagsnivå som de "
-"är anställda av eller kontrakterade för att arbeta för."
+"är anställda av eller kontrakterade för att arbeta för"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_811_d6262757
@@ -5067,9 +5727,9 @@ msgid ""
 "were engaged directly in identifying lessons or improvements as result of "
 "undertakings performance"
 msgstr ""
-"Redovisning av om och hur den egna personalen eller personalens "
+"redovisning av om och hur den egna personalen eller personalens "
 "representanter direkt engagerades i att identifiera lärdomar eller "
-"förbättringar till följd av företagens prestationer."
+"förbättringar till följd av företagens prestationer"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_809_9b299299
@@ -5077,7 +5737,7 @@ msgid ""
 "disclosure of whether and how own workforce or workforce' representatives "
 "were engaged directly in setting targets"
 msgstr ""
-"Redovisning av om och hur den egna personalen eller representanter för "
+"redovisning av om och hur den egna personalen eller representanter för "
 "personalen var direkt involverade i fastställandet av målen"
 
 #. module: __export__
@@ -5148,9 +5808,9 @@ msgid ""
 "procedures to ensure discrimination is prevented, mitigated and acted upon "
 "once detected, as well as to advance diversity and inclusion"
 msgstr ""
-"Redovisning av om och hur policyer implementeras genom specifika "
+"redovisning av om och hur policyer implementeras genom specifika "
 "förfaranden för att säkerställa att diskriminering förebyggs, mildras och "
-"åtgärdas när den upptäcks, samt för att främja mångfald och inkludering."
+"åtgärdas när den upptäcks, samt för att främja mångfald och inkludering"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_413_da81cf7c
@@ -5158,7 +5818,7 @@ msgid ""
 "disclosure of whether and how policy addresses mitigating negative impacts "
 "related to pollution of air, water and soil"
 msgstr ""
-"Redovisning av om och hur policyn hanterar begränsning av negativa effekter "
+"redovisning av om och hur policyn hanterar begränsning av negativa effekter "
 "relaterade till föroreningar av luft, vatten och mark"
 
 #. module: __export__
@@ -5167,7 +5827,7 @@ msgid ""
 "disclosure of whether and how policy addresses sustainable sourcing and use "
 "of renewable resources"
 msgstr ""
-"Redovisning av om och hur policyn behandlar hållbar anskaffning och "
+"redovisning av om och hur policyn behandlar hållbar anskaffning och "
 "användning av förnybara resurser"
 
 #. module: __export__
@@ -5177,9 +5837,9 @@ msgid ""
 "of virgin resources, including relative increases in use of secondary "
 "(recycled) resources"
 msgstr ""
-"Redovisning av om och hur politiken hanterar övergången från användning av "
+"redovisning av om och hur politiken hanterar övergången från användning av "
 "jungfruliga resurser, inklusive relativa ökningar av användningen av "
-"sekundära (återvunna) resurser."
+"sekundära (återvunna) resurser"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_489_5238dba7
@@ -5187,7 +5847,7 @@ msgid ""
 "disclosure of whether and how policy adresses commitment to reduce material "
 "water consumption in areas at water risk"
 msgstr ""
-"Redovisning av om och hur policyn adresserar åtagandet att minska den "
+"redovisning av om och hur policyn adresserar åtagandet att minska den "
 "materiella vattenförbrukningen i områden med vattenrisk"
 
 #. module: __export__
@@ -5196,8 +5856,8 @@ msgid ""
 "disclosure of whether and how policy adresses prevention and abatment of "
 "water pollution"
 msgstr ""
-"Uppgift om huruvida och hur policyn behandlar förebyggande och minskning av "
-"vattenföroreningar."
+"uppgift om huruvida och hur policyn behandlar förebyggande och minskning av "
+"vattenföroreningar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_488_32d72086
@@ -5205,8 +5865,8 @@ msgid ""
 "disclosure of whether and how policy adresses product and service design in "
 "view of addressing water-related issues and preservation of marine resources"
 msgstr ""
-"Redovisning av om och hur policyn tar upp produkt- och tjänstedesign för "
-"att hantera vattenrelaterade frågor och bevara marina resurser."
+"redovisning av om och hur policyn tar upp produkt- och tjänstedesign för "
+"att hantera vattenrelaterade frågor och bevara marina resurser"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_485_810b0a18
@@ -5214,13 +5874,13 @@ msgid ""
 "disclosure of whether and how policy adresses the use and sourcing of water "
 "and marine resources in own operations"
 msgstr ""
-"Redovisning av om och hur policyn behandlar användning och anskaffning av "
+"redovisning av om och hur policyn behandlar användning och anskaffning av "
 "vatten och marina resurser i den egna verksamheten"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_484_87ed7ae3
 msgid "disclosure of whether and how policy adresses water management"
-msgstr "Upplysning om huruvida och hur policyn behandlar vattenförvaltning"
+msgstr "upplysning om huruvida och hur policyn behandlar vattenförvaltning"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_382_8499bc3b
@@ -5229,9 +5889,9 @@ msgid ""
 "performance and position for assets and business activities at material "
 "transition risk have been assessed"
 msgstr ""
-"Upplysningar om huruvida och hur potentiella effekter på framtida "
+"upplysningar om huruvida och hur potentiella effekter på framtida "
 "finansiella resultat och ställning för tillgångar och affärsverksamhet med "
-"väsentlig övergångsrisk har bedömts."
+"väsentlig övergångsrisk har bedömts"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1148_6d33e385
@@ -5265,7 +5925,7 @@ msgid ""
 "disclosure of whether and how systemic risks have been considered "
 "(biodiversity and ecosystems)"
 msgstr ""
-"Redovisning av om och hur systemrisker har beaktats (biologisk mångfald och "
+"redovisning av om och hur systemrisker har beaktats (biologisk mångfald och "
 "ekosystem)"
 
 #. module: __export__
@@ -5274,7 +5934,7 @@ msgid ""
 "disclosure of whether and how target relates to reduction of water "
 "consumption"
 msgstr ""
-"Redovisning av om och hur målet relaterar till minskad vattenförbrukning"
+"redovisning av om och hur målet relaterar till minskad vattenförbrukning"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_658_05d78a53
@@ -5282,7 +5942,7 @@ msgid ""
 "disclosure of whether and how the undertaking has conducted consultations "
 "(resource and circular economy)"
 msgstr ""
-"Uppgift om huruvida och hur företaget har genomfört samråd (resurs- och "
+"uppgift om huruvida och hur företaget har genomfört samråd (resurs- och "
 "cirkulär ekonomi)"
 
 #. module: __export__
@@ -5293,10 +5953,10 @@ msgid ""
 "or those living in particular contexts, or those undertaking particular "
 "activities may be at greater risk of harm"
 msgstr ""
-"Uppgift om huruvida och hur företaget har utvecklat en förståelse för hur "
+"uppgift om huruvida och hur företaget har utvecklat en förståelse för hur "
 "drabbade grupper med särskilda egenskaper eller de som lever i särskilda "
 "sammanhang eller de som utför särskilda aktiviteter kan löpa större risk "
-"att skadas."
+"att skadas"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_929_ea8ba49e
@@ -5306,7 +5966,7 @@ msgid ""
 "in particular contexts, or those undertaking particular activities may be "
 "at greater risk of harm."
 msgstr ""
-"Uppgift om huruvida och hur företaget har utvecklat en förståelse för hur "
+"uppgift om huruvida och hur företaget har utvecklat en förståelse för hur "
 "arbetstagare med särskilda egenskaper, de som arbetar i särskilda "
 "sammanhang eller de som utför särskilda aktiviteter kan löpa större risk "
 "att skadas."
@@ -5318,8 +5978,8 @@ msgid ""
 "ensures respect of particular rights of indigenous peoples in its "
 "stakeholder engagement approach"
 msgstr ""
-"Upplysningar om huruvida och hur företaget beaktar och säkerställer respekt "
-"för urfolks särskilda rättigheter i sin strategi för intressentdialog."
+"upplysningar om huruvida och hur företaget beaktar och säkerställer respekt "
+"för urfolks särskilda rättigheter i sin strategi för intressentdialog"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_540_442a3baf
@@ -5340,10 +6000,10 @@ msgid ""
 "with modelling of biodiversity and ecosystems related consequences, with "
 "different possible pathways"
 msgstr ""
-"Redovisning av om och hur affärsmodellen/affärsmodellerna har verifierats "
+"redovisning av om och hur affärsmodellen/affärsmodellerna har verifierats "
 "med hjälp av olika scenarier för biologisk mångfald och ekosystem, eller "
 "andra scenarier med modellering av konsekvenser för biologisk mångfald och "
-"ekosystem, med olika möjliga utvecklingsvägar."
+"ekosystem, med olika möjliga utvecklingsvägar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1068_6383ec6f
@@ -5389,9 +6049,9 @@ msgid ""
 "relevant business relationships to manage material negative impacts "
 "affecting  consumers and end-users"
 msgstr ""
-"Uppgift om huruvida och hur företaget försöker utnyttja relevanta "
+"uppgift om huruvida och hur företaget försöker utnyttja relevanta "
 "affärsförbindelser för att hantera väsentliga negativa effekter som "
-"påverkar konsumenter och slutanvändare."
+"påverkar konsumenter och slutanvändare"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_800_627f78b4
@@ -5400,9 +6060,9 @@ msgid ""
 "relevant business relationships to manage material negative impacts "
 "affecting own workforce"
 msgstr ""
-"Uppgift om huruvida och hur företaget försöker utnyttja relevanta "
+"uppgift om huruvida och hur företaget försöker utnyttja relevanta "
 "affärsförbindelser för att hantera väsentliga negativa effekter som "
-"påverkar den egna personalstyrkan."
+"påverkar den egna personalstyrkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_978_6600d70e
@@ -5411,9 +6071,9 @@ msgid ""
 "relevant business relationships to manage material negative impacts "
 "affecting value chain workers"
 msgstr ""
-"Uppgift om huruvida och hur företaget försöker utnyttja relevanta "
+"uppgift om huruvida och hur företaget försöker utnyttja relevanta "
 "affärsförbindelser för att hantera väsentliga negativa effekter som "
-"påverkar arbetstagare i värdekedjan."
+"påverkar arbetstagare i värdekedjan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_988_d51a275a
@@ -5422,9 +6082,9 @@ msgid ""
 "representatives or credible proxies were engaged directly in identifying "
 "lessons or improvements as result of undertaking’s performance"
 msgstr ""
-"Uppgift om huruvida och hur arbetare i värdekedjan, deras legitima "
+"uppgift om huruvida och hur arbetare i värdekedjan, deras legitima "
 "företrädare eller trovärdiga ombud direkt engagerades i att identifiera "
-"lärdomar eller förbättringar till följd av företagets resultat."
+"lärdomar eller förbättringar till följd av företagets resultat"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_986_f8481f28
@@ -5432,8 +6092,8 @@ msgid ""
 "disclosure of whether and how value chain workers , their legitimate "
 "representatives or credible proxies were engaged directly in setting targets"
 msgstr ""
-"Redovisning av om och hur värdekedjearbetare, deras legitima företrädare "
-"eller trovärdiga ombud engagerades direkt i fastställandet av målen."
+"redovisning av om och hur värdekedjearbetare, deras legitima företrädare "
+"eller trovärdiga ombud engagerades direkt i fastställandet av målen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_987_2d9d3ceb
@@ -5442,9 +6102,8 @@ msgid ""
 "representatives or credible proxies were engaged directly in tracking "
 "performance against targets"
 msgstr ""
-"Redovisning av om och hur värdekedjearbetarna, deras legitima företrädare "
-"eller trovärdiga ombud engagerades direkt i uppföljningen av "
-"måluppfyllelsen."
+"redovisning av om och hur värdekedjearbetarna, deras legitima företrädare "
+"eller trovärdiga ombud engagerades direkt i uppföljningen av måluppfyllelsen"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_980_71a59131
@@ -5453,9 +6112,9 @@ msgid ""
 "representatives or their credible proxies play role in decisions regarding "
 "design and implementation of programmes or processes"
 msgstr ""
-"Uppgift om huruvida och hur värdekedjearbetare och legitima företrädare "
+"uppgift om huruvida och hur värdekedjearbetare och legitima företrädare "
 "eller deras trovärdiga ombud deltar i beslut som rör utformning och "
-"genomförande av program eller processer."
+"genomförande av program eller processer"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_961_406f7bd4
@@ -5464,9 +6123,9 @@ msgid ""
 "channels at level of undertaking they are employed by or contracted to work "
 "for"
 msgstr ""
-"Uppgift om huruvida och hur arbetare i värdekedjan kan få tillgång till "
+"uppgift om huruvida och hur arbetare i värdekedjan kan få tillgång till "
 "kanaler på företagsnivå som de är anställda av eller kontrakterade för att "
-"arbeta för."
+"arbeta för"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_802_3ca7abbb
@@ -5475,9 +6134,9 @@ msgid ""
 "role in decisions regarding design and implementation of programmes or "
 "processes whose primary aim is to deliver positive impacts for workers"
 msgstr ""
-"Uppgift om huruvida och hur arbetstagare och arbetstagarrepresentanter "
+"uppgift om huruvida och hur arbetstagare och arbetstagarrepresentanter "
 "deltar i beslut om utformning och genomförande av program eller processer "
-"vars främsta syfte är att ge positiva effekter för arbetstagarna."
+"vars främsta syfte är att ge positiva effekter för arbetstagarna"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_657_19a1c3bb
@@ -5487,10 +6146,10 @@ msgid ""
 "opportunities in own operations and upstream and downstream value chain, "
 "and if so, methodologies, assumptions and tools used"
 msgstr ""
-"Uppgift om huruvida företaget har granskat sina tillgångar och verksamheter "
+"ppgift om huruvida företaget har granskat sina tillgångar och verksamheter "
 "för att identifiera faktiska och potentiella effekter, risker och "
 "möjligheter i den egna verksamheten och i värdekedjan i tidigare och senare "
-"led, och i så fall vilka metoder, antaganden och verktyg som använts."
+"led, och i så fall vilka metoder, antaganden och verktyg som använts"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_51_8f5fd851
@@ -5513,7 +6172,7 @@ msgid ""
 "impacts and dependencies on affected communities are impacts on specific "
 "groups"
 msgstr ""
-"Redovisning av vilka av de väsentliga risker och möjligheter som uppstår "
+"redovisning av vilka av de väsentliga risker och möjligheter som uppstår "
 "genom påverkan på och beroende av berörda samhällen som påverkar specifika "
 "grupper"
 
@@ -5546,7 +6205,7 @@ msgid ""
 "impacts and dependencies on value chain workers  are impacts on specific "
 "groups"
 msgstr ""
-"Redovisning av vilka av de väsentliga risker och möjligheter som uppstår "
+"redovisning av vilka av de väsentliga risker och möjligheter som uppstår "
 "till följd av påverkan på och beroenden av medarbetare i värdekedjan som "
 "påverkar specifika grupper"
 
@@ -5559,8 +6218,8 @@ msgstr "redogörelse för varför olika scenarier har beaktats"
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_21_4438eb7c
 msgid "disclosure of why correction of prior period errors is not practicable"
 msgstr ""
-"Upplysning om varför rättelse av fel i tidigare perioder inte är praktiskt "
-"genomförbar."
+"upplysning om varför rättelse av fel i tidigare perioder inte är praktiskt "
+"genomförbar"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_321_801422b1
@@ -5612,7 +6271,7 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_246_277462d5
 msgid "disclosure to be reported if the undertaking has not adopted actions"
-msgstr "Uppgift som ska rapporteras om företaget inte har vidtagit åtgärder"
+msgstr "uppgift som ska rapporteras om företaget inte har vidtagit åtgärder"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_272_1064f5bf
@@ -5634,7 +6293,7 @@ msgstr ""
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_807_67467882
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_984_b1a2b0d1
 msgid "disclosures to be reported if the undertaking has not adopted actions"
-msgstr "Upplysningar som ska lämnas om företaget inte har vidtagit åtgärder"
+msgstr "upplysningar som ska lämnas om företaget inte har vidtagit åtgärder"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1061_44430757
@@ -5646,7 +6305,7 @@ msgstr "Upplysningar som ska lämnas om företaget inte har vidtagit åtgärder"
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_815_97ebe42e
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_992_b0999b3d
 msgid "disclosures to be reported if the undertaking has not adopted targets"
-msgstr "Upplysningar som ska lämnas om företaget inte har antagit mål"
+msgstr "upplysningar som ska lämnas om företaget inte har antagit mål"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1011_e23d966d
@@ -5662,7 +6321,7 @@ msgstr "Upplysningar som ska lämnas om företaget inte har antagit mål"
 msgid ""
 "disclosures to be reported in case the undertaking has not adopted policies"
 msgstr ""
-"Upplysningar som ska lämnas om företaget inte har antagit några principer"
+"upplysningar som ska lämnas om företaget inte har antagit några principer"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_857_3c447b6d
@@ -5922,9 +6581,9 @@ msgid ""
 "inform identification and assessment of physical risks over short, medium "
 "and long-term"
 msgstr ""
-"Förklaring av hur klimatrelaterad scenarioanalys har använts för att "
+"förklaring av hur klimatrelaterad scenarioanalys har använts för att "
 "informera om identifiering och bedömning av fysiska risker på kort, "
-"medellång och lång sikt."
+"medellång och lång sikt"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_232_985466ad
@@ -5933,9 +6592,9 @@ msgid ""
 "inform identification and assessment of transition risks and opportunities "
 "over short, medium and long-term"
 msgstr ""
-"Förklaring av hur klimatrelaterad scenarioanalys har använts för att "
+"förklaring av hur klimatrelaterad scenarioanalys har använts för att "
 "informera om identifiering och bedömning av omställningsrisker och "
-"omställningsmöjligheter på kort, medellång och lång sikt."
+"omställningsmöjligheter på kort, medellång och lång sikt"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_265_6d6810cf
@@ -6155,9 +6814,9 @@ msgid ""
 "impelement actions taken or planned to relevant line items or notes in the "
 "financial statements"
 msgstr ""
-"Förklaring av sambandet mellan betydande investeringar och driftskostnader "
+"förklaring av sambandet mellan betydande investeringar och driftskostnader "
 "som krävs för att genomföra vidtagna eller planerade åtgärder och relevanta "
-"poster eller noter i de finansiella rapporterna."
+"poster eller noter i de finansiella rapporterna"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_245_501f2fa1
@@ -6239,10 +6898,10 @@ msgid ""
 "addresses production, sourcing or consumption from ecosystems that are "
 "managed to maintain or enhance conditions for biodiversity"
 msgstr ""
-"Förklaring av om och hur policyer som rör biologisk mångfald och ekosystem "
+"förklaring av om och hur policyer som rör biologisk mångfald och ekosystem "
 "behandlar produktion, inköp eller konsumtion från ekosystem som förvaltas "
 "för att upprätthålla eller förbättra förutsättningarna för biologisk "
-"mångfald."
+"mångfald"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_578_2f2fc860
@@ -6250,9 +6909,9 @@ msgid ""
 "explanation of whether and how biodiversity and ecosystems-related policy "
 "addresses social consequences of biodiversity and ecosystems-related impacts"
 msgstr ""
-"Förklaring av om och hur politiken för biologisk mångfald och ekosystem tar "
+"förklaring av om och hur politiken för biologisk mångfald och ekosystem tar "
 "itu med sociala konsekvenser av effekter relaterade till biologisk mångfald "
-"och ekosystem."
+"och ekosystem"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_576_b8874fd5
@@ -6262,7 +6921,7 @@ msgid ""
 "significant actual or potential impacts on biodiversity and ecosystems "
 "along value chain"
 msgstr ""
-"Förklaring av om och hur policyer som rör biologisk mångfald och ekosystem "
+"förklaring av om och hur policyer som rör biologisk mångfald och ekosystem "
 "stöder spårbarhet av produkter, komponenter och råvaror med betydande "
 "faktisk eller potentiell påverkan på biologisk mångfald och ekosystem längs "
 "värdekedjan"
@@ -6663,7 +7322,7 @@ msgid ""
 "indication of metrics and related tools used to measure progress that are "
 "integrated in measurement approach (biodiversity and ecosystems)"
 msgstr ""
-"Uppgift om mätvärden och relaterade verktyg som används för att mäta "
+"uppgift om mätvärden och relaterade verktyg som används för att mäta "
 "framsteg och som är integrerade i mätmetoden (biologisk mångfald och "
 "ekosystem)"
 
@@ -6678,7 +7337,7 @@ msgid ""
 "indication of subsidiary undertakings included in consolidation that are "
 "exempted from individual or consolidated sustainability reporting"
 msgstr ""
-"Uppgift om dotterföretag som ingår i konsolideringen och som är undantagna "
+"uppgift om dotterföretag som ingår i konsolideringen och som är undantagna "
 "från individuell eller konsoliderad hållbarhetsredovisning"
 
 #. module: __export__
@@ -7379,7 +8038,7 @@ msgid ""
 "non-employees numbers are reported at end of reporting period/average/other "
 "methodology"
 msgstr ""
-"Icke-anställda antal rapporteras i slutet av rapporteringsperioden/"
+"icke-anställda antal rapporteras i slutet av rapporteringsperioden/"
 "genomsnitt/annan metod"
 
 #. module: __export__
@@ -8421,7 +9080,7 @@ msgid ""
 "potential future liabilities, based on existing contractual agreements, "
 "associated with carbon credits planned to be cancelled in near future"
 msgstr ""
-"Potentiella framtida skulder, baserade på befintliga avtal, kopplade till "
+"potentiella framtida skulder, baserade på befintliga avtal, kopplade till "
 "koldioxidkrediter som planeras att annulleras inom en snar framtid"
 
 #. module: __export__
@@ -8430,9 +9089,9 @@ msgid ""
 "potential market size of low-carbon products and services or adaptation "
 "solutions to which undertaking has or may have access"
 msgstr ""
-"Potentiell marknadsstorlek för produkter och tjänster med låga "
+"potentiell marknadsstorlek för produkter och tjänster med låga "
 "koldioxidutsläpp eller anpassningslösningar som företaget har eller kan ha "
-"tillgång till."
+"tillgång till"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1162_edfba5ea
@@ -8581,7 +9240,7 @@ msgid ""
 "scope of consolidation of consolidated sustainability statement is same as "
 "for financial statements"
 msgstr ""
-"Omfattningen av konsolideringen av den konsoliderade "
+"omfattningen av konsolideringen av den konsoliderade "
 "hållbarhetsredovisningen är densamma som för de finansiella rapporterna"
 
 #. module: __export__
@@ -8803,7 +9462,7 @@ msgid ""
 "biodiversity, the good environmental status of marine waters and the "
 "protection of the resource base upon which marine related activities depend;"
 msgstr ""
-"Policyn bidrar till god ekologisk och kemisk kvalitet på "
+"policyn bidrar till god ekologisk och kemisk kvalitet på "
 "ytvattenförekomster och god kemisk kvalitet och kvantitet på "
 "grundvattenförekomster, för att skydda människors hälsa, vattenförsörjning, "
 "naturliga ekosystem och biologisk mångfald, god miljöstatus i marina vatten "
@@ -8812,7 +9471,7 @@ msgstr ""
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_495_d78daa42
 msgid "the policy avoid impacts on affected communities."
-msgstr "Policyn undviker påverkan på berörda samhällen."
+msgstr "policyn undviker påverkan på berörda samhällen."
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_494_1533fe15
@@ -9306,7 +9965,7 @@ msgstr "företaget är verksamt inom odling och produktion av tobak"
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_75_affa0b25
 msgid "undertaking is active in fossil fuel (coal, oil and gas) sector"
 msgstr ""
-"företaget är verksamt inom sektorn för fossila bränslen (kol, olja och gas)."
+"företaget är verksamt inom sektorn för fossila bränslen (kol, olja och gas)"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1141_902c43b3
