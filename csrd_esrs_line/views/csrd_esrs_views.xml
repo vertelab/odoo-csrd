@@ -30,3 +30,15 @@
         <page name="survey" position="after">
           <page name="secondary_data_point" string="Secondary Data Point">
             <field name="child_ids" widget="section_and_note_one2many">
+              <list>
+                <field name="csrd_name" nolabel="1"/>
+              </list>
+            </field>
+          </page>
+        </page>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>
