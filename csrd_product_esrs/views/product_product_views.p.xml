@@ -9,6 +9,15 @@
         <page name="invoicing" position="after">
           <page name="esrs_line" string="ESRS Lines">
             <field name="product_esrs_line_ids">
+            <!-- #if VERSION <= "17.0" -->
+              <tree editable="bottom">
+                <field name="csrd_esrs_id"/>
+                <field name="quantity"/>
+                <field name="uom_id"/>
+                <field name="data_type"/>
+                <field name="create_date"/>
+              </tree>
+            <!-- #elif VERSION >= "18.0" -->
               <list editable="bottom">
                 <field name="csrd_esrs_id"/>
                 <field name="quantity"/>
@@ -16,6 +25,7 @@
                 <field name="data_type"/>
                 <field name="create_date"/>
               </list>
+            <!-- #endif -->
             </field>
           </page>
         </page>

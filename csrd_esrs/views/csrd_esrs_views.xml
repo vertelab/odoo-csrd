@@ -18,6 +18,7 @@
           <field name="create_date" optional="hide"/>
           <field name="document_page_manual_ids" widget="many2many_tags" optional="hide"/>
         </list>
+
       </field>
     </record>
 

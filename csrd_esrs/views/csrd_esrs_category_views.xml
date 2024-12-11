@@ -64,6 +64,7 @@
         </field>
       </record>
 
+
       <record id="view_csrd_esrs_category_pivot" model="ir.ui.view">
         <field name="name">csrd.esrs.pivot</field>
         <field name="model">csrd.esrs.category</field>

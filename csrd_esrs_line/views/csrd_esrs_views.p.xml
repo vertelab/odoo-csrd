@@ -44,9 +44,15 @@
         <page name="survey" position="after">
           <page name="secondary_data_point" string="Secondary Data Point">
             <field name="child_ids" widget="section_and_note_one2many">
+              <!-- #if VERSION <= "17.0" -->
+              <tree>
+                <field name="csrd_name" nolabel="1"/>
+              </tree>
+              <!-- #if VERSION >= "18.0" -->
               <list>
                 <field name="csrd_name" nolabel="1"/>
               </list>
+              <!-- #endif -->
             </field>
           </page>
         </page>

@@ -68,7 +68,11 @@ class CSRDESRSCategory(models.Model):
             "name": "Subcategorys",
             "type": "ir.actions.act_window",
             "res_model": "csrd.esrs.category",
+            # #if VERSION <= "17.0"
+            "views": [[False,"tree"],[False,"form"]],
+            # #elif VERSION >= "18.0"
             "views": [[False,"list"],[False,"form"]],
+            # #endif
             "domain": [("parent_id", "child_of", self.id), ("id", "!=", self.id)],
         }
     
@@ -84,3 +88,4 @@ class CSRDESRSCategory(models.Model):
 
                 child.impact_materiality = child.parent_id.impact_materiality
                 child.financial_materiality = child.parent_id.financial_materiality
+\No newline at end of file
