@@ -11,7 +11,7 @@
             <field name="survey_id" invisible="1"/>
             <field name="survey_question_id" domain="[('survey_id', '=', survey_id)]"/>
             <field name="is_one_answer" />
-            <field name="survey_question_suggested_answer_id" attrs="{'invisible': [('is_one_answer', '=', False)], 'required': [('is_one_answer', '=', True)]}" domain="[('question_id', '=', survey_question_id)]"/>
+            <field name="survey_question_suggested_answer_id" invisible="is_one_answer == False" required="is_one_answer == True" domain="[('question_id', '=', survey_question_id)]"/>
           </group>
           <footer>
             <button name="gather_survey_data" string="Ok" type="object" class="oe_highlight"/>

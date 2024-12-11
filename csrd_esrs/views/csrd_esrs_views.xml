@@ -32,7 +32,7 @@
           </header>
           <sheet>
             <div name="button_box" id="button_box" class="oe_button_box" />
-            <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
+            <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active == True" />
             <field name="active" invisible="1" />
             <div class="oe_title">
               <h1>
@@ -46,20 +46,20 @@
                     <field name="company_id" groups="base.group_multi_company" />
                     <field name="create_date" readonly="1" />
                     <field name="csrd_id" readonly="1" />
-                    <field name="csrd_dr" readonly="1" attrs="{'invisible': [('csrd_dr', '=', False)]}"/>
-                    <field name="csrd_paragraph" readonly="1" attrs="{'invisible': [('csrd_paragraph', '=', False)]}"/>
-                    <field name="csrd_related_ar" readonly="1" attrs="{'invisible': [('csrd_related_ar', '=', False)]}"/>
-                    <field name="csrd_data_type" readonly="1" attrs="{'invisible': [('csrd_data_type', '=', False)]}"/>
-                    <field name="csrd_conditional_or_alternative_dp" readonly="1" attrs="{'invisible': [('csrd_conditional_or_alternative_dp', '=', False)]}"/>
-                    <field name="csrd_may_v" readonly="1" attrs="{'invisible': [('csrd_may_v', '=', False)]}"/>
-                    <field name="csrd_appendix_b" readonly="1" attrs="{'invisible': [('csrd_appendix_b', '=', False)]}"/>
-                    <field name="csrd_appendix_c_less_then_750" readonly="1" attrs="{'invisible': [('csrd_appendix_c_less_then_750', '=', False)]}"/>
-                    <field name="csrd_appendix_c_more_then_750" readonly="1" attrs="{'invisible': [('csrd_appendix_c_more_then_750', '=', False)]}"/>
-                    <field name="category_id" attrs="{'invisible': [('category_id', '=', False)]}"/>
+                    <field name="csrd_dr" readonly="1" invisible="csrd_dr == False"/>
+                    <field name="csrd_paragraph" readonly="1" invisible="csrd_paragraph == False" />
+                    <field name="csrd_related_ar" readonly="1" invisible="csrd_related_ar == False" />
+                    <field name="csrd_data_type" readonly="1" invisible="csrd_data_type == False" />
+                    <field name="csrd_conditional_or_alternative_dp" readonly="1" invisible="csrd_conditional_or_alternative_dp == False" />
+                    <field name="csrd_may_v" readonly="1" invisible="csrd_may_v == False" />
+                    <field name="csrd_appendix_b" readonly="1" invisible="csrd_appendix_b == False"/>
+                    <field name="csrd_appendix_c_less_then_750" readonly="1" invisible="csrd_appendix_c_less_then_750 == False" />
+                    <field name="csrd_appendix_c_more_then_750" readonly="1" invisible="csrd_appendix_c_more_then_750 == False" />
+                    <field name="category_id" invisible="category_id == False" />
                   </group>
                 </group>
               </page>
-              <page name="policy" string="Policy" attrs="{'invisible': ['!',('csrd_data_type', 'ilike', 'narrative')]}">
+              <page name="policy" string="Policy" invisible="not 'narrative' in csrd_data_type">
                 <field name="description" nolabel="1" />
                 <field name="document_page_manual_ids">
                   <list editable="bottom">
@@ -67,7 +67,7 @@
                   </list>
                 </field>
               </page>
-              <page name="data" string="Data" attrs="{'invisible': [('csrd_data_type', 'ilike', 'narrative')]}">
+              <page name="data" string="Data" invisible="'narrative' in csrd_data_type">
                 <group>
                   <group>
                     <field name="currency_id" invisible="1"/>
@@ -89,11 +89,7 @@
               </page>
             </notebook>
           </sheet>
-          <div class="oe_chatter">
-            <field name="message_follower_ids" widget="mail_followers" />
-            <field name="activity_ids" widget="mail_activity" />
-            <field name="message_ids" widget="mail_thread" />
-          </div>
+          <chatter/>
         </form>
       </field>
     </record>

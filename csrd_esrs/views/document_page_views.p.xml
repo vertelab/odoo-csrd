@@ -21,10 +21,10 @@
                 </page>
             </field>
         </record>
-        <record id="view_wiki_list" model="ir.ui.view">
+        <record id="view_wiki_tree" model="ir.ui.view">
             <field name="name">document.page.list.inherrit</field>
             <field name="model">document.page</field>
-            <field name="inherit_id" ref="document_page.view_wiki_list"/>
+            <field name="inherit_id" ref="document_page.view_wiki_tree"/>
             <field name="type">list</field>
             <field name="arch" type="xml">
                 <field name="content_date" position="after">
