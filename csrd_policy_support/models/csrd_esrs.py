@@ -1,6 +1,7 @@
 from odoo import models, fields, api, _
 
 import logging, os
+import markdown
 from odoo.exceptions import ValidationError
 
 from langchain_core.prompts import PromptTemplate
@@ -52,7 +53,7 @@ class DocumentCSRD(models.Model):
                 ai_answer = self.get_llm(company_id=company_id).invoke(ai_message)
                 parser = StrOutputParser()
                 _logger.error(f"{ai_answer=}")
-                rec.description = parser.invoke(ai_answer)
+                rec.write({'description': markdown.markdown(parser.invoke(ai_answer))})
 
     def get_llm(self, company_id):
 
