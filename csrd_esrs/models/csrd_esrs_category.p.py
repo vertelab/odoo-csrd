@@ -88,4 +88,3 @@ class CSRDESRSCategory(models.Model):
 
                 child.impact_materiality = child.parent_id.impact_materiality
                 child.financial_materiality = child.parent_id.financial_materiality
-\No newline at end of file
