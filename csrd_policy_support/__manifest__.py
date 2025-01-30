@@ -35,11 +35,11 @@
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],  # 560x280
     'license': 'AGPL-3',
-    'depends': ["csrd_esrs"],
+    'depends': ["csrd_esrs", "ai_agent"],
     "external_dependencies": {
        "python": ["langchain_core", "langchain_openai", "langchain_mistralai"],
     },
-    'data': ["views/csrd_esrs_views.xml", "views/res_company_views.xml"],
+    'data': ["data/ai_data.xml", "views/csrd_esrs_views.xml", "views/res_company_views.xml" ],
     'demo': [],
     'assets': {
         'web_editor.assets_wysiwyg': [
