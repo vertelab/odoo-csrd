@@ -36,16 +36,13 @@
     'images': ['static/description/banner.png'],  # 560x280
     'license': 'AGPL-3',
     'depends': ["csrd_esrs", "ai_agent"],
-    "external_dependencies": {
-       "python": ["langchain_core", "langchain_openai", "langchain_mistralai"],
-    },
-    'data': ["data/ai_data.xml", "views/csrd_esrs_views.xml", "views/res_company_views.xml" ],
+    'data': ["data/ai_data.xml"],
     'demo': [],
-    'assets': {
-        'web_editor.assets_wysiwyg': [
-            'csrd_policy_support/static/src/js/wysiwyg.js',
-        ],
-    },
+    # ~ 'assets': {
+        # ~ 'web_editor.assets_wysiwyg': [
+            # ~ 'csrd_policy_support/static/src/js/wysiwyg.js',
+        # ~ ],
+    # ~ },
     'application': False,
     'installable': True,    
     'auto_install': False,
