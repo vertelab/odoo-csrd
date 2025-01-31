@@ -22,28 +22,27 @@
 # https://www.odoo.com/documentation/14.0/reference/module.html
 #
 {
-    'name': 'CSRD: Policy Support',
+    'name': 'CSRD: ESRS Datapoints Domain',
     'version': '1.0',
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
         subtitle on modules listing or apps.odoo.com""",
-    'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
+    'category': '',
     'description': """
-        Long description of module's purpose
+        ESRS Datapoints Domain
     """,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],  # 560x280
     'license': 'AGPL-3',
-    'depends': ["csrd_esrs", "ai_agent"],
-    'data': ["data/ai_data.xml"],
+    'depends': ['csrd_esrs'],
+    'data': [
+        'views/csrd_esrs_view.xml',
+        'data/ir_cron.xml'
+
+    ],
     'demo': [],
-    # ~ 'assets': {
-        # ~ 'web_editor.assets_wysiwyg': [
-            # ~ 'csrd_policy_support/static/src/js/wysiwyg.js',
-        # ~ ],
-    # ~ },
     'application': False,
-    'installable': True,    
+    'installable': True,
     'auto_install': False,
 }

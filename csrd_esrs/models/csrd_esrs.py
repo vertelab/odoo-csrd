@@ -1,5 +1,6 @@
 from odoo import models, fields, api
 
+
 class CSRDESRS(models.Model):
     _name = 'csrd.esrs'
     _inherit = ["mail.thread", "mail.activity.mixin"]
@@ -23,35 +24,36 @@ class CSRDESRS(models.Model):
     document_page_manual_ids = fields.One2many(comodel_name="document.page.csrd.esrs", inverse_name="csrd_esrs_id")
 
     currency_id = fields.Many2one('res.currency', string="Currency",
-                                 related='company_id.currency_id')
+                                  related='company_id.currency_id')
 
     stage = fields.Selection(selection=[
-       ('draft', 'Draft'),
-       ('done', 'Done'),
+        ('draft', 'Draft'),
+        ('done', 'Done'),
     ], string='Status', required=True, copy=False,
-    tracking=True, default='draft')
+        tracking=True, default='draft')
 
     description = fields.Html(string="Description")
     estimated_value = fields.Float(string="Estimated Value")
 
-    category_id = fields.Many2one(comodel_name="csrd.esrs.category", string="ESRS Category", compute="_compute_category_id", store=True)
+    category_id = fields.Many2one(comodel_name="csrd.esrs.category", string="ESRS Category",
+                                  compute="_compute_category_id", store=True)
 
     csrd_sheet_name = fields.Selection(
-            selection=[
-            ('ESRS 2','ESRS 2'),
-            ('ESRS 2 MDR','ESRS 2 MDR'),
-            ('ESRS E1','ESRS E1'),
-            ('ESRS E2','ESRS E2'),
-            ('ESRS E3','ESRS E3'),
-            ('ESRS E4','ESRS E4'),
-            ('ESRS E5','ESRS E5'),
-            ('ESRS S1','ESRS S1'),
-            ('ESRS S2','ESRS S2'),
-            ('ESRS S3','ESRS S3'),
-            ('ESRS S4','ESRS S4'),
-            ('ESRS G1','ESRS G1'),
-            ], 
-            default=None)
+        selection=[
+            ('ESRS 2', 'ESRS 2'),
+            ('ESRS 2 MDR', 'ESRS 2 MDR'),
+            ('ESRS E1', 'ESRS E1'),
+            ('ESRS E2', 'ESRS E2'),
+            ('ESRS E3', 'ESRS E3'),
+            ('ESRS E4', 'ESRS E4'),
+            ('ESRS E5', 'ESRS E5'),
+            ('ESRS S1', 'ESRS S1'),
+            ('ESRS S2', 'ESRS S2'),
+            ('ESRS S3', 'ESRS S3'),
+            ('ESRS S4', 'ESRS S4'),
+            ('ESRS G1', 'ESRS G1'),
+        ],
+        default=None)
 
     csrd_id = fields.Char(string="ID")
     csrd_esrs = fields.Char(string="ESRS")
@@ -72,4 +74,3 @@ class CSRDESRS(models.Model):
             category_id = self.env["csrd.esrs.category"].search([("name", '=', rec.csrd_sheet_name)])
             if category_id:
                 rec.category_id = category_id
-
