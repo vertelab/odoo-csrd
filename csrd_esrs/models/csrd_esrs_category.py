@@ -68,7 +68,7 @@ class CSRDESRSCategory(models.Model):
             "name": "Subcategorys",
             "type": "ir.actions.act_window",
             "res_model": "csrd.esrs.category",
-            "views": [[False,"tree"],[False,"form"]],
+            "views": [[False,"list"],[False,"form"]],
             "domain": [("parent_id", "child_of", self.id), ("id", "!=", self.id)],
         }
     

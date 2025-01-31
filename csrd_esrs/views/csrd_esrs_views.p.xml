@@ -1,10 +1,25 @@
 <odoo>
   <data>
 
-    <record id="view_csrd_esrs_tree" model="ir.ui.view">
+    <record id="view_csrd_esrs_list" model="ir.ui.view">
       <field name="name">csrd.esrs.list</field>
       <field name="model">csrd.esrs</field>
       <field name="arch" type="xml">
+        <!-- #if VERSION >= "18.0" -->
+        <list>
+          <field name="csrd_name" />
+          <field name="csrd_id" />
+          <field name="stage" />
+          <field name="csrd_dr" optional="hide"/>
+          <field name="csrd_related_ar" optional="hide"/>
+          <field name="csrd_data_type" optional="hide"/>
+          <field name="csrd_conditional_or_alternative_dp" optional="hide"/>
+          <field name="csrd_may_v" optional="hide"/>
+          <field name="company_id" groups="base.group_multi_company" optional="hide" />
+          <field name="create_date" optional="hide"/>
+          <field name="document_page_manual_ids" widget="many2many_tags" optional="hide"/>
+        </list>
+        <!-- #elif VERSION <= "17.0" -->
         <tree>
           <field name="csrd_name" />
           <field name="csrd_id" />
@@ -18,6 +33,8 @@
           <field name="create_date" optional="hide"/>
           <field name="document_page_manual_ids" widget="many2many_tags" optional="hide"/>
         </tree>
+        <!-- #endif -->
+
       </field>
     </record>
 
@@ -83,9 +100,15 @@
                   <!-- #endif -->
                   <field name="description" nolabel="1" />
                   <field name="document_page_manual_ids">
+                    <!-- #if VERSION >= "18.0" -->
+                    <list editable="bottom">
+                      <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]"/>
+                    </list>
+                    <!-- #elif VERSION <= "17.0" -->
                     <tree editable="bottom">
                       <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]"/>
                     </tree>
+                    <!-- #endif -->
                   </field>
                 </page>
                 <!-- #if VERSION >= "17.0" -->
@@ -100,9 +123,15 @@
                       </group>
                     </group>
                     <field name="document_page_manual_ids">
+                      <!-- #if VERSION >= "18.0" -->
+                      <list editable="bottom">
+                        <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]" string="Manual/Policy"/>
+                      </list>
+                      <!-- #elif VERSION <= "17.0" -->
                       <tree editable="bottom">
                         <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]" string="Manual/Policy"/>
                       </tree>
+                      <!-- #endif -->
                     </field>
                   </page>
                   <page name="survey" string="Survey">
@@ -114,11 +143,7 @@
                   </page>
                 </notebook>
               </sheet>
-              <div class="oe_chatter">
-                <field name="message_follower_ids" widget="mail_followers" />
-                <field name="activity_ids" widget="mail_activity" />
-                <field name="message_ids" widget="mail_thread" />
-              </div>
+              <chatter/>
             </form>
           </field>
         </record>
@@ -160,16 +185,24 @@
         <record model="ir.actions.act_window" id="action_csrd_esrs">
           <field name="name">CSRD</field>
           <field name="res_model">csrd.esrs</field>
+          <!-- #if VERSION >= "18.0" -->
+          <field name="view_mode">list,form,pivot</field>
+          <!-- #elif VERSION <= "17.0" -->
           <field name="view_mode">tree,form,pivot</field>
-          <field name="view_id" ref="csrd_esrs.view_csrd_esrs_tree"/>
+          <!-- #endif -->
+          <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list"/>
           <field name="search_view_id" ref="csrd_esrs.view_csrd_esrs_filter" />
           <field name="help">No ESRS Datapoints at the moment.</field>
         </record>
 
-        <record id="action_csrd_esrs_tree" model="ir.actions.act_window.view">
+        <record id="action_csrd_esrs_list" model="ir.actions.act_window.view">
           <field name="sequence" eval="0" />
+          <!-- #if VERSION >= "18.0" -->
+          <field name="view_mode">list</field>
+          <!-- #elif VERSION <= "17.0" -->
           <field name="view_mode">tree</field>
-          <field name="view_id" ref="csrd_esrs.view_csrd_esrs_tree" />
+          <!-- #endif -->
+          <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list" />
           <field name="act_window_id" ref="action_csrd_esrs" />
         </record>
 
