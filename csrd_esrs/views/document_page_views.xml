@@ -9,19 +9,19 @@
                 <page name="info" position="after">
                     <page name="esrs" string="ESRS" invisible="parent_id != %(mgmtsystem_manual.manuals)d">
                         <field name="csrd_esrs_ids">
-                            <list editable="bottom" string="Laws">
+                            <tree editable="bottom" string="Laws">
                                 <field name="csrd_esrs_id"/>
-                            </list>
+                            </tree>
                         </field>
                     </page>
                 </page>
             </field>
         </record>
         <record id="view_wiki_tree" model="ir.ui.view">
-            <field name="name">document.page.list.inherrit</field>
+            <field name="name">document.page.tree.inherrit</field>
             <field name="model">document.page</field>
             <field name="inherit_id" ref="document_page.view_wiki_tree"/>
-            <field name="type">list</field>
+            <field name="type">tree</field>
             <field name="arch" type="xml">
                 <field name="content_date" position="after">
                     <field name="csrd_esrs_ids" widget="many2many_tags" optional="hide"/>
