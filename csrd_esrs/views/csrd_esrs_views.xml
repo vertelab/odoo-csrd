@@ -1,7 +1,7 @@
 <odoo>
   <data>
 
-    <record id="view_csrd_esrs_tree" model="ir.ui.view">
+    <record id="view_csrd_esrs_list" model="ir.ui.view">
       <field name="name">csrd.esrs.list</field>
       <field name="model">csrd.esrs</field>
       <field name="arch" type="xml">
@@ -18,6 +18,7 @@
           <field name="create_date" optional="hide"/>
           <field name="document_page_manual_ids" widget="many2many_tags" optional="hide"/>
         </tree>
+
       </field>
     </record>
 
@@ -59,108 +60,104 @@
                   </group>
                 </group>
               </page>
-              <page name="policy" string="Policy" attrs="{'invisible': ['!',('csrd_data_type', 'ilike', 'narrative')]}">
-                <field name="description" nolabel="1" />
-                <field name="document_page_manual_ids">
-                  <tree editable="bottom">
-                    <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]"/>
-                  </tree>
-                </field>
-              </page>
-              <page name="data" string="Data" attrs="{'invisible': [('csrd_data_type', 'ilike', 'narrative')]}">
-                <group>
-                  <group>
-                    <field name="currency_id" invisible="1"/>
-                    <field name="estimated_value"/>
-                  </group>
-                </group>
-                <field name="document_page_manual_ids">
-                  <tree editable="bottom">
-                    <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]" string="Manual/Policy"/>
-                  </tree>
-                </field>
-              </page>
-              <page name="survey" string="Survey">
-                <group>
-                  <group>
-                    <field name="survey_id" />
-                  </group>
-                </group>
-              </page>
-            </notebook>
-          </sheet>
-          <div class="oe_chatter">
-            <field name="message_follower_ids" widget="mail_followers" />
-            <field name="activity_ids" widget="mail_activity" />
-            <field name="message_ids" widget="mail_thread" />
-          </div>
-        </form>
-      </field>
-    </record>
+                <page name="policy" string="Policy" attrs="{'invisible': ['!',('csrd_data_type', 'ilike', 'narrative')]}">
+                  <field name="description" nolabel="1" />
+                  <field name="document_page_manual_ids">
+                    <tree editable="bottom">
+                      <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]"/>
+                    </tree>
+                  </field>
+                </page>
+                  <page name="data" string="Data" attrs="{'invisible': [('csrd_data_type', 'ilike', 'narrative')]}">
+                    <group>
+                      <group>
+                        <field name="currency_id" invisible="1"/>
+                        <field name="estimated_value"/>
+                      </group>
+                    </group>
+                    <field name="document_page_manual_ids">
+                      <tree editable="bottom">
+                        <field name="document_page_id" domain="[('parent_id','=',%(mgmtsystem_manual.manuals)d)]" string="Manual/Policy"/>
+                      </tree>
+                    </field>
+                  </page>
+                  <page name="survey" string="Survey">
+                    <group>
+                      <group>
+                        <field name="survey_id" />
+                      </group>
+                    </group>
+                  </page>
+                </notebook>
+              </sheet>
+              <chatter/>
+            </form>
+          </field>
+        </record>
 
-    <record id="view_csrd_esrs_pivot" model="ir.ui.view">
-      <field name="name">csrd.esrs.pivot</field>
-      <field name="model">csrd.esrs</field>
-      <field name="arch" type="xml">
-        <pivot>
-          <field name="estimated_value" type="measure"/>
-        </pivot>
-      </field>
-    </record>
+        <record id="view_csrd_esrs_pivot" model="ir.ui.view">
+          <field name="name">csrd.esrs.pivot</field>
+          <field name="model">csrd.esrs</field>
+          <field name="arch" type="xml">
+            <pivot>
+              <field name="estimated_value" type="measure"/>
+            </pivot>
+          </field>
+        </record>
 
-    <record id="view_csrd_esrs_filter" model="ir.ui.view">
-      <field name="name">csrd.esrs.search</field>
-      <field name="model">csrd.esrs</field>
-      <field name="arch" type="xml">
-        <search string="Document csrd">
-          <field name="csrd_name" string="CSRD Name" />
-          <field name="csrd_id" />
-          <field name="company_id" />
-          <group expand="0" string="Group By...">
-            <filter name="group_by_esrs" string="ESRS" context="{'group_by':'csrd_esrs'}" />
-            <filter name="group_by_dr" string="DR" context="{'group_by':'csrd_dr'}" />
-            <filter name="group_by_conditional_or_alternative_dp" string="Conditional or Alternative DP" context="{'group_by':'csrd_conditional_or_alternative_dp'}" />
-            <filter name="group_by_data_type" string="Data Type" context="{'group_by':'csrd_data_type'}" />
-            <filter name="group_by_v" string="May V" context="{'group_by':'csrd_may_v'}" />
-            <filter name="group_by_company" string="Company" context="{'group_by':'company_id'}" />
-          </group>
-          <searchpanel>
-            <field name="category_id" icon="fa-folder" string="Category" enable_counters="1" />
-            <field name="stage" icon="fa-folder" string="Status" enable_counters="1" />
-          </searchpanel>
-        </search>
-      </field>
-    </record>
+        <record id="view_csrd_esrs_filter" model="ir.ui.view">
+          <field name="name">csrd.esrs.search</field>
+          <field name="model">csrd.esrs</field>
+          <field name="arch" type="xml">
+            <search string="Document csrd">
+              <field name="csrd_name" string="CSRD Name" />
+              <field name="csrd_id" />
+              <field name="company_id" />
+              <group expand="0" string="Group By...">
+                <filter name="group_by_esrs" string="ESRS" context="{'group_by':'csrd_esrs'}" />
+                <filter name="group_by_dr" string="DR" context="{'group_by':'csrd_dr'}" />
+                <filter name="group_by_conditional_or_alternative_dp" string="Conditional or Alternative DP" context="{'group_by':'csrd_conditional_or_alternative_dp'}" />
+                <filter name="group_by_data_type" string="Data Type" context="{'group_by':'csrd_data_type'}" />
+                <filter name="group_by_v" string="May V" context="{'group_by':'csrd_may_v'}" />
+                <filter name="group_by_company" string="Company" context="{'group_by':'company_id'}" />
+              </group>
+              <searchpanel>
+                <field name="category_id" icon="fa-folder" string="Category" enable_counters="1" />
+                <field name="stage" icon="fa-folder" string="Status" enable_counters="1" />
+              </searchpanel>
+            </search>
+          </field>
+        </record>
 
-    <record model="ir.actions.act_window" id="action_csrd_esrs">
-      <field name="name">CSRD</field>
-      <field name="res_model">csrd.esrs</field>
-      <field name="view_mode">tree,form,pivot</field>
-      <field name="view_id" ref="csrd_esrs.view_csrd_esrs_tree"/>
-      <field name="search_view_id" ref="csrd_esrs.view_csrd_esrs_filter" />
-      <field name="help">No ESRS Datapoints at the moment.</field>
-    </record>
+        <record model="ir.actions.act_window" id="action_csrd_esrs">
+          <field name="name">CSRD</field>
+          <field name="res_model">csrd.esrs</field>
+          <field name="view_mode">tree,form,pivot</field>
+          <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list"/>
+          <field name="search_view_id" ref="csrd_esrs.view_csrd_esrs_filter" />
+          <field name="help">No ESRS Datapoints at the moment.</field>
+        </record>
 
-    <record id="action_csrd_esrs_tree" model="ir.actions.act_window.view">
-      <field name="sequence" eval="0" />
-      <field name="view_mode">tree</field>
-      <field name="view_id" ref="csrd_esrs.view_csrd_esrs_tree" />
-      <field name="act_window_id" ref="action_csrd_esrs" />
-    </record>
+        <record id="action_csrd_esrs_list" model="ir.actions.act_window.view">
+          <field name="sequence" eval="0" />
+          <field name="view_mode">tree</field>
+          <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list" />
+          <field name="act_window_id" ref="action_csrd_esrs" />
+        </record>
 
-    <record id="action_csrd_esrs_form" model="ir.actions.act_window.view">
-      <field name="sequence" eval="5" />
-      <field name="view_mode">form</field>
-      <field name="view_id" ref="view_csrd_esrs_form" />
-      <field name="act_window_id" ref="action_csrd_esrs" />
-    </record>
+        <record id="action_csrd_esrs_form" model="ir.actions.act_window.view">
+          <field name="sequence" eval="5" />
+          <field name="view_mode">form</field>
+          <field name="view_id" ref="view_csrd_esrs_form" />
+          <field name="act_window_id" ref="action_csrd_esrs" />
+        </record>
 
-    <record id="action_csrd_esrs_pivot" model="ir.actions.act_window.view">
-      <field name="sequence" eval="5" />
-      <field name="view_mode">pivot</field>
-      <field name="view_id" ref="view_csrd_esrs_pivot" />
-      <field name="act_window_id" ref="action_csrd_esrs" />
-    </record>
+        <record id="action_csrd_esrs_pivot" model="ir.actions.act_window.view">
+          <field name="sequence" eval="5" />
+          <field name="view_mode">pivot</field>
+          <field name="view_id" ref="view_csrd_esrs_pivot" />
+          <field name="act_window_id" ref="action_csrd_esrs" />
+        </record>
 
     <menuitem id="menu_csrd_esrs_root" name="CSRD" action="action_csrd_esrs" sequence="20" />
 
@@ -168,5 +165,5 @@
 
     <menuitem id="menu_csrd_esrs_configuration" name="Configuration" groups="base.group_system" parent="menu_csrd_esrs_root" sequence="22" />
 
-  </data>
-</odoo>
+      </data>
+    </odoo>
