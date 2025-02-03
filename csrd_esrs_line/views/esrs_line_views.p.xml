@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-+   <record id="view_esrs_line_list" model="ir.ui.view">
-+       <field name="name">esrs.line.list</field>
+    <record id="view_esrs_line_list" model="ir.ui.view">
+        <field name="name">esrs.line.list</field>
         <field name="model">esrs.line</field>
         <field name="arch" type="xml">
             <!-- #if VERSION <= "17.0" -->
