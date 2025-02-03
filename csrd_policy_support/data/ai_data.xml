@@ -23,7 +23,7 @@ for record in records:
             <field name="ai_backstory">
 Your job is to supervise agents to determine if an ESRS data point is relevant for the company you receive information about.
 If you haven't received any information about a company, please tell the user that they should fill out that information on their company profile so you can do an adequate job and ensure the "company information" checkbox is selected on the quest.
-</field>
+            </field>
             <field name="ai_prompt_template">
 {message}
             </field>
