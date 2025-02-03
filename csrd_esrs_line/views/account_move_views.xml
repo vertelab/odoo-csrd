@@ -9,7 +9,7 @@
         <page id="aml_tab" position="after">
           <page id="esrs_line" string="ESRS Lines">
             <field name="esrs_line_ids">
-              <list editable="bottom">
+              <tree editable="bottom">
                 <control>
                   <create string="Add a ESRS Datapoint" />
                 </control>
@@ -18,7 +18,7 @@
                 <field name="uom_id"/>
                 <field name="data_type"/>
                 <field name="create_date"/>
-              </list>
+              </tree>
             </field>
           </page>
         </page>

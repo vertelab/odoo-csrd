@@ -27,7 +27,7 @@ class CSRDESRS(models.Model):
             'name': 'ESRS_lines',
             'type': 'ir.actions.act_window',
             'res_model': 'esrs.line',
-            'view_mode': 'list',
+            'view_mode': 'tree',
             'target': 'current',
             'domain': [('id', 'in', self.esrs_line_ids.ids)]
         }

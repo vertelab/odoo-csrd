@@ -5,16 +5,16 @@
 +       <field name="name">esrs.line.list</field>
         <field name="model">esrs.line</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="name"/>
                 <field name="quantity"/>
                 <field name="data_type"/>
-                <field name="account_move_id" invisible="account_move_id == False" />
-                <field name="survey_id" invisible="survey_id == False" optional="hide"/>
+                <field name="account_move_id" attrs="{'invisible': [('account_move_id', '=', False)]}" optional="hide"/>
+                <field name="survey_id" attrs="{'invisible': [('survey_id', '=', False)]}" optional="hide"/>
                 <field name="csrd_esrs_id"/>
                 <field name="uom_id"/>
                 <field name="create_date"/>
-            </list>
+            </tree>
         </field>
     </record>
 
@@ -29,8 +29,8 @@
                         <field name="name"/>
                         <field name="quantity"/>
                         <field name="data_type"/>
-                        <field name="account_move_id" invisible="account_move_id == False" />
-                        <field name="survey_id" invisible="survey_id == False" />
+                        <field name="account_move_id" attrs="{'invisible': [('account_move_id', '=', False)]}" />
+                        <field name="survey_id" attrs="{'invisible': [('survey_id', '=', False)]}" />
                         <field name="csrd_esrs_id"/>
                         <field name="uom_id"/>
                         <field name="create_date"/>
@@ -57,7 +57,7 @@
     <record id="action_esrs_line" model="ir.actions.act_window">
         <field name="name">ESRS Lines</field>
         <field name="res_model">esrs.line</field>
-        <field name="view_mode">list,form,pivot</field>
+        <field name="view_mode">tree,form,pivot</field>
     </record>
 
     <menuitem id="menu_esrs_line" name="ESRS Lines" parent="csrd_esrs.menu_csrd_esrs_configuration" action="action_esrs_line" sequence="10"/>
