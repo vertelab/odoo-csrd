@@ -8,6 +8,9 @@
             <field name="code">model._cron_check_csrd_data_point()</field>
             <field name="interval_number">1</field>
             <field name="interval_type">days</field>
+            # #if VERSION <= "17.0"
+            <field name="numbercall">-1</field>
+			# #endif
         </record>
     </data>
  </odoo>
