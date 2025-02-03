@@ -31,7 +31,7 @@ class CSRDESRS(models.Model):
             'view_mode': 'tree',
             # #elif VERSION >= "18.0"
             'view_mode': 'list',
-            # #endif
+			# #endif
             'target': 'current',
             'domain': [('id', 'in', self.esrs_line_ids.ids)]
         }
