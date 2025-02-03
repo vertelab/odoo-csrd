@@ -9,11 +9,11 @@
 if records:
     for record in records:
         session = self.env['ai.quest.session'].quest_init(self)
-        response = quest.build_graph(message=record.rss_text,session=session).invoke({"messages": [HumanMessage(content=record.rss_text)]})
+        response = quest.build_graph(message=record.description,session=session).invoke({"messages": [HumanMessage(content=record.description)]})
         ai_message = quest.get_last_ai_message_content(response)
-        record.write({"ai_policy": ai_message})
+        record.write({"description": ai_message})
             </field>
-            <field name="model_id" ref="csrd_policy_support.model_csrd_esrs" />
+            <field name="model_id" ref="csrd_esrs.model_csrd_esrs" />
             <field name="description">We have a lot of ESRS data points in a database. With the help of an agent, determine if this ESRS data point is relevant for the company you have gotten information about.</field>
         </record>
 
