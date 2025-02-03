@@ -1,17 +1,17 @@
 <odoo>
   <data noupdate="1">
-	  
+      
     <record id="ai_quest_esrs_policy" model="ai.quest">
       <field name="name">ESRS Policy</field>
       <field name="ai_type">esrs_policy</field>
       <field name="init_type">server-action</field>
       <field name="code">
 if records:
-  for record in records:
-    session = self.env['ai.quest.session'].quest_init(self)
-    response = quest.build_graph(message=record.description,session=session).invoke({"messages": [HumanMessage(content=record.description)]})
-    ai_message = quest.get_last_ai_message_content(response)
-    record.write({"description": ai_message})
+    for record in records:
+        session = self.env['ai.quest.session'].quest_init(self)
+        response = quest.build_graph(message=record.description,session=session).invoke({"messages": [HumanMessage(content=record.description)]})
+        ai_message = quest.get_last_ai_message_content(response)
+        record.write({"description": ai_message})
       </field>
       <field name="model_id" ref="csrd_esrs.model_csrd_esrs" />
       <field name="description">We have a lot of ESRS data points in a database. With the help of an agent, determine if this ESRS data point is relevant for the company you have gotten information about.</field>
