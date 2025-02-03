@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="csrd_esrs_view_form" model="ir.ui.view">
+            <field name="name">csrd.esrs.view.form</field>
+            <field name="model">csrd.esrs</field>
+            <field name="inherit_id" ref="csrd_esrs.view_csrd_esrs_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[last()]" position="after">
+                    <page string="Domain" name="policy_domain">
+                        <group>
+                            <field name="model_id" widget="selection"/>
+                            <field name="model" invisible="1"/>
+                        </group>
+                        <div class="w-lg-50">
+                            <field name="domain" widget="domain" options="{'model': 'model'}"/>
+                        </div>
+
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>
