@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="view_esrs_line_tree" model="ir.ui.view">
-        <field name="name">esrs.line.tree</field>
+    <record id="view_esrs_line_list" model="ir.ui.view">
+        <field name="name">esrs.line.list</field>
         <field name="model">esrs.line</field>
         <field name="arch" type="xml">
+            <!-- #if VERSION <= "17.0" -->
             <tree>
+            <!-- #elif VERSION >= "18.0" -->
+            <list>
+            <!-- #endif -->
                 <field name="name"/>
                 <field name="quantity"/>
                 <field name="data_type"/>
@@ -19,7 +23,11 @@
                 <field name="csrd_esrs_id"/>
                 <field name="uom_id"/>
                 <field name="create_date"/>
+            <!-- #if VERSION <= "17.0" -->
             </tree>
+            <!-- #elif VERSION >= "18.0" -->
+            </list>
+            <!-- #endif -->
         </field>
     </record>
 
@@ -67,7 +75,11 @@
     <record id="action_esrs_line" model="ir.actions.act_window">
         <field name="name">ESRS Lines</field>
         <field name="res_model">esrs.line</field>
+        <!-- #if VERSION <= "17.0" -->
         <field name="view_mode">tree,form,pivot</field>
+        <!-- #elif VERSION >= "18.0" -->
+        <field name="view_mode">list,form,pivot</field>
+        <!-- #endif -->
     </record>
 
     <menuitem id="menu_esrs_line" name="ESRS Lines" parent="csrd_esrs.menu_csrd_esrs_configuration" action="action_esrs_line" sequence="10"/>
