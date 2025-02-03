@@ -159,11 +159,11 @@
           <field name="act_window_id" ref="action_csrd_esrs" />
         </record>
 
-    <menuitem id="menu_csrd_esrs_root" name="CSRD" action="action_csrd_esrs" sequence="20" />
+        <menuitem id="menu_csrd_esrs_root" name="CSRD" action="action_csrd_esrs" sequence="20" />
 
-    <menuitem id="menu_csrd_esrs_items" name="Items" parent="menu_csrd_esrs_root" sequence="21" />
+        <menuitem id="menu_csrd_esrs_items" name="Items" parent="menu_csrd_esrs_root" sequence="21" />
 
-    <menuitem id="menu_csrd_esrs_configuration" name="Configuration" groups="base.group_system" parent="menu_csrd_esrs_root" sequence="22" />
+        <menuitem id="menu_csrd_esrs_configuration" name="Configuration" groups="base.group_system" parent="menu_csrd_esrs_root" sequence="22" />
 
       </data>
     </odoo>
