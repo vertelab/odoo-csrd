@@ -1,0 +1,2 @@
+git@github.com:OCA/knowledge.git /usr/share/odooext-OCA-knowledge
+git@github.com:OCA/management-system.git /usr/share/odooext-OCA-management-system
