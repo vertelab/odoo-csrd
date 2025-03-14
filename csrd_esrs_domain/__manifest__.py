@@ -25,21 +25,22 @@
     'name': 'CSRD: ESRS Datapoints Domain',
     'version': '1.0',
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.odoo.com""",
+        Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints.
+        Example: How many employees are men and women, respectively.
+    """,
     'category': '',
     'description': """
-        ESRS Datapoints Domain
+        Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints.
+        Example: How many employees are men and women, respectively.
     """,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
-    'images': ['static/description/banner.png'],  # 560x280
+    'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'depends': ['csrd_esrs'],
     'data': [
         'views/csrd_esrs_view.xml',
         'data/ir_cron.xml'
-
     ],
     'demo': [],
     'application': False,

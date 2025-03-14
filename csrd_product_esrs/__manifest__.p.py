@@ -25,22 +25,17 @@
     'name': 'CSRD: Product ESRS Line',
     'version': '1.0',
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.odoo.com""",
+        This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.     
+    """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
     'description': """
-        Long description of module's purpose
+        This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.
     """,
-    #'sequence': 1,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'], # 560x280
     'license': 'AGPL-3',
     'depends': ["mrp","csrd_esrs_line"],
-     #"external_dependencies": {
-     #   "bin": ["openssl",], 
-     #   "python": ["acme_tiny", "IPy",],
-     #},
     'data': ["security/ir.model.access.csv", "views/product_product_views.xml"],
     'demo': [],
     'application': False,
