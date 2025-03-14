@@ -25,22 +25,17 @@
     'name': 'CSRD: ESRS Line',
     'version': '1.0',
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.odoo.com""",
+        Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity. 
+    """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
     'description': """
-        Long description of module's purpose
+        Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity. 
     """,
-    #'sequence': 1,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
-    'images': ['static/description/banner.png'], # 560x280
+    'images': ['static/description/banner.png'], 
     'license': 'AGPL-3',
     'depends': ["account", "csrd_esrs", "uom"],
-     #"external_dependencies": {
-     #   "bin": ["openssl",], 
-     #   "python": ["acme_tiny", "IPy",],
-     #},
     'data': ["security/ir.model.access.csv", "data/esrs_data_type_data.xml", "views/account_move_views.xml", "views/csrd_esrs_views.xml", "views/esrs_line_views.xml","wizard/csrd_esrs_gather_survey_wizard_views.xml"],
     'demo': [],
     'application': False,

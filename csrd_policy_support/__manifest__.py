@@ -25,11 +25,11 @@
     'name': 'CSRD: Policy Support',
     'version': '1.0',
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.odoo.com""",
+        Adds AI support to the CSRD ESRS module in the form of an AI that can create an ESRS policy on a datapoint with the help of relevant information about the company, as well as an AI that determines if an ESRS datapoint is relevant for the company or not.
+    """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
     'description': """
-        Long description of module's purpose
+        Adds AI support to the CSRD ESRS module in the form of an AI that can create an ESRS policy on a datapoint with the help of relevant information about the company, as well as an AI that determines if an ESRS datapoint is relevant for the company or not.
     """,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
@@ -38,11 +38,6 @@
     'depends': ["csrd_esrs", "ai_agent"],
     'data': ["data/ai_data.xml"],
     'demo': [],
-    # ~ 'assets': {
-        # ~ 'web_editor.assets_wysiwyg': [
-            # ~ 'csrd_policy_support/static/src/js/wysiwyg.js',
-        # ~ ],
-    # ~ },
     'application': False,
     'installable': True,    
     'auto_install': False,
