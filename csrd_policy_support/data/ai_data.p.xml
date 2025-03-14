@@ -1,20 +1,20 @@
 <odoo>
   <data noupdate="1">
-      
+	  
     <record id="ai_quest_esrs_policy" model="ai.quest">
       <field name="name">ESRS Policy</field>
       <field name="ai_type">esrs_policy</field>
       <field name="init_type">server-action</field>
       <field name="code">
-if records:
-    for record in records:
-        session = self.env['ai.quest.session'].quest_init(self)
-        response = quest.build_graph(message=record.description,session=session).invoke({"messages": [HumanMessage(content=record.description)]})
-        ai_message = quest.get_last_ai_message_content(response)
-        record.write({"description": ai_message})
+        if records:
+          for record in records:
+            session = self.env['ai.quest.session'].quest_init(self)
+            response = quest.build_graph(message=record.description,session=session).invoke({"messages": [HumanMessage(content=record.description)]})
+            ai_message = quest.get_last_ai_message_content(response)
+            record.write({"description": ai_message})
       </field>
       <field name="model_id" ref="csrd_esrs.model_csrd_esrs" />
-      <field name="description">We have a lot of ESRS data points in a database. With the help of an agent, determine if this ESRS data point is relevant for the company you have gotten information about.</field>
+      <field name="description">We have a lot of ESRS data points in a database. Create an ESRS policy for the datapoint you receive information about, and tailor it after the company information you receive.</field>
     </record>
     
     <record id="ai_agent_csrd_policy_supervisor" model="ai.agent">
@@ -34,11 +34,9 @@ if records:
     <record id="ai_agent_esrs_policy_agent" model="ai.agent">
       <field name="name">ESRS Policy Agent</field>
       <field name="ai_role">You are an AI agent who has a good grasp of ESRS and CSRD matters.</field>
-      <field name="ai_goal">Your job is to determine if an ESRS data point is relevant for the company your supervisor provides information about.</field>
+      <field name="ai_goal">Your job is to create an ESRS company policy from the datapoint and the company information you receive information about.</field>
       <field name="ai_backstory">
-        If you believe you didn't receive enough information about the company, please try to make do.
-        Return the answer to whether it is relevant for the company or not as a JSON boolean. Please use backticks "`" around the JSON.
-        Example: {"is_relevant": true} or {"is_relevant": false}
+        You were created in order to help the user create ESRS policies for specific ESRS datapoints.
       </field>
       <field name="ai_prompt_template">{message}</field>
       <field name="ai_type">esrs_policy</field>
