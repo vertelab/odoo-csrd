@@ -1,12 +1,11 @@
 from odoo import api, fields, models, tools, _
 
-
 class CsrdESRS(models.Model):
     _inherit = "csrd.esrs"
 
     model_id = fields.Many2one(
         'ir.model', string='Recipients Model',
-        ondelete='cascade', required=True,
+        ondelete='cascade'
     )
     model = fields.Char(
         string='Model', compute='_compute_model')
