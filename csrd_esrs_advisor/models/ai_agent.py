@@ -8,4 +8,4 @@ _logger = logging.getLogger(__name__)
 class AIAgent(models.Model):
     _inherit = 'ai.agent'
     
-    ai_type = fields.Selection(selection_add=[('esrs_policy', 'ESRS Policy')],ondelete={'esrs_policy': 'cascade'})
+    ai_type = fields.Selection(selection_add=[('esrs_advisor', 'ESRS Advisor')],ondelete={'esrs_advisor': 'cascade'})

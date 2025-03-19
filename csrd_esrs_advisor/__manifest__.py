@@ -22,14 +22,14 @@
 # https://www.odoo.com/documentation/14.0/reference/module.html
 #
 {
-    'name': 'CSRD: Policy Support',
+    'name': 'CSRD: ESRS Advisor',
     'version': '1.0',
     'summary': """
-        Adds AI support to the CSRD ESRS module in the form of an AI that can create an ESRS policy on a datapoint with the help of relevant information about the company, as well as an AI that determines if an ESRS datapoint is relevant for the company or not.
+        Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.
     """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
     'description': """
-        Adds AI support to the CSRD ESRS module in the form of an AI that can create an ESRS policy on a datapoint with the help of relevant information about the company, as well as an AI that determines if an ESRS datapoint is relevant for the company or not.
+        Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.
     """,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
