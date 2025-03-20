@@ -212,6 +212,13 @@
             <field name="act_window_id" ref="action_esrs_category" />
         </record>
 
+        <record id="action_csrd_esrs_category_kanban" model="ir.actions.act_window.view">
+            <field name="sequence" eval="5" />
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="csrd_esrs_category_view_kanban" />
+            <field name="act_window_id" ref="action_esrs_category" />
+        </record>
+
         <menuitem id="menu_csrd_esrs_category" name="ESRS Category" parent="menu_csrd_esrs_items" action="action_esrs_category" sequence="24" />
 
     </data>
