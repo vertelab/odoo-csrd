@@ -60,7 +60,7 @@
                             <page name="swot" string="SWOT">
                                 <group>
                                     <group>
-                                        <field name="swot_diagram" widget="mermaid" nolabel="1"/>
+                                        <field name="swot_diagram" widget="mermaid" nolabel="1" />
                                     </group>
                                 </group>
                             </page>

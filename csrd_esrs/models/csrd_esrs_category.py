@@ -22,12 +22,14 @@ class CSRDESRSCategory(models.Model):
     survey_id = fields.Many2one(comodel_name='survey.survey')
 
     impact_materiality = fields.Selection([
-        ('1','1'), ('2','2'), ('3','3'), ('4','4'), ('5','5'), ('6','6'), ('7','7'), ('8','8'), ('9','9'), ('10','10'),
-    ], string="Impact Materiality", default=None, group_operator="max", group_expand='_read_group_impact_materiality')
+        ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
+        ('10', '10'),
+    ], string="Impact Materiality", default=None, group_operator="max")
 
     financial_materiality = fields.Selection([
-        ('1','1'), ('2','2'), ('3','3'), ('4','4'), ('5','5'), ('6','6'), ('7','7'), ('8','8'), ('9','9'), ('10','10'),
-    ], string="Financial Materiality", default=None, group_operator="max", group_expand='_read_group_financial_materiality')
+        ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
+        ('10', '10'),
+    ], string="Financial Materiality", default=None, group_operator="max")
     
     priority = fields.Selection(selection=[("0","0"),("1","1")])
 
@@ -56,7 +58,7 @@ class CSRDESRSCategory(models.Model):
 
     def compute_number_of_children(self):
         for rec in self:
-            rec.number_of_children = self.search_count([("parent_id", "child_of", rec.id), ("id", "!=", rec.id)])
+            rec.number_of_children = self.search_count([("parent_id", "child_of", rec.id),("id", "!=", rec.id)])
 
     def get_subcategorys(self):
         return {
@@ -71,6 +73,7 @@ class CSRDESRSCategory(models.Model):
         children = self.search([("parent_id", "child_of", self.id)])
         for child in children:
             if child.id != self.id:
+                _logger.error(f"{child.name=}"*50)
                 child.impact_materiality = child.parent_id.impact_materiality
                 child.financial_materiality = child.parent_id.financial_materiality
 
@@ -117,12 +120,10 @@ class CSRDESRSCategory(models.Model):
                     for sub_category in sub_category_ids.filtered(lambda x: x.parent_id)
                 ])
                 data = categories
-
             else:
                 if csrd_esrs_data := self._get_csrd_category_lines(rec):
                     csrd_esrs = '\n'.join(csrd_esrs_data)
                     data = csrd_esrs
-
             rec.swot_diagram = self._quadrant_chart(data=data)
 
     swot_diagram = fields.Text(string='SWOT Diagram', compute=_get_swot_diagram)

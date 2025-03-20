@@ -57,8 +57,6 @@
                                         <field name="csrd_appendix_c_less_then_750" readonly="1" invisible="csrd_appendix_c_less_then_750 == False" />
                                         <field name="csrd_appendix_c_more_then_750" readonly="1" invisible="csrd_appendix_c_more_then_750 == False" />
                                         <field name="category_id" invisible="category_id == False" />
-                                        <field name="impact_materiality"/>
-                                        <field name="financial_materiality"/>
                                     </group>
                                 </group>
                             </page>
