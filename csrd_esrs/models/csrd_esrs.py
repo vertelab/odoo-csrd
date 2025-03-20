@@ -74,3 +74,13 @@ class CSRDESRS(models.Model):
             category_id = self.env["csrd.esrs.category"].search([("name", '=', rec.csrd_sheet_name)])
             if category_id:
                 rec.category_id = category_id
+
+    impact_materiality = fields.Selection([
+        ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
+        ('10', '10'),
+    ], string="Impact Materiality", default=None, group_operator="max")
+
+    financial_materiality = fields.Selection([
+        ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
+        ('10', '10'),
+    ], string="Financial Materiality", default=None, group_operator="max")

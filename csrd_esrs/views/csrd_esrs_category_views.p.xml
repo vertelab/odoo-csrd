@@ -1,134 +1,218 @@
 <odoo>
-  <data>
+    <data>
 
-    <record id="view_csrd_esrs_category_list" model="ir.ui.view">
-      <field name="name">csrd.esrs.category.list</field>
-      <field name="model">csrd.esrs.category</field>
-      <field name="arch" type="xml">
-        <!-- #if VERSION >= "18.0" -->
-        <list>
-          <field name="name" />
-        </list>
-        <!-- #elif VERSION <= "17.0" -->
-        <tree>
-          <field name="name" />
-        </tree>
-        <!-- #endif -->
-      </field>
-    </record>
+        <record id="view_csrd_esrs_category_list" model="ir.ui.view">
+            <field name="name">csrd.esrs.category.list</field>
+            <field name="model">csrd.esrs.category</field>
+            <field name="arch" type="xml">
+                <!-- #if VERSION >= "18.0" -->
+                <list>
+                    <field name="name" />
+                </list>
+                <!-- #elif VERSION <= "17.0" -->
+                <tree>
+                    <field name="name" />
+                </tree>
+                <!-- #endif -->
+            </field>
+        </record>
 
-    <record id="view_csrd_esrs_category_form" model="ir.ui.view">
-      <field name="name">csrd.esrs.category.form</field>
-      <field name="model">csrd.esrs.category</field>
-      <field name="priority">9</field>
-      <field name="arch" type="xml">
-        <form string="ESRS Category">
-          <header>
-            <button name="set_materiality_downward" type="object" string="Update Subcategorys" class="btn-primary"/>
-          </header>
-          <sheet>
-            <div name="button_box" id="button_box" class="oe_button_box">
-              <!-- #if VERSION >= "17.0" -->
-              <button class="oe_stat_button" type="object" name="get_subcategorys" icon="fa-list" invisible="number_of_children == 0">
-                <!-- #elif VERSION <= "16.0" -->
-                <button class="oe_stat_button" type="object" name="get_subcategorys" icon="fa-list" attrs="{'invisible': [('number_of_children', '=', 0)]}">
-                  <!-- #endif -->
-                  <field string="Subcategories" name="number_of_children" widget="statinfo"/>
-                </button>
-              </div>
-              <!-- #if VERSION >= "17.0" -->
-              <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active == True" />
-              <!-- #elif VERSION <= "16.0" -->
-              <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
-              <!-- #endif -->
-              <field name="active" invisible="1" />
-              <div class="oe_title">
-                <h1>
-                  <field name="name" placeholder="Name" />
-                </h1>
-              </div>
-              <group>
-                <field name="parent_id" />
-                <field name="priority" widget="priority" />
-              </group>
-              <notebook>
-                <page name="impact_materiality" string="Impact Materiality">
-                  <group>
-                    <field name="impact_materiality" string="Value"/>
-                    <field name="impact_materiality_description" string="Description"/>
-                  </group>
-                </page>
-                <page name="financial_materiality" string="Financial Materiality">
-                  <group>
-                    <field name="financial_materiality" string="Value"/>
-                    <field name="financial_materiality_description" string="Description"/>
-                  </group>
-                </page>
-                <page name="survey" string="Survey">
-                  <group>
-                    <group>
-                      <field name="survey_id" />
+        <record id="view_csrd_esrs_category_form" model="ir.ui.view">
+            <field name="name">csrd.esrs.category.form</field>
+            <field name="model">csrd.esrs.category</field>
+            <field name="priority">9</field>
+            <field name="arch" type="xml">
+                <form string="ESRS Category">
+                    <header>
+                        <button name="set_materiality_downward" type="object" string="Update Subcategories" class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <div name="button_box" id="button_box" class="oe_button_box">
+                            <!-- #if VERSION >= "17.0" -->
+                            <button class="oe_stat_button" type="object" name="get_subcategorys" icon="fa-list" invisible="number_of_children == 0">
+                            <!-- #elif VERSION <= "16.0" -->
+                            <button class="oe_stat_button" type="object" name="get_subcategorys" icon="fa-list" attrs="{'invisible': [('number_of_children', '=', 0)]}">
+                                <!-- #endif -->
+                                <field string="Subcategories" name="number_of_children" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <!-- #if VERSION >= "17.0" -->
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active == True" />
+                        <!-- #elif VERSION <= "16.0" -->
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
+                        <!-- #endif -->
+                        <field name="active" invisible="1" />
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="parent_id" />
+                            <field name="priority" widget="priority" />
+                        </group>
+                        <notebook>
+                            <page name="impact_materiality" string="Impact Materiality">
+                                <group>
+                                    <field name="impact_materiality" string="Value"/>
+                                    <field name="impact_materiality_description" string="Description"/>
+                                </group>
+                            </page>
+                            <page name="financial_materiality" string="Financial Materiality">
+                                <group>
+                                    <field name="financial_materiality" string="Value"/>
+                                    <field name="financial_materiality_description" string="Description"/>
+                                </group>
+                            </page>
+                            <page name="survey" string="Survey">
+                                <group>
+                                    <group>
+                                        <field name="survey_id" />
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="swot" string="SWOT">
+                                <group>
+                                    <group>
+                                        <field name="swot_diagram" widget="mermaid" nolabel="1" />
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_csrd_esrs_category_pivot" model="ir.ui.view">
+            <field name="name">csrd.esrs.pivot</field>
+            <field name="model">csrd.esrs.category</field>
+            <field name="arch" type="xml">
+                <pivot string="ESRS Category Pivot">
+                    <field name="impact_materiality" type="measure"/>
+                    <field name="financial_materiality" type="measure"/>
+                    <field name="name" type="col"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record id="view_csrd_esrs_category_filter" model="ir.ui.view">
+            <field name="name">csrd.esrs.category.search</field>
+            <field name="model">csrd.esrs.category</field>
+            <field name="arch" type="xml">
+                <search string="Document csrd">
+                    <field name="parent_id"/>
+                    <field name="survey_id" />
+                    <group expand="0" string="Group By...">
+                        <filter name="group_by_parent" string="Parent" context="{'group_by':'parent_id'}" />
+                        <filter name="group_by_priority" string="Priority" context="{'group_by':'priority'}" />
+                        <filter name="group_by_impact_materiality" string="Impact Materiality" context="{'group_by':'impact_materiality'}" />
+                        <filter name="group_by_financial_materiality" string="Financial Materiality" context="{'group_by':'financial_materiality'}" />
+                        <filter name="group_by_survey" string="Survey" context="{'group_by':'survey_id'}" />
                     </group>
-                  </group>
-                </page>
-              </notebook>
-            </sheet>
-            <chatter/>
-          </form>
-        </field>
-      </record>
+                </search>
+            </field>
+        </record>
+
+        <record id="csrd_esrs_category_view_kanban" model="ir.ui.view" >
+            <field name="name">csrd.esrs.category.kanban</field>
+            <field name="model">csrd.esrs.category</field>
+            <field name="arch" type="xml">
+                <kanban class="o_hr_department_kanban o_kanban_small_column" can_open="0" sample="1">
+                    <field name="active"/>
+                    <templates>
+                        <t t-name="menu" t-if="!selection_mode">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 role="menuitem" class="o_kanban_card_manage_title">
+                                            <span>View</span>
+                                        </h5>
+                                        <div role="menuitem">
+                                            <a name="get_subcategorys" type="object">View SubCategories</a>
+                                        </div>
+                                        <div role="menuitem">
+                                            <a name="set_materiality_downward" type="object">Update SubCategories</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o_kanban_card_manage_settings row" groups="hr.group_hr_user">
+
+                                    <div class="col-6">
+                                        <a t-if="record.active.raw_value" role="menuitem" type="archive" class="dropdown-item">Archive</a>
+                                        <a t-if="!record.active.raw_value" role="menuitem" type="unarchive" class="dropdown-item">Unarchive</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                        <t t-name="card">
+                            <a type="open"><field name="name" class="fw-bold fs-4 d-bolck ms-2"/></a>
+                            <field name="parent_id" readonly="1" class="text-muted ms-2"/>
+
+                            <div class="row g-0 mt-2 ms-2">
+                                <field name="priority" widget="priority" groups="base.group_user" class="me-2"/>
+                            </div>
 
 
-      <record id="view_csrd_esrs_category_pivot" model="ir.ui.view">
-        <field name="name">csrd.esrs.pivot</field>
-        <field name="model">csrd.esrs.category</field>
-        <field name="arch" type="xml">
-          <pivot string="ESRS Category Pivot">
-            <field name="impact_materiality" type="measure"/>
-            <field name="financial_materiality" type="measure"/>
-            <field name="name" type="col"/>
-          </pivot>
-        </field>
-      </record>
+                            <div class="row g-0 mt-2 mb-2 ms-2" t-if="!selection_mode">
+                                <div class="col-6">
+                                    <button class="btn btn-primary" name="get_subcategorys" type="object">
+                                        <field name="number_of_children"/> SubCategories
+                                    </button>
+                                </div>
+                                <div name="kanban_primary_right" class="col-6">
+                                    <!-- placeholder for xpaths -->
+                                </div>
+                            </div>
+                            <div name="kanban_card_lower_content" class="mt-auto" t-if="!selection_mode">
+                                <!-- placeholder for bottom content -->
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
 
-      <record model="ir.actions.act_window" id="action_esrs_category">
-        <field name="name">ESRS Category</field>
-        <field name="res_model">csrd.esrs.category</field>
-        <!-- #if VERSION >= "18.0" -->
-        <field name="view_mode">list,form,pivot</field>
-        <!-- #elif VERSION <= "17.0" -->
-        <field name="view_mode">tree,form,pivot</field>
-        <!-- #endif -->
-        <field name="view_id" ref="csrd_esrs.view_csrd_esrs_category_list"/>
-        <field name="help">No ESRS Categorys</field>
-      </record>
+        <record model="ir.actions.act_window" id="action_esrs_category">
+            <field name="name">ESRS Category</field>
+            <field name="res_model">csrd.esrs.category</field>
+            <!-- #if VERSION >= "18.0" -->
+            <field name="view_mode">kanban,list,form,pivot</field>
+            <!-- #elif VERSION <= "17.0" -->
+            <field name="view_mode">kanban,tree,form,pivot</field>
+            <!-- #endif -->
+            <field name="view_id" ref="csrd_esrs.view_csrd_esrs_category_list"/>
+            <field name="help">No ESRS Categorys</field>
+        </record>
 
-      <record id="action_csrd_esrs_category_list" model="ir.actions.act_window.view">
-        <field name="sequence" eval="0" />
-        <!-- #if VERSION >= "18.0" -->
-        <field name="view_mode">list</field>
-        <!-- #elif VERSION <= "17.0" -->
-        <field name="view_mode">tree</field>
-        <!-- #endif -->
-        <field name="view_id" ref="csrd_esrs.view_csrd_esrs_category_list" />
-        <field name="act_window_id" ref="action_esrs_category" />
-      </record>
+        <record id="action_csrd_esrs_category_list" model="ir.actions.act_window.view">
+            <field name="sequence" eval="0" />
+            <!-- #if VERSION >= "18.0" -->
+            <field name="view_mode">list</field>
+            <!-- #elif VERSION <= "17.0" -->
+            <field name="view_mode">tree</field>
+            <!-- #endif -->
+            <field name="view_id" ref="csrd_esrs.view_csrd_esrs_category_list" />
+            <field name="act_window_id" ref="action_esrs_category" />
+        </record>
 
-      <record id="action_csrd_esrs_category_form" model="ir.actions.act_window.view">
-        <field name="sequence" eval="5" />
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="view_csrd_esrs_category_form" />
-        <field name="act_window_id" ref="action_esrs_category" />
-      </record>
+        <record id="action_csrd_esrs_category_form" model="ir.actions.act_window.view">
+            <field name="sequence" eval="5" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_csrd_esrs_category_form" />
+            <field name="act_window_id" ref="action_esrs_category" />
+        </record>
 
-      <record id="action_csrd_esrs_category_pivot" model="ir.actions.act_window.view">
-        <field name="sequence" eval="5" />
-        <field name="view_mode">pivot</field>
-        <field name="view_id" ref="view_csrd_esrs_category_pivot" />
-        <field name="act_window_id" ref="action_esrs_category" />
-      </record>
+        <record id="action_csrd_esrs_category_pivot" model="ir.actions.act_window.view">
+            <field name="sequence" eval="5" />
+            <field name="view_mode">pivot</field>
+            <field name="view_id" ref="view_csrd_esrs_category_pivot" />
+            <field name="act_window_id" ref="action_esrs_category" />
+        </record>
 
-      <menuitem id="menu_csrd_esrs_category" name="ESRS Category" parent="menu_csrd_esrs_items" action="action_esrs_category" sequence="24" />
+        <menuitem id="menu_csrd_esrs_category" name="ESRS Category" parent="menu_csrd_esrs_items" action="action_esrs_category" sequence="24" />
 
     </data>
-  </odoo>
+</odoo>

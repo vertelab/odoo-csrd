@@ -35,7 +35,7 @@
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
-    'depends': ['mail','document_page','survey','mgmtsystem_manual'],
+    'depends': ['mail','document_page','survey','mgmtsystem_manual', 'web_widget_mermaid_field'],
      "external_dependencies": {
        "python": ["openpyxl"],
      },
