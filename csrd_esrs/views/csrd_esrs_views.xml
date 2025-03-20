@@ -140,26 +140,7 @@
             <field name="help">No ESRS Datapoints at the moment.</field>
         </record>
 
-        <record id="action_csrd_esrs_list" model="ir.actions.act_window.view">
-            <field name="sequence" eval="0" />
-            <field name="view_mode">list</field>
-            <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list" />
-            <field name="act_window_id" ref="action_csrd_esrs" />
-        </record>
 
-        <record id="action_csrd_esrs_form" model="ir.actions.act_window.view">
-            <field name="sequence" eval="5" />
-            <field name="view_mode">form</field>
-            <field name="view_id" ref="view_csrd_esrs_form" />
-            <field name="act_window_id" ref="action_csrd_esrs" />
-        </record>
-
-        <record id="action_csrd_esrs_pivot" model="ir.actions.act_window.view">
-            <field name="sequence" eval="5" />
-            <field name="view_mode">pivot</field>
-            <field name="view_id" ref="view_csrd_esrs_pivot" />
-            <field name="act_window_id" ref="action_csrd_esrs" />
-        </record>
 
         <menuitem id="menu_csrd_esrs_root" name="CSRD" action="action_csrd_esrs" sequence="20" />
 
