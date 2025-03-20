@@ -165,7 +165,7 @@
             <field name="name">ESRS Category</field>
             <field name="res_model">csrd.esrs.category</field>
             <field name="view_mode">kanban,list,form,pivot</field>
-            <field name="view_id" ref="csrd_esrs.view_csrd_esrs_category_list"/>
+            <field name="view_id" ref="csrd_esrs.csrd_esrs_category_view_kanban"/>
             <field name="help">No ESRS Categorys</field>
         </record>
 
