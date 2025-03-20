@@ -184,7 +184,7 @@
             <field name="view_mode">kanban,tree,form,pivot</field>
             <!-- #endif -->
             <field name="view_id" ref="csrd_esrs.csrd_esrs_category_view_kanban"/>
-            <field name="help">No ESRS Categorys</field>
+            <field name="help">No ESRS Categories</field>
         </record>
 
         <record id="action_csrd_esrs_category_list" model="ir.actions.act_window.view">
