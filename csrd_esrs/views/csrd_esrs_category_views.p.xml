@@ -187,7 +187,6 @@
             <field name="help">No ESRS Categories</field>
         </record>
 
-
         <menuitem id="menu_csrd_esrs_category" name="ESRS Category" parent="menu_csrd_esrs_items" action="action_esrs_category" sequence="24" />
 
     </data>
