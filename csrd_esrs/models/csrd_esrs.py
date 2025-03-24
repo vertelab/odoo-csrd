@@ -78,9 +78,9 @@ class CSRDESRS(models.Model):
     impact_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
-    ], string="Impact Materiality", default=None, group_operator="max")
+    ], string="Impact Materiality", default=None, aggregator="max")
 
     financial_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
-    ], string="Financial Materiality", default=None, group_operator="max")
+    ], string="Financial Materiality", default=None, aggregator="max")
