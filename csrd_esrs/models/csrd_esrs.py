@@ -88,6 +88,7 @@ class CSRDESRS(models.Model):
 
     @api.model
     def _read_group_impact_materiality(self, values, domain, order):
+
         all_values = [value[0] for value in self._fields['impact_materiality'].selection]
 
         # Make sure values contains all possible selection values
@@ -100,13 +101,12 @@ class CSRDESRS(models.Model):
 
     @api.model
     def _read_group_financial_materiality(self, values, domain, order):
+
         all_values = [value[0] for value in self._fields['financial_materiality'].selection]
 
-        # Make sure values contains all possible selection values
         missing_values = set(all_values) - set(values)
         values = values + list(missing_values)
 
         # Sort values numerically
         values.sort(key=lambda x: int(x) if x else 0)
         return values
-
