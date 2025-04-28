@@ -75,16 +75,30 @@ class CSRDESRS(models.Model):
             if category_id:
                 rec.category_id = category_id
 
+    ## if VERSION <= "17.0"
     impact_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
     ], string="Impact Materiality", default=None, group_operator="max", group_expand='_read_group_impact_materiality')
+    ## else
+    impact_materiality = fields.Selection([
+        ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
+        ('10', '10'),
+    ], string="Impact Materiality", default=None, aggregator="max", group_expand='_read_group_impact_materiality')
+    ##endif
 
+    ## if VERSION <= "17.0"
     financial_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
     ], string="Financial Materiality", default=None, group_operator="max",
         group_expand='_read_group_financial_materiality')
+    ## else
+    financial_materiality = fields.Selection([
+        ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
+        ('10', '10'),
+    ], string="Financial Materiality", default=None, aggregator="max", group_expand='_read_group_financial_materiality')
+    ##endif
 
     @api.model
     # #if VERSION <= "17.0"
