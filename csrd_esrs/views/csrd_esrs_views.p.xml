@@ -250,11 +250,11 @@
             <field name="name">CSRD</field>
             <field name="res_model">csrd.esrs</field>
             <!-- #if VERSION >= "18.0" -->
-            <field name="view_mode">kanban,list,form,pivot</field>
+            <field name="view_mode">list,kanban,form,pivot</field>
             <!-- #elif VERSION <= "17.0" -->
-            <field name="view_mode">kanban,tree,form,pivot</field>
+            <field name="view_mode">tree,kanban,form,pivot</field>
             <!-- #endif -->
-            <field name="view_id" ref="csrd_esrs.csrd_esrs_view_kanban"/>
+            <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list"/>
             <field name="search_view_id" ref="csrd_esrs.view_csrd_esrs_filter" />
             <field name="help">No ESRS Datapoints at the moment.</field>
         </record>
