@@ -254,7 +254,7 @@
             <!-- #elif VERSION <= "17.0" -->
             <field name="view_mode">kanban,tree,form,pivot</field>
             <!-- #endif -->
-            <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list"/>
+            <field name="view_id" ref="csrd_esrs.csrd_esrs_view_kanban"/>
             <field name="search_view_id" ref="csrd_esrs.view_csrd_esrs_filter" />
             <field name="help">No ESRS Datapoints at the moment.</field>
         </record>
