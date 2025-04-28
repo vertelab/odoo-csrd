@@ -103,7 +103,6 @@ class CSRDESRS(models.Model):
     @api.model
     # #if VERSION <= "17.0"
     def _read_group_impact_materiality(self, values, domain, order):
-
     # #elif VERSION >= "18.0"
     def _read_group_impact_materiality(self, values, domain):
         # #endif
@@ -120,7 +119,6 @@ class CSRDESRS(models.Model):
     @api.model
     # #if VERSION <= "17.0"
     def _read_group_financial_materiality(self, values, domain, order):
-
     # #elif VERSION >= "18.0"
     def _read_group_financial_materiality(self, values, domain):
         # #endif
