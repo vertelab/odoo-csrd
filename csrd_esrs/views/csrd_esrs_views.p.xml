@@ -42,6 +42,30 @@
             <field name="name">csrd.esrs.kanban</field>
             <field name="model">csrd.esrs</field>
             <field name="arch" type="xml">
+                <!-- #if VERSION >= "18.0" -->
+                <kanban sample="1">
+                    <field name="csrd_name" invisible="1"/>
+                    <field name="csrd_id" invisible="1"/>
+                    <field name="category_id" invisible="1"/>
+                    <templates>
+                        <t t-name="card" class="flex-row">
+                            <main class="pe-2">
+                                <div class="mb-1">
+                                    <div class="d-flex mb-0 h5 text-truncate">
+                                        <field name="csrd_name"/>
+                                    </div>
+                                    <span t-if="record.csrd_id.value">
+                                        [<field name="csrd_id"/>]
+                                    </span>
+                                </div>
+                                <span>
+                                    Stage: <field name="stage"/>
+                                </span>
+                            </main>
+                        </t>
+                    </templates>
+                </kanban>
+                <!-- #elif VERSION <= "17.0" -->
                 <kanban class="oe_background_grey o_kanban_dashboard o_kanban_small_column" can_open="0" sample="1">
                     <field name="csrd_name" invisible="1"/>
                     <field name="csrd_id" invisible="1"/>
@@ -68,6 +92,7 @@
                         </t>
                     </templates>
                 </kanban>
+                <!-- #endif -->
             </field>
         </record>
 
