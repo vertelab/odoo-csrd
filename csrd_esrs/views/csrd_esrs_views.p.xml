@@ -209,6 +209,8 @@
                         <filter name="group_by_conditional_or_alternative_dp" string="Conditional or Alternative DP" context="{'group_by':'csrd_conditional_or_alternative_dp'}" />
                         <filter name="group_by_data_type" string="Data Type" context="{'group_by':'csrd_data_type'}" />
                         <filter name="group_by_v" string="May V" context="{'group_by':'csrd_may_v'}" />
+                        <filter name="group_by_financial_materiality" string="Financial Materiality" context="{'group_by':'financial_materiality'}" />
+                        <filter name="group_by_impact_materiality" string="Impact Materiality" context="{'group_by':'impact_materiality'}" />
                         <filter name="group_by_company" string="Company" context="{'group_by':'company_id'}" />
                     </group>
                     <searchpanel>
@@ -223,9 +225,9 @@
             <field name="name">CSRD</field>
             <field name="res_model">csrd.esrs</field>
             <!-- #if VERSION >= "18.0" -->
-            <field name="view_mode">list,form,pivot</field>
+            <field name="view_mode">kanban,list,form,pivot</field>
             <!-- #elif VERSION <= "17.0" -->
-            <field name="view_mode">tree,form,pivot</field>
+            <field name="view_mode">kanban,tree,form,pivot</field>
             <!-- #endif -->
             <field name="view_id" ref="csrd_esrs.view_csrd_esrs_list"/>
             <field name="search_view_id" ref="csrd_esrs.view_csrd_esrs_filter" />
