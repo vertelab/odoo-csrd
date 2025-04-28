@@ -98,7 +98,7 @@ class CSRDESRSCategory(models.Model):
 
         if csrd_esrs_ids:
             csrd_esrs_data = [
-                f"{csrd_esrs_id.csrd_name.replace(':', '')}: [{int(csrd_esrs_id.financial_materiality) / 10}, {int(csrd_esrs_id.impact_materiality) / 10}]"
+                f"{csrd_esrs_id.csrd_id.replace(':', '')}: [{int(csrd_esrs_id.financial_materiality) / 10}, {int(csrd_esrs_id.impact_materiality) / 10}]"
                 for csrd_esrs_id in csrd_esrs_ids
             ]
         else:

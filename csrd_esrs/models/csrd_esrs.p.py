@@ -79,23 +79,56 @@ class CSRDESRS(models.Model):
     impact_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
-    ], string="Impact Materiality", default=None, group_operator="max")
+    ], string="Impact Materiality", default=None, group_operator="max", group_expand='_read_group_impact_materiality')
     ## else
     impact_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
-    ], string="Impact Materiality", default=None, aggregator="max")
+    ], string="Impact Materiality", default=None, aggregator="max", group_expand='_read_group_impact_materiality')
     ##endif
 
     ## if VERSION <= "17.0"
     financial_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
-    ], string="Financial Materiality", default=None, group_operator="max")
+    ], string="Financial Materiality", default=None, group_operator="max",
+        group_expand='_read_group_financial_materiality')
     ## else
     financial_materiality = fields.Selection([
         ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),
         ('10', '10'),
-    ], string="Financial Materiality", default=None, aggregator="max")
+    ], string="Financial Materiality", default=None, aggregator="max", group_expand='_read_group_financial_materiality')
     ##endif
 
+    @api.model
+    # #if VERSION <= "17.0"
+    def _read_group_impact_materiality(self, values, domain, order):
+
+    # #elif VERSION >= "18.0"
+    def _read_group_impact_materiality(self, values, domain):
+        # #endif
+        all_values = [value[0] for value in self._fields['impact_materiality'].selection]
+
+        # Make sure values contains all possible selection values
+        missing_values = set(all_values) - set(values)
+        values = values + list(missing_values)
+
+        # Sort values numerically
+        values.sort(key=lambda x: int(x) if x else 0)
+        return values
+
+    @api.model
+    # #if VERSION <= "17.0"
+    def _read_group_financial_materiality(self, values, domain, order):
+
+    # #elif VERSION >= "18.0"
+    def _read_group_financial_materiality(self, values, domain):
+        # #endif
+        all_values = [value[0] for value in self._fields['financial_materiality'].selection]
+
+        missing_values = set(all_values) - set(values)
+        values = values + list(missing_values)
+
+        # Sort values numerically
+        values.sort(key=lambda x: int(x) if x else 0)
+        return values
