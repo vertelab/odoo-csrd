@@ -13,8 +13,8 @@ class ESRSLine(models.Model):
     survey_id = fields.Many2one(comodel_name="survey.survey")
     csrd_esrs_id = fields.Many2one(comodel_name="csrd.esrs" )
     parent_csrd_esrs_id = fields.Many2one(comodel_name="csrd.esrs", related="csrd_esrs_id.parent_id", readonly=True, store=True)
-    uom_id = fields.Many2one(comodel_name="uom.uom",compute="compute_uom_id")
-    data_type = fields.Many2one(comodel_name="esrs.data.type",compute="compute_data_type")
+    uom_id = fields.Many2one(comodel_name="uom.uom",compute="compute_uom_id", store=True)
+    data_type = fields.Many2one(comodel_name="esrs.data.type",compute="compute_data_type", store=True)
     quantity = fields.Float(string="Quantity", required=True)
     
     @api.depends("csrd_esrs_id", "uom_id", "survey_id", "account_move_id", "account_move_id.name", "account_move_id.state")
