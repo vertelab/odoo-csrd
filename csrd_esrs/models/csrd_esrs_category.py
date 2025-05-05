@@ -85,10 +85,21 @@ class CSRDESRSCategory(models.Model):
         ])
 
         if csrd_esrs_ids:
-            csrd_esrs_data = [
-                f"{csrd_esrs_id.csrd_id.replace('.', '-').replace(':', '')}: [{int(csrd_esrs_id.financial_materiality) / 10}, {int(csrd_esrs_id.impact_materiality) / 10}]"
-                for csrd_esrs_id in csrd_esrs_ids
-            ]
+            csrd_esrs_data = []
+            for csrd_esrs_id in csrd_esrs_ids:
+                # Convert to float values
+                financial_val = int(csrd_esrs_id.financial_materiality) / 10
+                impact_val = int(csrd_esrs_id.impact_materiality) / 10
+
+                # Handle edge case of 1.0 values - adjust to 0.99 to prevent rendering issues
+                if financial_val >= 1.0:
+                    financial_val = 0.99
+                if impact_val >= 1.0:
+                    impact_val = 0.99
+
+                csrd_esrs_data.append(
+                    f"{csrd_esrs_id.csrd_id.replace('.', '-').replace(':', '')}: [{financial_val}, {impact_val}]"
+                )
         else:
             csrd_esrs_data = False
         return csrd_esrs_data
@@ -115,11 +126,26 @@ class CSRDESRSCategory(models.Model):
 
             data = False
             if sub_category_ids:
-                categories = '\n'.join([
-                    f"{sub_category.name.replace(':', '')}: [{int(sub_category.financial_materiality) / 10}, {int(sub_category.impact_materiality) / 10}]"
-                    for sub_category in sub_category_ids.filtered(lambda x: x.parent_id)
-                ])
-                data = categories
+                categories_data = []
+                for sub_category in sub_category_ids.filtered(lambda x: x.parent_id):
+                    if not sub_category.financial_materiality or not sub_category.impact_materiality:
+                        continue
+
+                    # Convert to float values
+                    fin_val = int(sub_category.financial_materiality) / 10
+                    imp_val = int(sub_category.impact_materiality) / 10
+
+                    # Handle edge case of 1.0 values
+                    if fin_val >= 1.0:
+                        fin_val = 0.99
+                    if imp_val >= 1.0:
+                        imp_val = 0.99
+
+                    categories_data.append(
+                        f"{sub_category.name.replace(':', '')}: [{fin_val}, {imp_val}]"
+                    )
+
+                data = '\n'.join(categories_data) if categories_data else False
             else:
                 if csrd_esrs_data := self._get_csrd_category_lines(rec):
                     csrd_esrs = '\n'.join(csrd_esrs_data)
