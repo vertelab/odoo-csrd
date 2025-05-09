@@ -7,12 +7,11 @@
       <field name="ai_type">esrs_advisor</field>
       <field name="init_type">powerbox</field>
       <field name="code">
-session = env['ai.quest.session'].quest_init(self) 
 quick_prompt=f"ESRS Datapoint: {record.csrd_name}\nQuestion: {prompt}"
 result = quest.build(message=quick_prompt,session=session).invoke({"messages": [HumanMessage(content=quick_prompt)]})       
       </field>
       <field name="model_id" ref="csrd_esrs.model_csrd_esrs" />
-      <field name="description">This quest allows users to ask questions to a knowledgeable AI about CSRD and ESRS matters and can also help to create policies. To access this AI, go to the policy part of the ESRS Datapoints from the CSRD module and type "/". You should get access to a window. In the window, choose "AI Quest" to get access to this quest.</field>
+      <field name="description">In this instance, the user is asking you questions that probably are in regard to CSRD or ESRS datapoints. The user might want to use your answer as a policy or the start of one. So, answering in a way that fits a policy text might be a good idea.</field>
     </record>
 
     <record id="ai_quest_esrs_relevancy_advisor" model="ai.quest">
@@ -21,12 +20,18 @@ result = quest.build(message=quick_prompt,session=session).invoke({"messages": [
       <field name="ai_type">esrs_advisor</field>
       <field name="init_type">server-action</field>
       <field name="code">
-session = env['ai.quest.session'].quest_init(self) 
-quick_prompt=f"ESRS Datapoint: {record.csrd_name}\nQuestion: {prompt}"
-result = quest.build(message=quick_prompt,session=session).invoke({"messages": [HumanMessage(content=quick_prompt)]})     
+for rec in records:
+    result = quest.build(message=rec.csrd_name,session=session).invoke({"messages": [HumanMessage(content=rec.csrd_name)]})
+    if result:
+        answer = quest.get_last_ai_message_content(result)
+        dicts = quest.extract_dicts(answer)
+        if dicts:
+            if str(dicts[0].get("relevant")).lower() == "false":
+                record.write({'active': False})
+            record.message_post( body=dicts[0].get("reason"), subtype_xmlid='mail.mt_note', message_type='comment')  
       </field>
       <field name="model_id" ref="csrd_esrs.model_csrd_esrs" />
-      <field name="description">This quest allows users to ask questions to a knowledgeable AI about CSRD and ESRS matters and can also help to create policies. To access this AI, go to the policy part of the ESRS Datapoints from the CSRD module and type "/". You should get access to a window. In the window, choose "AI Quest" to get access to this quest.</field>
+      <field name="description">When giving a response return the answer as a json in this format { "relevant": bool, "reason": str }</field>
     </record>
 
     <record id="ai_agent_esrs_advisor" model="ai.agent">
@@ -40,17 +45,6 @@ You were created in order to help the company work with CSRD. This can entail an
       <field name="ai_type">esrs_advisor</field>
     </record>
 
-    <record id="ai_agent_esrs_relevancy_advisor" model="ai.agent">
-      <field name="name">ESRS Datapoint Relevancy Advisor</field>
-      <field name="ai_role">You are an AI agent who has a good grasp of ESRS and CSRD matters.</field>
-      <field name="ai_goal">Determine if the ESRS datapoint is relevant for the company and return the result as a JSON.</field>
-      <field name="ai_backstory">
-You were created to determine if an ESRS datapoint is relevant for the company with the help of the datapoint and company information you're given. The answer should be returned as a JSON.
-      </field>
-      <field name="ai_prompt_template">{message}</field>
-      <field name="ai_type">esrs_advisor</field>
-    </record>
-
     <record id="ai_quest_agent_esrs_advisor" model="ai.quest.agent">
       <field name="ai_quest_id" ref="ai_quest_esrs_advisor" />
       <field name="ai_agent_id" ref="ai_agent_esrs_advisor" />
@@ -58,7 +52,7 @@ You were created to determine if an ESRS datapoint is relevant for the company w
 
     <record id="ai_quest_agent_esrs_relevancy_advisor" model="ai.quest.agent">
       <field name="ai_quest_id" ref="ai_quest_esrs_relevancy_advisor" />
-      <field name="ai_agent_id" ref="ai_agent_esrs_relevancy_advisor" />
+      <field name="ai_agent_id" ref="ai_agent_esrs_advisor" />
     </record>
 
   </data>
