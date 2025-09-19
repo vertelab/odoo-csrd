@@ -40,6 +40,22 @@
         </field>
     </record>
 
+    <!-- Search View -->
+    <record id="view_esrs_line_search" model="ir.ui.view">
+        <field name="name">esrs.line.search</field>
+        <field name="model">esrs.line</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <group expand="1" string="Group By">
+                    <filter string="CSRD ESRS" name="group_by_csrd_esrs_id" context="{'group_by': 'csrd_esrs_id'}"/>
+                    <filter string="Create Date" name="group_by_create_date" context="{'group_by': 'create_date'}"/>
+                    <filter string="Data Type" name="group_by_data_type" context="{'group_by': 'data_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
     <!-- Pivot View -->
     <record id="view_esrs_line_pivot" model="ir.ui.view">
         <field name="name">esrs.line.pivot</field>
