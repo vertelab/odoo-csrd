@@ -2769,7 +2769,7 @@ msgid ""
 "undertaking’s production process"
 msgstr ""
 "beskrivning av de viktigaste produkter och material som kommer ut ur "
-"företagets produktionsprocess"
+"bolagets produktionsprocess"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1135_43e43c54
@@ -2831,7 +2831,7 @@ msgid ""
 "they relate to undertaking's strategy and business model"
 msgstr ""
 "beskrivning av förståelsen för viktiga intressenters intressen och "
-"synpunkter när det gäller företagets strategi och affärsmodell"
+"synpunkter när det gäller bolagets strategi och affärsmodell"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1182_89681c79
@@ -2839,7 +2839,7 @@ msgid ""
 "description of undertakings standard payment terms in number of days by "
 "main category of suppliers"
 msgstr ""
-"beskrivning av företagens standardiserade betalningsvillkor i antal dagar "
+"beskrivning av bolagens standardiserade betalningsvillkor i antal dagar "
 "per huvudkategori av leverantörer"
 
 #. module: __export__
@@ -2977,7 +2977,7 @@ msgid ""
 "description of whether and how the undertaking has taken action to provide "
 "or enable remedy in relation to an actual material impact"
 msgstr ""
-"beskrivning av om och hur företaget har vidtagit åtgärder för att "
+"beskrivning av om och hur bolaget har vidtagit åtgärder för att "
 "tillhandahålla eller möjliggöra avhjälpande i förhållande till en faktisk "
 "väsentlig påverkan"
 
@@ -3409,7 +3409,7 @@ msgid ""
 msgstr ""
 "redovisning av nuvarande och förväntade effekter av väsentliga effekter, "
 "risker och möjligheter på affärsmodell, värdekedja, strategi och "
-"beslutsfattande samt hur företaget har reagerat eller planerar att reagera "
+"beslutsfattande samt hur bolaget har reagerat eller planerar att reagera "
 "på dessa effekter"
 
 #. module: __export__
