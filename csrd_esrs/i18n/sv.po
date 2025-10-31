@@ -117,7 +117,7 @@ msgstr "Kategori"
 #: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__company_id
 #: model_terms:ir.ui.view,arch_db:csrd_esrs.view_csrd_esrs_filter
 msgid "Company"
-msgstr "Företag"
+msgstr "Bolag"
 
 #. module: csrd_esrs
 #: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs__csrd_conditional_or_alternative_dp
@@ -402,7 +402,7 @@ msgstr "Om kryssrutan är markerad får vissa meddelanden ett leveransfel."
 #. module: csrd_esrs
 #: model:ir.model.fields,help:csrd_esrs.field_csrd_esrs__company_id
 msgid "If set, page is accessible only from this company"
-msgstr "Om den är inställd är sidan endast tillgänglig från detta företag"
+msgstr "Om den är inställd är sidan endast tillgänglig från detta bolaget"
 
 #. module: csrd_esrs
 #: model:ir.model.fields,field_description:csrd_esrs.field_csrd_esrs_category__impact_materiality
@@ -982,7 +982,7 @@ msgstr ""
 "alla anställda i den egna arbetsstyrkan omfattas av socialt skydd, genom "
 "offentliga program eller genom förmåner som erbjuds, mot inkomstförlust på "
 "grund av arbetslöshet från och med den tidpunkt då den egna arbetstagaren "
-"arbetar för företaget"
+"arbetar för bolaget"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_724_23db4674
@@ -1130,7 +1130,7 @@ msgid ""
 "biodiversity areas that undertaking is negatively affecting"
 msgstr ""
 "areal av områden som ägs, hyrs eller förvaltas i eller nära skyddade "
-"områden eller viktiga områden för biologisk mångfald som företaget påverkar "
+"områden eller viktiga områden för biologisk mångfald som bolaget påverkar "
 "negativt"
 
 #. module: __export__
@@ -1348,7 +1348,7 @@ msgid ""
 "characteristics of undertaking's employees - information on employees by "
 "contract type and gender  [table]"
 msgstr ""
-"egenskaper hos företagets anställda - information om anställda per "
+"egenskaper hos bolagets anställda - information om anställda per "
 "avtalstyp och kön [tabell]"
 
 #. module: __export__
@@ -1357,7 +1357,7 @@ msgid ""
 "characteristics of undertaking's employees - information on employees by "
 "region [table]"
 msgstr ""
-"egenskaper hos företagets anställda - information om anställda per region "
+"egenskaper hos bolagets anställda - information om anställda per region "
 "[tabell]"
 
 #. module: __export__
@@ -1366,7 +1366,7 @@ msgid ""
 "characteristics of undertaking's employees - number of employees by gender "
 "[table]"
 msgstr ""
-"egenskaper hos företagets anställda - antal anställda per kön [tabell]"
+"egenskaper hos bolagets anställda - antal anställda per kön [tabell]"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_819_7353c02f
@@ -1375,7 +1375,7 @@ msgid ""
 "countries with 50 or more employees representing at least 10% of total "
 "number of employees [table]"
 msgstr ""
-"egenskaper hos företagets anställda - antal anställda i länder med 50 eller "
+"egenskaper hos bolagets anställda - antal anställda i länder med 50 eller "
 "fler anställda som representerar minst 10% av det totala antalet anställda "
 "[tabell]"
 
@@ -1464,7 +1464,7 @@ msgid ""
 "date of adoption of transition plan for undertakings not having adopted "
 "transition plan yet"
 msgstr ""
-"datum för antagande av övergångsplan för företag som ännu inte har antagit "
+"datum för antagande av övergångsplan för bolaget som ännu inte har antagit "
 "övergångsplan"
 
 #. module: __export__
@@ -1554,7 +1554,7 @@ msgid ""
 "undertaking's upstream and downstram value chain"
 msgstr ""
 "beskrivning av åtgärder som vidtagits för att förebygga uppkomsten av "
-"avfall i företagets värdekedja i tidigare och senare led"
+"avfall i bolagets värdekedja i tidigare och senare led"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_1066_f9517587
@@ -2058,7 +2058,7 @@ msgid ""
 "description of how process considers impacts with which undertaking is "
 "involved through own operations or as result of business relationships"
 msgstr ""
-"beskrivning av hur processen beaktar påverkan som företaget berörs av genom "
+"beskrivning av hur processen beaktar påverkan som bolaget berörs av genom "
 "sin egen verksamhet eller som ett resultat av affärsförbindelser"
 
 #. module: __export__
@@ -2133,8 +2133,8 @@ msgid ""
 "description of how the undertaking establishes, develops, promotes and "
 "evaluates its corporate culture"
 msgstr ""
-"beskrivning av hur företaget etablerar, utvecklar, främjar och utvärderar "
-"sin företagskultur"
+"beskrivning av hur bolaget etablerar, utvecklar, främjar och utvärderar "
+"sin bolagskultur"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_132_502192e5
@@ -2200,7 +2200,7 @@ msgid ""
 "description of level in undertaking at which terms of incentive schemes are "
 "approved and updated"
 msgstr ""
-"beskrivning av den nivå i företaget där villkoren för incitamentsprogrammen "
+"beskrivning av den nivå i bolaget där villkoren för incitamentsprogrammen "
 "godkänns och uppdateras"
 
 #. module: __export__
@@ -2210,7 +2210,7 @@ msgid ""
 "undertakings position in value chain"
 msgstr ""
 "beskrivning av huvuddragen i värdekedjan uppströms och nedströms och "
-"företagets ställning i värdekedjan"
+"bolagets ställning i värdekedjan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_64_f512ad17
@@ -2409,7 +2409,7 @@ msgid ""
 "undertaking is involved with material impacts"
 msgstr ""
 "beskrivning av arten av de verksamheter eller affärsförbindelser genom "
-"vilka företaget är involverat i väsentlig påverkan"
+"vilka bolaget är involverat i väsentlig påverkan"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_671_61eddb9e
@@ -2480,7 +2480,7 @@ msgstr ""
 msgid "description of policy to prevent late payments, especially to smes"
 msgstr ""
 "beskrivning av policy för att förhindra sena betalningar, särskilt till små "
-"och medelstora företag"
+"och medelstora bolag"
 
 #. module: __export__
 #: model:csrd.esrs,csrd_name:__export__.csrd_esrs_219_025a417c
@@ -2514,7 +2514,7 @@ msgid ""
 "and appropriate in response to particular actual or potential negative "
 "impact on own workforce"
 msgstr ""
-"beskrivning av den process genom vilken företaget identifierar vilka "
+"beskrivning av den process genom vilken bolaget identifierar vilka "
 "åtgärder som behövs och är lämpliga som svar på en viss faktisk eller "
 "potentiell negativ inverkan på den egna personalstyrkan"
 
