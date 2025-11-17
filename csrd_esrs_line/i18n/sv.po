@@ -4,23 +4,23 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0-20241127\n"
+"Project-Id-Version: Odoo Server 18.0-20251117\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 15:54+0000\n"
-"PO-Revision-Date: 2024-11-28 09:59+0100\n"
+"POT-Creation-Date: 2025-11-17 15:28+0000\n"
+"PO-Revision-Date: 2025-11-17 16:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: sv_SE\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line__account_move_id
 msgid "Account Move"
-msgstr "Flytta konto"
+msgstr "Verifikat"
 
 #. module: csrd_esrs_line
 #: model_terms:ir.ui.view,arch_db:csrd_esrs_line.view_move_form
@@ -33,6 +33,11 @@ msgid "Apply Survey Data"
 msgstr "Tillämpa undersökningsdata"
 
 #. module: csrd_esrs_line
+#: model_terms:ir.ui.view,arch_db:csrd_esrs_line.view_esrs_line_search
+msgid "CSRD ESRS"
+msgstr "CSRD ESRS"
+
+#. module: csrd_esrs_line
 #: model_terms:ir.ui.view,arch_db:csrd_esrs_line.csrd_esrs_gather_survey_data_wizard_view
 msgid "Cancel"
 msgstr "Avbryt"
@@ -40,12 +45,17 @@ msgstr "Avbryt"
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs__child_ids
 msgid "Child"
-msgstr "Barn"
+msgstr "Underordnad"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs__count_esrs_lines
 msgid "Count Esrs Lines"
-msgstr "Räkna Esrs linjer"
+msgstr "Räkna Esrs rader"
+
+#. module: csrd_esrs_line
+#: model_terms:ir.ui.view,arch_db:csrd_esrs_line.view_esrs_line_search
+msgid "Create Date"
+msgstr "Skapa datum"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs_gather_survey_wizard__create_uid
@@ -59,7 +69,7 @@ msgstr "Skapad av"
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_data_type__create_date
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line__create_date
 msgid "Created on"
-msgstr "Skapad på"
+msgstr "Skapad den"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs_gather_survey_wizard__csrd_esrs_id
@@ -70,6 +80,7 @@ msgstr "Csrd Esrs"
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs__data_type
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line__data_type
+#: model_terms:ir.ui.view,arch_db:csrd_esrs_line.view_esrs_line_search
 msgid "Data Type"
 msgstr "Typ av data"
 
@@ -111,10 +122,14 @@ msgstr "ESRS-linjer"
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_account_bank_statement_line__esrs_line_ids
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_account_move__esrs_line_ids
-#: model:ir.model.fields,field_description:csrd_esrs_line.field_account_payment__esrs_line_ids
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs__esrs_line_ids
 msgid "Esrs Line"
-msgstr "Esrs linje"
+msgstr "Esrs rader"
+
+#. module: csrd_esrs_line
+#: model_terms:ir.ui.view,arch_db:csrd_esrs_line.view_esrs_line_search
+msgid "Group By"
+msgstr "Grupp av"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs_gather_survey_wizard__id
@@ -126,18 +141,16 @@ msgstr "ID"
 #. module: csrd_esrs_line
 #: model:ir.model.fields,help:csrd_esrs_line.field_csrd_esrs_gather_survey_wizard__is_one_answer
 msgid ""
-"If true, you can store the result of the number of a specified answer on the"
-" main data point."
+"If true, you can store the result of the number of a specified answer on "
+"the main data point."
 msgstr ""
 "Om det är sant kan du lagra resultatet av antalet angivna svar på "
 "huvuddatapunkten."
 
 #. module: csrd_esrs_line
-#: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs_gather_survey_wizard____last_update
-#: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_data_type____last_update
-#: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line____last_update
-msgid "Last Modified on"
-msgstr "Senast ändrad den"
+#: model:ir.model,name:csrd_esrs_line.model_account_move
+msgid "Journal Entry"
+msgstr "Verifikat"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs_gather_survey_wizard__write_uid
@@ -169,7 +182,7 @@ msgstr "Ok"
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs__parent_id
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line__parent_csrd_esrs_id
 msgid "Parent"
-msgstr "Förälder"
+msgstr "Överordnad"
 
 #. module: csrd_esrs_line
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line__quantity
@@ -207,14 +220,9 @@ msgstr "Enkätfråga Föreslaget svar"
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_csrd_esrs__uom_id
 #: model:ir.model.fields,field_description:csrd_esrs_line.field_esrs_line__uom_id
 msgid "Uom"
-msgstr "Uom"
+msgstr "Måttenhet"
 
 #. module: csrd_esrs_line
 #: model:ir.model,name:csrd_esrs_line.model_csrd_esrs_gather_survey_wizard
 msgid "collects data from surveys for ESRS reporting"
 msgstr "samlar in data från enkäter för ESRS-rapportering"
-
-#. module: csrd_esrs_line
-#: model:ir.model,name:csrd_esrs_line.model_account_move
-msgid "scaffold_test.scaffold_test"
-msgstr "ställnings_test.ställnings_test"
