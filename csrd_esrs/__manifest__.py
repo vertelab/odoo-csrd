@@ -30,6 +30,9 @@
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
     'description': """
         Adds ESRS datapoints for an easier time when reporting CSRD.
+
+
+        This module depends on project https://github.com/OCA/management-system 
     """,
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-',
