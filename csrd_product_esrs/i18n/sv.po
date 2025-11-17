@@ -4,18 +4,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0-20241127\n"
+"Project-Id-Version: Odoo Server 18.0-20251117\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 15:55+0000\n"
-"PO-Revision-Date: 2024-11-28 10:01+0100\n"
+"POT-Creation-Date: 2025-11-17 15:29+0000\n"
+"PO-Revision-Date: 2025-11-17 16:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: sv_SE\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__create_uid
@@ -25,7 +25,7 @@ msgstr "Skapad av"
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__create_date
 msgid "Created on"
-msgstr "Skapad på"
+msgstr "Skapad den"
 
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__csrd_esrs_id
@@ -50,7 +50,7 @@ msgstr "Visningsnamn"
 #. module: csrd_product_esrs
 #: model_terms:ir.ui.view,arch_db:csrd_product_esrs.product_normal_form_view
 msgid "ESRS Lines"
-msgstr "ESRS-linjer"
+msgstr "ESRS-rader"
 
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__id
@@ -63,9 +63,9 @@ msgid "Is Computed"
 msgstr "Är beräknad"
 
 #. module: csrd_product_esrs
-#: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line____last_update
-msgid "Last Modified on"
-msgstr "Senast ändrad den"
+#: model:ir.model,name:csrd_product_esrs.model_account_move
+msgid "Journal Entry"
+msgstr "Verifikat"
 
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__write_uid
@@ -80,7 +80,7 @@ msgstr "Senast uppdaterad den"
 #. module: csrd_product_esrs
 #: model:ir.model,name:csrd_product_esrs.model_product_esrs_line
 msgid "Lines to store ESRS data on products"
-msgstr "Linjer för lagring av ESRS-data på produkter"
+msgstr "Rader för lagring av ESRS-data på produkter"
 
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__name
@@ -95,7 +95,7 @@ msgstr "Produkt"
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_product__product_esrs_line_ids
 msgid "Product Esrs Line"
-msgstr "Produkt Esrs Linje"
+msgstr "Produkt Esrs rad"
 
 #. module: csrd_product_esrs
 #: model:ir.model,name:csrd_product_esrs.model_product_product
@@ -110,9 +110,4 @@ msgstr "Kvantitet"
 #. module: csrd_product_esrs
 #: model:ir.model.fields,field_description:csrd_product_esrs.field_product_esrs_line__uom_id
 msgid "Uom"
-msgstr "Uom"
-
-#. module: csrd_product_esrs
-#: model:ir.model,name:csrd_product_esrs.model_account_move
-msgid "scaffold_test.scaffold_test"
-msgstr "ställnings_test.ställnings_test"
+msgstr "Måttenhet"
