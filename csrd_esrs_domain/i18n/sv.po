@@ -1,0 +1,49 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* csrd_esrs_domain
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20251117\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-17 15:26+0000\n"
+"PO-Revision-Date: 2025-11-17 16:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: csrd_esrs_domain
+#: model:ir.actions.server,name:csrd_esrs_domain.ir_cron_data_check_csrd_data_point_ir_actions_server
+msgid "CSRD Policy: check CSRD policy data point"
+msgstr "CSRD-policy: kontrollera datapunkten i CSRD-policyn"
+
+#. module: csrd_esrs_domain
+#: model:ir.model.fields,field_description:csrd_esrs_domain.field_csrd_esrs__domain
+#: model_terms:ir.ui.view,arch_db:csrd_esrs_domain.csrd_esrs_view_form
+msgid "Domain"
+msgstr "Domän"
+
+#. module: csrd_esrs_domain
+#: model:ir.model,name:csrd_esrs_domain.model_csrd_esrs
+msgid "ESRS Datapoints"
+msgstr "ESRS Datapunkter"
+
+#. module: csrd_esrs_domain
+#: model:ir.model.fields,field_description:csrd_esrs_domain.field_csrd_esrs__model
+msgid "Model"
+msgstr "Modell"
+
+#. module: csrd_esrs_domain
+#: model:ir.model.fields,field_description:csrd_esrs_domain.field_csrd_esrs__model_name
+msgid "Model Name"
+msgstr "Modellnamn"
+
+#. module: csrd_esrs_domain
+#: model:ir.model.fields,field_description:csrd_esrs_domain.field_csrd_esrs__model_id
+msgid "Recipients Model"
+msgstr "Mottagare Modell"
