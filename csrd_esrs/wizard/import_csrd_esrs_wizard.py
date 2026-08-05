@@ -6,6 +6,7 @@ from odoo import models, fields, api
 
 class ImportCSRDESRSWizard(models.TransientModel):
     _name = 'import.csrd.esrs.wizard'
+    _description = 'Import CSRD ESRS Wizard'
 
     file = fields.Binary(string="File", required=True)
 
