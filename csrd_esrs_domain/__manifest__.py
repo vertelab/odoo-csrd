@@ -34,7 +34,7 @@
         Example: How many employees are men and women, respectively.
     """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-',
+    'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs_domain',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'depends': ['csrd_esrs'],

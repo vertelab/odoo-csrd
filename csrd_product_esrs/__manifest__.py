@@ -32,7 +32,7 @@
         This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.
     """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-',
+    'website': 'https://vertel.se/apps/odoo-csrd/csrd_product_esrs',
     'images': ['static/description/banner.png'], # 560x280
     'license': 'AGPL-3',
     'depends': ["mrp","csrd_esrs_line"],

@@ -35,7 +35,7 @@
         This module depends on project https://github.com/OCA/management-system 
     """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-',
+    'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'depends': ['mail','document_page','survey','mgmtsystem_manual', 'web_widget_mermaid_field'],

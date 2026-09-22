@@ -32,7 +32,7 @@
         Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity. 
     """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-',
+    'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs_line',
     'images': ['static/description/banner.png'], 
     'license': 'AGPL-3',
     'depends': ["account", "csrd_esrs", "uom"],
