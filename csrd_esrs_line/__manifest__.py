@@ -23,14 +23,21 @@
 #
 {
     'name': 'CSRD: ESRS Line',
-    'version': '1.0',
-    'summary': """
-        Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity. 
-    """,
+    'version': '18.0.1.0.0',
+    'summary': """Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity.""",
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
-    'description': """
-        Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity. 
-    """,
+    'description': '''
+ESRS Line
+=========
+
+    Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity.
+
+    Features:
+
+        - Guided Wizards: Step-by-step dialogs for data entry.
+        - UI Integration: Extends 6 view(s) in the Odoo interface.
+        - Extends Odoo: Builds on account.move, account_move_id, csrd.esrs, csrd_esrs_id.
+    ''',
     'author': 'Vertel AB',
     'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs_line',
     'images': ['static/description/banner.png'], 
