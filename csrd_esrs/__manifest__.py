@@ -23,23 +23,16 @@
 #
 {
     'name': 'CSRD: ESRS Datapoints',
-    'version': '18.0.1.0.0',
-    'summary': """Adds ESRS datapoints for an easier time when reporting CSRD.""",
+    'version': '1.0',
+    'summary': """
+        Adds ESRS datapoints for an easier time when reporting CSRD.
+    """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
-    'description': '''
-ESRS Datapoints
-===============
-
-    This module depends on project https://github.com/OCA/management-system
-
-    Features:
-
-        - Guided Wizards: Step-by-step dialogs for data entry.
-        - UI Integration: Extends 6 view(s) in the Odoo interface.
-        - Extends Odoo: Builds on category_id, csrd.esrs, csrd.esrs.category, csrd_esrs_id.
-    ''',
+    'description': """
+        Adds ESRS datapoints for an easier time when reporting CSRD.
+    """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs',
+    'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'depends': ['mail','document_page','survey','mgmtsystem_manual', 'web_widget_mermaid_field'],
