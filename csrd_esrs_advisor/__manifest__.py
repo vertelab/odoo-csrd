@@ -23,21 +23,16 @@
 #
 {
     'name': 'CSRD: ESRS Advisor',
-    'version': '18.0.1.0.0',
-    'summary': """Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.""",
+    'version': '1.0',
+    'summary': """
+        Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.
+    """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
-    'description': '''
-ESRS Advisor
-============
-
-    Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.
-
-    Features:
-
-        - Extends Odoo: Builds on ai.agent, ai.quest.
-    ''',
+    'description': """
+        Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.
+    """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs_advisor',
+    'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],  # 560x280
     'license': 'AGPL-3',
     'depends': ["csrd_esrs", "ai_agent"],

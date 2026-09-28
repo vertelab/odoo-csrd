@@ -23,24 +23,18 @@
 #
 {
     'name': 'CSRD: ESRS Datapoints Domain',
-    'version': '18.0.1.0.0',
-    'summary': """Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints. Example: How many employees are men and women, respectively.""",
+    'version': '1.0',
+    'summary': """
+        Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints.
+        Example: How many employees are men and women, respectively.
+    """,
     'category': '',
-    'description': '''
-ESRS Datapoints Domain
-======================
-
-    Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints.
-            Example: How many employees are men and women, respectively.
-
-    Features:
-
-        - Automation: Scheduled jobs: CSRD Policy: check CSRD policy data point, CSRD Policy: check CSRD policy data point.
-        - UI Integration: Extends 2 view(s) in the Odoo interface.
-        - Extends Odoo: Builds on csrd.esrs.
-    ''',
+    'description': """
+        Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints.
+        Example: How many employees are men and women, respectively.
+    """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-csrd/csrd_esrs_domain',
+    'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'depends': ['csrd_esrs'],

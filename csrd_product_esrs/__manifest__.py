@@ -23,22 +23,16 @@
 #
 {
     'name': 'CSRD: Product ESRS Line',
-    'version': '18.0.1.0.0',
-    'summary': """This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.""",
+    'version': '1.0',
+    'summary': """
+        This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.     
+    """,
     'category': '', # Technical Settings|Localization|Payroll Localization|Account Charts|User types|Invoicing|Sales|Human Resources|Operations|Marketing|Manufacturing|Website|Theme|Administration|Appraisals|Sign|Helpdesk|Administration|Extra Rights|Other Extra Rights|
-    'description': '''
-Product ESRS Line
-=================
-
-    This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.
-
-    Features:
-
-        - UI Integration: Extends 2 view(s) in the Odoo interface.
-        - Extends Odoo: Builds on account.move, csrd.esrs, esrs.data.type, esrs.line.
-    ''',
+    'description': """
+        This module makes it possible to add ESRS information to products, like the amount of CO2 used in manufacturing.
+    """,
     'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-csrd/csrd_product_esrs',
+    'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'], # 560x280
     'license': 'AGPL-3',
     'depends': ["mrp","csrd_esrs_line"],
