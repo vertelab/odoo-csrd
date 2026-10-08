@@ -33,7 +33,7 @@
         Adds a domain that allows one to create a connection from records in Odoo to ESRS datapoints.
         Example: How many employees are men and women, respectively.
     """,
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
