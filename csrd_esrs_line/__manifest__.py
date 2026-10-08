@@ -31,7 +31,7 @@
     'description': """
         Adds lines on invoices for alternatives to monetary values, like CO2, water, and electricity. 
     """,
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'], 
     'license': 'AGPL-3',

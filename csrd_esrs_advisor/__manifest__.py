@@ -31,7 +31,7 @@
     'description': """
         Adds AI support to the CSRD ESRS module, where the user can ask questions about ESRS datapoints, get help writing ESRS policies, and help determining if an ESRS datapoint is relevant for the company.
     """,
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],  # 560x280
     'license': 'AGPL-3',

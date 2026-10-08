@@ -31,7 +31,7 @@
     'description': """
         Adds ESRS datapoints for an easier time when reporting CSRD.
     """,
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'website': 'https://vertel.se/apps/odoo-',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
